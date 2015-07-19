@@ -1,0 +1,12 @@
+: 1 330
+1 i checkinstall 4126 3983 986744507
+1 i copyright 59 5210 986744507
+1 i i.none 5743 44453 986744507
+1 i patch_checkinstall 1555 54237 986744507
+1 i patch_postinstall 824 1074 986744507
+1 i pkginfo 502 38980 986744507
+1 i postinstall 6703 341 986744507
+1 i preinstall 6567 40086 986744507
+1 d none usr 0755 root sys
+1 d none usr/lib 0755 root bin
+1 f none usr/lib/libproc.so.1 0755 root bin 118496 3801 986696628

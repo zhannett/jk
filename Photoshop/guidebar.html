@@ -1,0 +1,86 @@
+<HTML>
+<HEAD>
+<TITLE>NavBut8</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<!-- ImageReady Preload Script (NavBut8.psd) -->
+<SCRIPT TYPE="text/javascript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		News_over = newImage("images/News-over.gif");
+		Web_Design_News_over = newImage("images/Web-Design-News_over.gif");
+		Web_Design_over = newImage("images/Web-Design-over.gif");
+		Web_Design_Jobs_Web_Design_over = newImage("images/Web-Design-Jobs-Web-Design_.gif");
+		Web_Design_Jobs_over = newImage("images/Web-Design-Jobs-over.gif");
+		Photoshop_Web_Design_Jobs_over = newImage("images/Photoshop-Web-Design-Jobs_o.gif");
+		Photoshop_over = newImage("images/Photoshop-over.gif");
+		Favorite_Websites_Photoshop_over = newImage("images/Favorite-Websites-Photoshop.gif");
+		Favorite_Websites_over = newImage("images/Favorite-Websites-over.gif");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+<!-- End Preload Script -->
+</HEAD>
+<BODY BGCOLOR=#FFFFFF LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0 ONLOAD="preloadImages();">
+<!-- ImageReady Slices (NavBut8.psd) -->
+<TABLE WIDTH=150 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD>
+			<A HREF="http://www.reuters.com"
+				ONMOUSEOVER="changeImages('News', 'images/News-over.gif', 'Web_Design', 'images/Web-Design-News_over.gif'); return true;"
+				ONMOUSEOUT="changeImages('News', 'images/News.gif', 'Web_Design', 'images/Web-Design.gif'); return true;">
+				<IMG NAME="News" SRC="images/News.gif" WIDTH=150 HEIGHT=40 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD>
+			<A HREF="http://www.ftpconferences.com/webdesignworld/"
+				ONMOUSEOVER="changeImages('Web_Design', 'images/Web-Design-over.gif', 'Web_Design_Jobs', 'images/Web-Design-Jobs-Web-Design_.gif'); return true;"
+				ONMOUSEOUT="changeImages('Web_Design', 'images/Web-Design.gif', 'Web_Design_Jobs', 'images/Web-Design-Jobs.gif'); return true;">
+				<IMG NAME="Web_Design" SRC="images/Web-Design.gif" WIDTH=150 HEIGHT=41 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD>
+			<A HREF="http://jobs.workopolis.com/jobshome/db/work.res_list?pi_sort_col=POST_DATE&pi_search_id=168958448&pi_page_no=1&pi_msg=&pi_gam_date="
+				ONMOUSEOVER="changeImages('Web_Design_Jobs', 'images/Web-Design-Jobs-over.gif', 'Photoshop', 'images/Photoshop-Web-Design-Jobs_o.gif'); return true;"
+				ONMOUSEOUT="changeImages('Web_Design_Jobs', 'images/Web-Design-Jobs.gif', 'Photoshop', 'images/Photoshop.gif'); return true;">
+				<IMG NAME="Web_Design_Jobs" SRC="images/Web-Design-Jobs.gif" WIDTH=150 HEIGHT=40 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD>
+			<A HREF="http://www.adobe.com"
+				ONMOUSEOVER="changeImages('Photoshop', 'images/Photoshop-over.gif', 'Favorite_Websites', 'images/Favorite-Websites-Photoshop.gif'); return true;"
+				ONMOUSEOUT="changeImages('Photoshop', 'images/Photoshop.gif', 'Favorite_Websites', 'images/Favorite-Websites.gif'); return true;">
+				<IMG NAME="Photoshop" SRC="images/Photoshop.gif" WIDTH=150 HEIGHT=41 BORDER=0 ALT=""></A></TD>
+	</TR>
+	<TR>
+		<TD>
+			<A HREF="http://www.yahoo.com"
+				ONMOUSEOVER="changeImages('Favorite_Websites', 'images/Favorite-Websites-over.gif'); return true;"
+				ONMOUSEOUT="changeImages('Favorite_Websites', 'images/Favorite-Websites.gif'); return true;">
+				<IMG NAME="Favorite_Websites" SRC="images/Favorite-Websites.gif" WIDTH=150 HEIGHT=42 BORDER=0 ALT=""></A></TD>
+	</TR>
+</TABLE>
+<!-- End ImageReady Slices -->
+</BODY>
+</HTML>

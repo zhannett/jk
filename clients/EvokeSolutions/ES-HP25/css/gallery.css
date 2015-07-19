@@ -1,0 +1,17 @@
+#overlay {background: #000; opacity: 0.8; display: none; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 100; cursor: pointer; cursor: hand}
+#gallery {position: absolute; top: 13%; left: 13%; width: 900px; height: 550px; background: #FFF; z-index: 110; display: none}
+#gallery_prev, #gallery_next {position: absolute; bottom: 0px; right: 0px; z-index: 120; width: 60px; text-align: center; font-size: 12px; padding: 4px}
+#gallery_prev {left: 0px}
+#gallery_prev a, #gallery_next a {color: #000; text-decoration: none}
+#gallery_title {position: absolute; bottom: 5px; left: 5px; width: 100%; font-size: 16px; text-align: center}
+
+#gallery img {position: absolute; top: 5px; left: 5px; width: 640px; height: 480px; border: 0px; z-index: 115}
+
+#gallery.normal {width:525px; height:400px}
+#gallery img.normal {width:500px; height:375px}
+
+#gallery.tall {width:400px; height:525px}
+#gallery.tall img {width:375px; height:500px}
+
+#gallery.wide {width:900px; height:400px}
+#gallery.wide img {width:875px; height:375px}

@@ -1,0 +1,20 @@
+	.bg_top {position:relative; top:2px}
+	.bg_bottom {background:none; height:0; clear:both}
+	.bg_top_footer {background:none; height:0}	
+	.bg_bottom_footer {background: none; height:0;position:relative; top:0}
+	#content {position:relative; top:-18px}
+	#navtop {position:relative; top:0}
+	#footer_nav {height:130px; position:relative; top:-35px}
+	#copyright {height:25px; position:relative; top:-35px}
+	
+	#index .column {float:left; width:178px; margin:10px; padding:10px; border:0}
+	#index .column p {width:160px; font-size:0.75em; line-height:1.5em}
+
+
+.pageSubtitle {padding-top:80px}
+
+/* >>> thickbox settings <<<*/
+#TB_overlay {position: absolute; height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');}
+#TB_window {position: absolute; margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');}
+#TB_load {position: absolute; margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');}
+#TB_HideSelect {position: absolute; height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');}

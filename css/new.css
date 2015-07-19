@@ -1,0 +1,235 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {margin:0px; padding:0px; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent}
+body {line-height: 1}
+ol, ul {list-style: none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none}
+:focus {outline: 0}
+ins {text-decoration: none}
+del {text-decoration: line-through}
+table {border-collapse: collapse; border-spacing: 0}
+/*end reset.css  */
+
+
+/* HTML Selectors  */  
+	body {width:100%; margin:0; text-align:center; overflow:scroll; background: url(../img/bg_xmas.gif)}	/* bg_body */
+	h1, h2 {color:#005A9C; font: italic 2.0em Georgia, "Times New Roman", Times, serif; padding-bottom:10px; letter-spacing:-1px}
+	h3 {color:#1567A4; font: italic 1.4em Georgia, "Times New Roman", Times, serif; padding:5px 0; letter-spacing:-1px; text-align:center}
+	p {font: 0.8em/1.6 Trebuchet MS,Arial,sans-serif; letter-spacing:0.5px; color:#666; text-align:justify; padding-left:10px}	
+	img {border:0}
+	ul {text-align:left}
+	li {color:#112B49}
+	ul li {padding: 0 0 2px 5px}
+	blockquote {font: italic 0.7em/1.8 Georgia, "Times New Roman", Times, serif; color:#333; padding:10px}
+	blockquote .quot {display:inline}
+	blockquote .author {font-style:normal; color:#999; padding-top:10px}
+	
+	
+/* Classes - global */
+	/*.hidden { position: absolute; left: -9000px; top:0px}*/
+	.hidden {display:none}
+	.pink {color:#FC24BC}	
+	.h10 {height:10px}
+	.h20 {height:20px; clear:both}
+	.quotation {background-color:#E2E2E2}
+	.page {width:1000px; margin: 0px auto}
+	.bg_top {background:url(../img/bg_header_top.gif) repeat-x; height:16px; clear:both}
+	.bg_bottom {background:url(../img/bg_header_bottom.gif) repeat-x; height:16px; clear:both}
+	.bg_top_footer {background:url(../img/bg_footer_top.gif) repeat-x; height:5px; clear:both; position:relative; top:-5px; z-index:0}	
+	#footer {height:16px; background-color:#E2E2E2; font: 0.6em Georgia, "Times New Roman", Times, serif; text-align:right; padding-right:10px; color:#999; clear:both; position:relative; top:-5px}
+	.bg_bottom_footer {background:url(../img/bg_header_bottom.gif) repeat-x; height:16px; clear:both; position:relative; top:-5px}
+	.bg_nav {width:1000px; margin: 0px auto; background-color:#F2F2F2; clear:both}	
+	#navtop {height:50px; position:relative; top:-15px; background-color:#F2F2F2}
+	#navbottom {height:29px; background-color:#F2F2F2; clear:both}
+	
+	#header {clear:both}
+	#header #logo {background-color:#E8E8E8; padding: 5px 0px}		
+	#header #logo a {font: bold 1.3em Verdana, Arial, Helvetica, sans-serif; color:#005A9C; letter-spacing:5px; position:relative; top:5px}		
+	#header #date_time {text-align:right; padding-bottom:5px; background-color:#E8E8E8; font: 0.7em Georgia, "Times New Roman", Times, serif; text-align:right; padding-right:10px; color:#999}
+	#header #clock {padding-left:15px}	
+	
+	#switcher {float:right; width:205px; padding-bottom:5px; clear:right}
+	#switcher .button {float:right; width:15px; padding: 3px 3px 3px 3px; margin: .5em .5em 0em 0em; border: 1px solid #CCC; position: relative; display:inline; background-color:#B2CDE0; font-size:0.75em; cursor: pointer; color:#666; text-align:center}
+	#switcher .label {float:right; width:100px; margin-right:5px; cursor: pointer; position: relative; top:5px}
+	#switcher .label span.txt {font:0.65em Trebuchet MS,Arial,sans-serif; color:#999; border-bottom: 1px solid #CCC}
+	
+	/* Hypertext Links */
+	a {text-decoration:none; font: 0.7em Arial, Helvetica, sans-serif; color:#6097C0}
+	a:link		{color:#6097C0; text-decoration:none}
+	a:visited 	{color:#6097C0; text-decoration:none}
+	a:hover 	{color:#005A9C; border-bottom: 1px solid #005A9C; cursor:pointer} /* background-color:#B2CDE0  */
+	a:active 	{color:#FFF; background-color:#B2CDE0; border-bottom: 1px solid #FFF}
+	.mailto a:link {color:#FE7A69; font-size:0.85em}
+	.mailto a:hover {color:#FE7A69; text-decoration:none; background-color:#E2E2E2}
+	a.pdflink {color:#090}	
+	
+	.external li a {padding-left: 15px; background: url(../img/remote.gif) center left no-repeat}
+	.external li a:visited {color:#BED6E7}
+	.external li a:hover {background: #E2E2E2 url(../img/remote_a.gif) center left no-repeat; color:#005A9C}	
+	.external li a:active {}
+	
+	
+	/* Navigation */		
+	#topNav, #bottomNav {float:left; clear:both; background-color:#E2E2E2; margin:0 auto}
+	#bottomNav {z-index:10}		
+	#topNav ul, #bottomNav ul {list-style:none; padding:0}
+	#topNav ul li, #bottomNav ul li {display:inline; margin:0; padding:0; float:left}
+	#topNav ul li {border-bottom: 1px solid #CCC}
+	#bottomNav ul li {border-top: 1px solid #CCC}
+	#topNav a, #bottomNav a {text-decoration:none; display: block; padding: 5px 15px; font: 0.7em Verdana, Arial, Helvetica, sans-serif; color:#005A9C; float:left}
+	.active {color:#005A9C; background-color:#B2CDE0}
+	.current {color:white; background-color:#005A9C}	
+
+	
+ 	#w3c {width:110px; clear:both; padding-left:5px}
+	.custom {font: 0.7em/1.6 Trebuchet MS,Arial,sans-serif; letter-spacing:0.5px}
+	
+		
+	/*  Content  */
+	#content {width:1000px; margin: 0px auto; display:inline-table; border-collapse:separate; table-layout:fixed}
+	#content_container {width:1000px; background-color:#F2F2F2; color:#333; display:table-row}
+	#content #content_container #col_left {float:left; clear:left; width:135px; display:table-cell}
+	#content #content_container #col_middle {float:left; width:700px; padding-bottom:20px; text-align:left; display:table-cell}  /* font: 0.8em/1.6 Trebuchet MS,Arial,sans-serif; letter-spacing:0.5px */
+	#content #content_container #col_right {float:left; width:150px; padding-bottom:20px; text-align:left; clear:right; padding-right:15px; display:table-cell}	
+	
+	
+	/* Generic Page Components */
+	
+	form#newwindowlinks {position:relative; top:-15px}
+	#new_window {text-align:left; padding-left:25px}	
+	label.openlinks {font: italic 0.7em/1.6 Trebuchet MS,Arial,sans-serif; color:#333; padding-left:450px; position:relative; top:-3px}
+	.pageTitle {padding:0px 10px 0px 30px; clear:both} 
+	.pageSubtitle {text-align:center; padding:10px 10px 20px 30px; clear:both}
+	.back_to_top {padding-left:25px; font-size:0.75em; clear:right; position:relative; top:-10px}
+		
+	
+	/* Specific Page Components */ 		
+	#index #welcome {float:left; width:290px; clear:left; background-color:#F8F8F8; padding:10px 20px}
+	#index #welcome p {line-height:1.5; padding: 5px 0px;}
+	#index #welcome_img {float:left; padding: 0 20px; vertical-align:top; clear:right}
+	#index #services {float:left; width:632px; clear:both; background-color:#F8F8F8; margin-top:20px; padding:10px 20px}
+	#index #services ul {width:550px; padding-top:15px; position:relative; left:35px; list-style-image:url(../img/arrow_off.gif)}
+	#index #services ul li {font: 0.8em/1.6 Trebuchet MS,Arial,sans-serif; color:#666; letter-spacing:0.5px; padding-bottom:7px}
+	
+	#skills #skillset {float:left; width:700px; margin-bottom:20px; clear:both}	
+	#skills #col_middle {float:left; width:830px; padding-bottom:20px; text-align:left; display:table-cell}	
+	#skills #certificates {clear:both; background-color:#F8F8F8; padding:20px; height:390px}
+	#skills #allcertificates {padding: 0px 25px 10px 35px; line-height:1.5em; text-align:left; clear:both}
+	#skills #certificates_list ul {height:110px; clear:both}
+	#skills #certificates_list li {list-style-image: url(../img/arrow_off.gif)}
+	#skills #certificates_list li span {font: 0.7em/1.6 Trebuchet MS,Arial,sans-serif; color:#666; letter-spacing:0.5px}
+	#skills #certificates #imglist li {padding:5px 0; margin:5px 0; display:inline}	
+	.certimg {display:block; float:left; border: 1px solid #999; margin:1em; padding:0px}
+	#skills #computerskills {margin-top:20px; padding:20px 0 20px 0}
+	#skills #computerskills #skillset {padding: 10px 0px; clear:both; background-color:#F8F8F8}
+	#skills #computerskills #skillset dl.table-display {width:800px; margin: 5px 0px 5px 20px}
+	#skills #computerskills #skillset .table-display dt {float:left; width:130px; padding:5px 5px; font: bold 0.7em/1.6 Trebuchet MS,Arial,sans-serif; color:#666; letter-spacing:0.5px}
+	/* commented backslash hack for mac-ie5 \*/ #skills #skillset dt {clear: both} /* end hack */
+	#skills #computerskills #skillset .table-display dd {float:left; width:480px; padding:5px 10px; font: 0.7em/1.6 Trebuchet MS,Arial,sans-serif; color:#666; letter-spacing:0.5px}	
+	
+	#portfolio #projects {width:680px; text-align:left; clear:both; background-color:#F8F8F8; padding-bottom:20px}
+	#portfolio #projects #latest_projects {width:500px; position:relative; left:35px}
+	#portfolio #projects #latest_projects li {list-style-image: url(../img/arrow_off.gif)}
+	#portfolio #projects #latest_projects li span {font: 0.7em/1.6 Trebuchet MS,Arial,sans-serif; color:#666; letter-spacing:0.5px}
+	#portfolio #projects #latest_projects ul#BofA li {list-style:none; padding: 0px}
+	#portfolio #projects .more {font: 0.8em Verdana, Arial, Helvetica, sans-serif; cursor:pointer; color:#6097C0; padding:30px 0; text-align:center}	
+	
+	#education h2 span {color:#1567A4; font: italic 0.75em Trebuchet MS,Arial,sans-serif; color:#666; letter-spacing:0.5px}
+	#education h2.diploma {color:#1567A4; font: italic 0.75em Trebuchet MS,Arial,sans-serif; color:#666; letter-spacing:0.5px}
+	#education #schools {width:650px; background-color:#F8F8F8; clear:both}
+	#education #schools ul {position:relative; left:35px; height:430px; list-style-image: url(../img/arrow_off.gif)}
+	#education #schools ul li {padding:20px 20px; clear:both}
+	#education #schools ul li .school_logo {float:left; width:140px; clear:left}
+	#education #schools ul li .school_diploma {float:left; width:400px; clear:right; padding-bottom:15px}
+	#education #schools ul li .school_diploma h2 {padding-top:10px}
+	#education h2 {font-size:1.0em}	
+	.inline {display:inline}
+
+	#contact #contactInfo {width: 580px; padding:15px 0; background-color:#F8F8F8; margin: 0 auto 15px auto} 
+	#contact .img_container {float:left; width:50px; height:50px; clear:left; position:relative; left:35px}
+	#contact .contact {position:relative; left:65px; height:50px; vertical-align:top; text-align:left; clear:right}
+	#contact .contact span {font: 0.8em/1.6 Trebuchet MS,Arial,sans-serif; color:#666; letter-spacing:0.5px}
+	#contact .map {width:580px; height:300px; border:1px solid #CCC; margin: 0 auto}
+	#contact #img_email {width:55px; height:24px; background: url(../img/email.gif) no-repeat right}
+	#contact #img_phone {width:55px; height:40px; background: url(../img/phone.gif) no-repeat right}
+	#contact #img_mobile {width:55px; height:45px; background: url(../img/mobile.jpg) no-repeat right}
+	#contact #img_skype {width:55px; height:35px; background: url(../img/skype.gif) no-repeat right}
+	#contact #img_home {width:55px; height:40px; background: url(../img/home.gif) no-repeat right}
+	
+	.photo {width:120px; height:120px; float:left; padding: 5px 25px 5px 10px; } /* for left and middle img in imagegallery_dynamic.php  */	
+	
+	#ref #col_middle #col_middle_container {width:640px}
+	#ref .term {padding-top:5px 0; font: bold 0.7em/1.6 Trebuchet MS,Arial,sans-serif; color:#666; letter-spacing:0.5px; text-align:left; padding-left:10px}
+	#ref .definition {padding:10px; font: 0.7em/1.6 Trebuchet MS,Arial,sans-serif; color:#666; letter-spacing:0.5px}
+	#ref ul li {list-style-image: url(../img/arrow_off.gif); padding:3px 3px; position:relative; left:50px; font: 0.7em/1.6 Trebuchet MS,Arial,sans-serif}
+	#ref h4 {color:#1567A4; font: italic 1.2em Georgia, "Times New Roman", Times, serif; padding:5px 0; letter-spacing:-1px}
+	#ref h5 {color:#1567A4; font: italic 1.0em Georgia, "Times New Roman", Times, serif; padding:5px 0; letter-spacing:-1px}
+	#ref h6 {color:#1567A4; font: italic 0.85em Georgia, "Times New Roman", Times, serif; padding:5px 0; letter-spacing:-1px}
+	#ref #col_right img {margin-bottom:20px}
+	.loading {border: 1px #000 solid; background-color: #B2CDE0; padding:20px; margin: 100px 0 0 200px; position:absolute; display:none; font: 0.9em Arial, Helvetica, sans-serif; cursor:pointer; color:#005A9C}
+	#termin, #props, #pageevent, #dyn {float:left; width:220px; padding-right:15px}
+	#dictionary, #properties, #pageevents, #dynamic_elem {float:left; width:370px; clear:right; background-color:#FFF; border:1px solid #B2CDE0; margin:20px 0}
+	#properties p, #dictionary p, #pageevents p, #dynamic_elem p{padding: 0 15px}
+	#properties h5, #dictionary h5, #pageevents h5, #dynamic_elem h5 {padding-left:15px}
+	.p1 {font:0.7em Trebuchet MS,Arial,sans-serif; letter-spacing:0; color:#666 }
+	.p2 {font:0.7em Trebuchet MS,Arial,sans-serif; letter-spacing:0; color:#999; padding-top:5px; padding-bottom:5px}
+	.code {font: 0.7em Arial, Helvetica, sans-serif; color:#005A9C; padding: 0 15px}						
+	div#event_object {clear:both}
+	div#page_events {clear:both}
+	.lib {background:url(../img/book.gif) no-repeat; position:relative; margin-top:15px; clear:both; margin-top:10px}
+	.lib h4 {position:relative; left:40px; top:-5px}
+	.codeline {padding-left:15px}
+	.comment {padding-left:15px; color:#999}
+	.codetitle {font: bold 0.7em Arial, Helvetica, sans-serif; color:#666; padding:5px 0}
+						
+	
+	#photogallery #col_middle h4 {color:#1567A4; font: bold italic 1.0em/0.8 Georgia, "Times New Roman", Times, serif; position:relative; left:17px}
+	#photogallery #col_middle p {width:600px; padding:10px 0}
+	#photogallery #col_middle .photogallery {padding:20px 0; list-style-image:url(../img/arrow_off.gif); position:relative; left:35px}
+	#photogallery #col_middle .photogallery li {padding:4px 0}
+	#photogallery #col_middle .photogallery li a {font-size:0.9em}
+	#photogallery #col_right img {padding:5px 0; clear:both}
+	
+	#content #content_container #gallery #col_left {float:left; clear:left; width:240px; display:table-cell; text-align:left}
+	#content #content_container #gallery #col_middle {float:left; width:710px; clear:right; padding-bottom:20px; text-align:left; display:table-cell} 
+	#gallery #col_left h3 {padding-top:35px; text-align:left; padding-left:15px}
+	#gallery #col_left h4 {color:#1567A4; font: bold italic 0.9em/0.8 Georgia, "Times New Roman", Times, serif; letter-spacing:-1px; text-align:left; padding-left:15px}
+	#gallery #col_left ul {padding:20px 0; list-style-image:url(../img/arrow_off.gif); position:relative; left:35px}
+	#gallery #col_left ul li {width:170px; cursor:pointer; padding: 4px 0 0 15px}
+	#gallery #col_left ul li a {font-size:0.85em}
+	#gallery #col_middle #galleries {width:700px; background-color:#F8F8F8; clear:both; margin:20px 0}
+	#gallery ul.gallery {width:680px; padding: 20px 0; text-align:center}
+	#gallery ul.gallery li {display:inline}
+	
+
+	
+	
+	.button {
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  border-top: 3px solid #888;
+  border-left: 3px solid #888;
+  border-bottom: 3px solid #444;
+  border-right: 3px solid #444;
+}
+
+
+#loading {
+  border: 1px #000 solid;
+  background-color: #eee;
+  padding: 20px;
+  margin: 100px 0 0 200px;
+  position: absolute;
+  display: none;
+}
+
+.highlighted {
+  background-color: #dfd;
+  font-style: italic;
+}

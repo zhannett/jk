@@ -1,0 +1,18 @@
+<h1>Wall Street</h1>																			
+<ul class="gallery">		
+        <li><a href="img/photo/nyc/wallstreet/IMG_0055.JPG" rel="prettyPhoto[gallery_wallstreet]" title="Wall Street"><img src="img/photo/nyc/wallstreet/thumb/IMG_0055.JPG" width="80" height="60" alt="Wall Street" /></a></li>
+        <li><a href="img/photo/nyc/wallstreet/IMG_0064.JPG" rel="prettyPhoto[gallery_wallstreet]" title="Wall Street"><img src="img/photo/nyc/wallstreet/thumb/IMG_0064.JPG" width="80" height="60" alt="Wall Street" /></a></li>
+        <li><a href="img/photo/nyc/wallstreet/IMG_0061.JPG" rel="prettyPhoto[gallery_wallstreet]" title="Wall Street"><img src="img/photo/nyc/wallstreet/thumb/IMG_0061.JPG" width="80" height="60" alt="Wall Street" /></a></li>
+        <li><a href="img/photo/nyc/wallstreet/IMG_0058.JPG" rel="prettyPhoto[gallery_wallstreet]" title="Wall Street"><img src="img/photo/nyc/wallstreet/thumb/IMG_0058.JPG" width="80" height="60" alt="Wall Street" /></a></li>
+        <li><a href="img/photo/nyc/wallstreet/IMG_0059.JPG" rel="prettyPhoto[gallery_wallstreet]" title="Wall Street"><img src="img/photo/nyc/wallstreet/thumb/IMG_0059.JPG" width="60" height="80" alt="Wall Street" /></a></li>
+        <li><a href="img/photo/nyc/wallstreet/IMG_0057.JPG" rel="prettyPhoto[gallery_wallstreet]" title="Wall Street"><img src="img/photo/nyc/wallstreet/thumb/IMG_0057.JPG" width="60" height="80" alt="Wall Street" /></a></li>
+        <li><a href="img/photo/nyc/wallstreet/IMG_0053.JPG" rel="prettyPhoto[gallery_wallstreet]" title="Wall Street"><img src="img/photo/nyc/wallstreet/thumb/IMG_0053.JPG" width="60" height="80" alt="Wall Street" /></a></li>
+        <li><a href="img/photo/nyc/wallstreet/IMG_0056.JPG" rel="prettyPhoto[gallery_wallstreet]" title="Wall Street"><img src="img/photo/nyc/wallstreet/thumb/IMG_0056.JPG" width="60" height="80" alt="Wall Street" /></a></li>
+        <li><a href="img/photo/nyc/wallstreet/IMG_0060.JPG" rel="prettyPhoto[gallery_wallstreet]" title="Wall Street"><img src="img/photo/nyc/wallstreet/thumb/IMG_0060.JPG" width="60" height="80" alt="Wall Street" /></a></li>
+        <li><a href="img/photo/nyc/wallstreet/IMG_0062.JPG" rel="prettyPhoto[gallery_wallstreet]" title="Wall Street"><img src="img/photo/nyc/wallstreet/thumb/IMG_0062.JPG" width="60" height="80" alt="Wall Street" /></a></li>
+        <li><a href="img/photo/nyc/wallstreet/IMG_0066.JPG" rel="prettyPhoto[gallery_wallstreet]" title="Wall Street"><img src="img/photo/nyc/wallstreet/thumb/IMG_0066.JPG" width="60" height="80" alt="Wall Street" /></a></li>
+        <li><a href="img/photo/nyc/wallstreet/IMG_0067.JPG" rel="prettyPhoto[gallery_wallstreet]" title="Wall Street"><img src="img/photo/nyc/wallstreet/thumb/IMG_0067.JPG" width="60" height="80" alt="Wall Street" /></a></li>
+        <li><a href="img/photo/nyc/wallstreet/IMG_0068.JPG" rel="prettyPhoto[gallery_wallstreet]" title="Wall Street"><img src="img/photo/nyc/wallstreet/thumb/IMG_0068.JPG" width="60" height="80" alt="Wall Street" /></a></li>
+        <li><a href="img/photo/nyc/wallstreet/IMG_0069.JPG" rel="prettyPhoto[gallery_wallstreet]" title="Wall Street"><img src="img/photo/nyc/wallstreet/thumb/IMG_0069.JPG" width="60" height="80" alt="Wall Street" /></a></li>																			
+        <li><a href="img/photo/nyc/wallstreet/IMG_0070.JPG" rel="prettyPhoto[gallery_wallstreet]" title="Wall Street"><img src="img/photo/nyc/wallstreet/thumb/IMG_0070.JPG" width="60" height="80" alt="Wall Street" /></a></li>
+</ul>

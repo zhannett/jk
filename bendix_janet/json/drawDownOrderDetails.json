@@ -1,0 +1,26 @@
+[
+	{
+		"drawDownOrder"		  : "Forward #F001007",
+		"date"				      : "01/02/2012",
+		"currency"			    : "GBP",
+		"originalAmount"	  : "10,000,000",
+		"rate"				      : 0.7536,
+		"remainingBalance"	: "5,000"
+	},
+	{
+		"drawDownOrder"		: "Forward #F001008",
+		"date"				: "04/05/2012",
+		"currency"			: "USD",
+		"originalAmount"	: "20,000,000",
+		"rate"				: 0.9999,
+		"remainingBalance"	: "10,000"
+	},
+	{
+		"drawDownOrder"		: "Forward #F001009",
+		"date"				: "02/03/2012",
+		"currency"			: "GBP",
+		"originalAmount"	: "50,000,000",
+		"rate"				: 0.7536,
+		"remainingBalance"	: "20,000"
+	}
+]

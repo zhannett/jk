@@ -1,0 +1,68 @@
+<?php
+	$today = $today = date("l, F j, Y");              
+/*
+	$browser  =  $HTTP_USER_AGENT ;
+	$ip  =  $REMOTE_ADDR ;
+	$refer = $HTTP_REFERER;
+	$db  =  mysql_connect ( "localhost" , "root" , "" );
+	mysql_select_db ( "statistics" , $db );
+	$sql  =  "INSERT INTO table_name(ip,browser,received) VALUES('$ip','$browser',now())" ;
+	$results  =  mysql_query ( $sql);
+*/
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+		<meta name="verify-v1" content="CtkzISAHaZfDzboC9XWpobDuF94hkPtsM8X+l85yePQ=" />
+		<title>Janet (Zhanna) Kulyk's Web Site - Web Development Services</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<meta name="author" content="Janet (Zhanna) Kulyk" />
+		<meta name="keywords" content="Janet (Zhanna) Kulyk, freelancer, freelance developer, web freelancer, web development, interface, frontend, performanse, web 2.0, Toronto, Ontario, Canada" />
+		<meta name="description" content="Personal web site of Janet (Zhanna) Kulyk and JK IT Consulting Ltd. Web development, design, fronend engineering" />
+		<meta name="robots" content="all" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  
+  <body onload="MM_preloadImages('img/banner.gif','img/zhanna.jpg','img/bg.jpg')"> 	  
+	  	<div id="mainContainer">		
+					<?php include("inc/header.inc") ?>
+					<?php include("inc/w3c.inc") ?>			
+					<div id="contentColumn">	
+							<div id="index">									
+									<div id="topNav">
+											<ul>
+													<li class="current"><a href="index.php"><span class="white">Home</span></a></li>
+													<li><a href="skills.php">Computer Skills</a></li>
+													<li><a href="portfolio.php">Portfolio</a></li>
+													<li><a href="education.php">Education</a></li>
+													<li><a href="contact.php">Contact Information</a></li>
+											</ul>
+									</div>									
+									<div id="date_switcher">
+										<?php include("inc/date.php") ?>
+										<?php include("inc/switcher.inc"); ?>	
+									</div>		
+									<h1>Favorite Links</h1>
+									<ul>
+										<li><a href="http://www.sitepoint.com">Site Point</a></li>
+										<li><a href="http://developer.yahoo.com">Yahoo Develolper Network</a></li>
+										<li><a href="http://developer.yahoo.com/ypatterns/">Yahoo Develolper Network - Pattern Library</a></li>
+									</ul>
+									<h2>JavaScript</h2>		
+									<h3>Events</h3>	
+									<ul>				
+											<li><a href="js/addEvent.txt">addEvent removeEvent fixEvent</a></li>
+											<li><a href="inc/fade-in-on-load_technique.txt">Fade-in-on-Load Technique Without Failing if JavaScript Is Disabled (JS is disabled or not supported by the browser but CSS is supported)</a></li>
+											<li><a href="inc/accessible_js.txt">A Tabbed-Navigation Scenario with Hovering Effects - Attaching Pairs of events to Elements to Allow for Accessible Web Page Use</a></li>
+									</ul>
+							</div> 
+						</div>						
+						<?php include("inc/footer.inc"); ?>				
+				</div>
+				<script type="text/javascript" src="js/js_lib.js"></script>
+				<script type="text/javascript" src="js/clock.js"></script>
+				<script type="text/javascript" src="scripts/jquery.js"></script>
+				<script type="text/javascript" src="scripts/textSizeSwitcher.js"></script>
+				<script type="text/javascript" src="scripts/button_animation.js"></script>
+  	</body>
+</html>

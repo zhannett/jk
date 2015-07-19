@@ -1,0 +1,78 @@
+/* Drop-Down Navigation */
+.dropdown {
+	float: left;
+	background: #fff;
+	border: 1px solid #999;
+	padding: 1px 0 0 1px;
+	margin: 0;
+}
+.dropdown_trigger {
+	display: inline-block;
+	vertical-align: top;
+}
+.dropdown a {
+	display: block;
+	height: 2em;
+	background: #ccc url(http://74fc8dbd1b965de1c679-6efcb597f6004a0f0ebadc4fc23e6156.r82.cf1.rackcdn.com/gradient.gif) repeat-x;
+	border: 1px solid #fff;
+	border-top-width: 0;
+	color: #333;
+	line-height: 2em;
+	overflow: hidden;
+	text-decoration: none;
+}
+.dropdown a:hover {
+	color: #fff;
+	background: #666;
+}
+.dropdown ul {
+	position: absolute;
+	top: 2.0em;
+	left: -1px;
+	display: none;
+	background: #fff;
+	border: 1px solid #999;
+	border-top-width: 0;
+	z-index: 9999;
+	margin: 0;
+	padding: 0;
+}
+.dropdown ul a {
+	background: #eee;
+	padding: 0 0 0 5px;
+}
+.dropdown li {
+	list-style: none;
+	position: relative;
+	text-align: left;
+	width: 7.5em;
+	margin: 0;
+	font-size: 1em;
+}
+.dropdown li.dropdown_trigger ul li {
+	height: 2em;
+	border-bottom: 1px solid #999;
+}
+
+.dropdown li li a {
+	font-size: 1em;
+	height: 2em;
+	line-height: 2em;
+}
+.dropdown li.dropdown_trigger {
+	display: inline;
+	float: left;
+	margin: 0 0 0 -1px;
+	text-align: center;
+}
+.dropdown li.dropdown_trigger:hover ul {
+	display: block;
+}
+
+/* `Rounded Corners
+----------------------------------------------------------------------------------------------------*/
+.dropdown li.dropdown_trigger ul,
+.dropdown li.dropdown_trigger ul li:last-child a {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}

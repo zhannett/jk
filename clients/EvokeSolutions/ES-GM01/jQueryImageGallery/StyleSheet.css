@@ -1,0 +1,89 @@
+﻿body
+{
+font: 85% arial;
+}
+
+ul, li, a, body
+{
+margin: 0; 
+padding: 0;
+}
+
+a
+{
+color: #292929;
+text-decoration: none;
+}
+
+ul
+{
+height: 1.5em;
+margin: 1em auto 0;
+width: 20em;
+}
+
+li
+{
+background-color: #e3e3e3;
+border-right: 1px solid #292929;
+display: inline;
+float: left;
+line-height: 1.5em;
+padding: 0 .5em 0;
+position: relative;
+text-align: center;
+}
+
+li:hover
+{
+background-color: #faa41a;
+}
+
+/* Second tier */
+
+li ul
+{
+background-color: #e3e3e3;
+display: none;
+height: auto;
+left: 0;
+margin: 0;
+position: absolute;
+top: 100%;
+width: 10em;
+}
+
+/* When the user hovers over a list item, we'll then make the nested unordered list visibile*/
+
+li:hover ul
+{
+display: block;
+}
+
+li ul li
+{
+border-bottom: 1px solid black;
+border-right: none;
+margin: 0;
+padding: 0;
+text-align: left;
+width: 100%;
+}
+
+li ul li a
+{
+padding-left: .3em;
+}
+
+li ul li:hover a
+{
+background-color: #faa41a;
+display: block;
+height: 100%;
+}
+
+.noBorder
+{
+border: none;
+}
+

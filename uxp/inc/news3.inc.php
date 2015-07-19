@@ -1,0 +1,6 @@
+﻿<p class="date">Toronto – ON, April 7, 2011:</p>
+<p>UXP Systems announced today that Steve Neal has been appointed Chief Financial Officer.   Steve will assume the company's finance, HR, information systems and administrative functions in support of the development of the next generation Connected Experience Platform.</p>
+<p>Prior to joining UXP Systems, Steve held various senior management positions in early and later stage technology companies, including SDL, Inc. and JDS Uniphase.  "Steve has the perfect mix of skills and relevant experience to assist in growing our business in support of the vision of Powering the Connected Experience for Communications Service Providers.  We are fortunate to have been able to attract someone of Steve's calibre to our team and are excited to pursue our strategy with him."</p>
+<h3>About UXP Systems</h3>
+<p>Based in Toronto, Canada, UXP Systems' Connected Experience Platform and solutions deliver critical components to cable and telecom operators, enabling a consistent and intuitive multi-service, multi-device experience.  UXP Systems combines deep industry experience and carrier-class software platform to enable converged services across personal computers, tablets, smart phones and televisions.</p>
+<p>For more information, please contact <a href="mailto:nfo@uxpsystems.com">info@uxpsystems.com</a>.</p>

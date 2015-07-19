@@ -1,0 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent}
+body {line-height: 1}
+ol, ul {list-style: none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none}
+:focus {outline: 0}
+ins {text-decoration: none}
+del {text-decoration: line-through}
+table {border-collapse: collapse; border-spacing: 0}
+
+
+
+body {text-align:center}
+
+#page {width:960px; margin:0px auto; height:400px; font-family:Arial, Helvetica, sans-serif} /*; background-color:#CCFF66*/
+#pageWrapper {padding: 20px 45px 20px 22px; background-color:#99FF99}
+
+#header {clear:both; text-align:left; height:84px; background-color:#FFCCFF}
+#header #logo {float:left; clear:left; width:671px}
+#header #slogan {float:left; clear:right; width:200px; height:84px}
+
+#div_nav {float:left; clear:left; width:790px; height:36px; text-align:left}
+#mainNav {text-align:lef; background: #DDD url(../img/bg_nav.gif) no-repeatt}
+#mainNav li {display:inline; text-align:left; float:left; hight:36px; padding:0px 15px 0px 15px}
+#mainNav li#first {padding:0px 15px 0px 0px}
+#mainNav li a {text-decoration:none}
+#mainNav li a .nav1 {font: 0.7em Arial, Helvetica, sans-serif; color:#333; letter-spacing: 1px; text-decoration:none}
+#mainNav li a .nav2 {font: 1.2em Arial, Helvetica, sans-serif; color:#0A9DDC; text-decoration:none}
+.active {border-bottom:3px solid #1A1A1A}
+.border_left {border-left:1px solid #CCC}
+
+#rightNav {float:right; clear:right; width:100px; text-align:right}
+#rightNav li{}
+#rightNav li a {font: 0.8em Arial, Helvetica, sans-serif; color:#808080; text-decoration:none}
+#rightNav li a:visited {text-decoration:none}
+#rightNav li a:hover {text-decoration:underline}
+#rightNav li a:active {text-decoration:underline}
+
+#content {height:100px; background-color:#CCC}
+
+#footer {padding-left:115px; background-color:#99FF66; text-align:left}
+#footer ul {}
+#footer ul li {display:inline; padding:8px}
+#footer ul li a {font: 0.8em Arial, Helvetica, sans-serif; color:#808080; text-decoration:none}
+#footer ul li a:visited {text-decoration:none}
+#footer ul li a:hover {text-decoration:underline}
+#footer ul li a:active {text-decoration:underline}

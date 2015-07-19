@@ -1,0 +1,85 @@
+<!doctype html> 
+<html lang="en"> 
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Use of HTML5 input types</title>
+		<link type="text/css" rel="stylesheet" media="screen" href="css/basic.css" />
+		<!--[if !IE]>-->
+			<link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 128px) and (max-device-width: 160px)" href="css/lowend.css" />
+			<link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 176px) and (max-device-width: 220px)" href="css/midend1.css" />
+			<link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 240px) and (max-device-height: 320px)" href="css/midend2.css" />
+			<link type="text/css" rel="stylesheet" media="only screen and (device-width: 320px) and (device-height: 240px)" href="css/midend2.css" />
+			<link type="text/css" rel="stylesheet" media="only screen and (min-device-width: 240px) and (min-device-height: 480px)" href="css/highend.css" />
+			<link type="text/css" rel="stylesheet" media="only screen and (device-width: 480px) and (device-height: 320px)" href="css/highend.css" />
+			<link type="text/css" rel="stylesheet" media="only screen and (min-device-width: 640px) and (min-device-height: 961px)" href="css/desktop.css" />
+		<!--<![endif]-->
+		<style type="text/css">
+			body {
+				width: 500px;
+			}
+			h1 {
+				text-align: center;
+				font-size: medium;
+			}
+			fieldset {
+				text-align: center;
+				border: 1px solid #CCC;
+			}
+			lable, input {
+				margin: 10px 0;
+				clear: both;
+			}
+			p {
+				margin-left: 20px;
+			}
+		</style>
+	</head> 
+	<body> 
+		<header>
+			<h1>HTML5 Input Types</h1>
+		</header>
+		<div id="content">
+			<form id="favNum" action="#" method="get">
+				<fieldset>
+					<label for="theFavNum">Please type your favorite number (in the 1 - 100 range): </label>
+					<input type="number" min="1" max="100" step="1" required aria-required /><br/>
+					<input type="submit" value="Submit" />
+				</fieldset>
+				<h1>My Current Location:</h1>
+				<p id="latitude"></p>
+				<p id="longitude"></p>
+				<p id="timestamp"></p>
+			</form>
+		</div>
+		<footer>
+		</footer>
+		<script>
+			function userLocated(position) {
+				var latitude = position.coords.latitude,
+					longitude = position.coords.longitude,
+					timeOfLocation = position.timestamp;
+				document.getElementById('latitude').innerHTML = 'Latitude = ' + latitude;
+				document.getElementById('longitude').innerHTML = 'Longitude = ' + longitude;
+				document.getElementById('timestamp').innerHTML = 'Timestamp = ' + timeOfLocation;
+			}
+			function locationError(error) {
+				switch(error.code) {
+					case error.PERMISSION_DENIED:
+						//error handling
+						alert("Permission denied");
+						break;
+					case error.POSITION_UNAVAILABLE:
+						//errorhandling
+						alert("Position unavailable");
+						break;
+					case error.TIMEOUT:
+						//error handling
+						alert("Timeout");
+						break;
+				}
+			}
+			navigator.geolocation.getCurrentPosition(userLocated, locationError);
+		</script>
+	</body>
+</html> 

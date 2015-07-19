@@ -1,0 +1,21 @@
+form {}
+legend {}
+fieldset {border: 1px solid #CCC; padding:20px; margin:20px 0; background-color:#E2E2E2; padding:20px}
+fieldset .textinput {width:550px; height:20px}
+textarea {padding:10px}
+label {width:600px; text-align:left; font-size:120%; padding-top:10px}
+input {clear:both}
+label.error {color:#F00}
+span.error {color:#F00; font-size:120%}
+.feedback {color:#FE7A69; margin:20px 0; border:0px solid #FE7A69; font-size:150%}
+
+#forum .intro { letter-spacing:1px; font-size:110%}
+
+#forum table {border:0}
+#forum table tr {}
+#forum table td {padding:2px; padding:0 5px; border: 1px solid #CCC}
+#forum table .subj {width:50%; text-align:left;}
+#forum table .postedby {width:20%; text-align:left}
+#forum table .postedon {width:10%; text-align:left}
+#forum table .replies {width:10%; text-align:center}
+#forum table .latestreply {width:10%; text-align:left}

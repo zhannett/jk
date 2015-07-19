@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^http://janetkulyk.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://janetkulyk.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.janetkulyk.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.janetkulyk.com$      [NC]
+
+AddType application/vnd.wap.xhtml+xml xhtml-mp
+AddType application/xhtml+xml xhtml

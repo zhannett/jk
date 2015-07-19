@@ -1,0 +1,93 @@
+
+@media screen and (max-width: 1024px) {
+    .document,
+    .header,
+    .fatfooter,
+    .fatfooter2,
+    .topnav,
+    .stay_connected {
+        width: auto;
+        margin: 0 10px;
+    }
+    .aside_left {
+        display: none;
+    }
+    .aside_right {
+        width: 25%;
+    }
+    .fatfooter .col {
+        margin: 0 2.1%;
+        width: 18%;
+    }
+    .fatfooter .col h2 {
+        font-size: 1.2em;
+    }
+    .vcard ,
+    .map {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+   .fatfooter .col {
+        margin: 0 1.5%;
+        width: 19%;
+    }
+    .fatfooter .col h2 {
+        font-size: 1.1em;
+    }
+    .pres {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 600px) {
+    .panel_logo,
+    .aside_right,
+    .fatfooter,
+    .fatfooter2,
+    #institutions img {
+        display: none;
+    }
+    .main_section,
+    .latest_projects,
+    .cols {
+        float: none;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .fatfooter .col h2 {
+        font-size: 1.2em;
+    }
+    .pres {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 480px) {
+    
+}
+@media screen and (max-width: 320px) {
+    
+}
+@media screen and (min-width: 1024px) {
+    .document,
+    .header,
+    .fatfooter,
+    .fatfooter2,
+    .topnav,
+    .stay_connected {
+        width: 90%;
+    }
+    .fatfooter .col {
+        margin: 0 3.7%;
+        width: 15%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .document,
+    .header,
+    .fatfooter,
+    .fatfooter2,
+    .topnav,
+    .stay_connected {
+        max-width: 1140px;
+    }
+}

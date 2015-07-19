@@ -1,0 +1,61 @@
+h1, h2 {
+	font-size: small;
+}
+p, a, li , div {
+	font-size: x-small;
+}
+h1{
+	padding: 7px 5px;
+	border-top: 4px solid #500;
+	border-bottom: 4px solid #500;
+}
+h2 {
+	color: #C00;
+	margin: 3px auto;
+}
+div {
+	margin: 0 auto;
+}
+p {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+p, .par {
+	padding: 2px 3px;
+	margin-left: 30px;
+    line-height: 1.5em;
+}
+ol {
+	margin: 2px 5px 5px 0;
+}
+li {
+	padding: 5px 0;
+	margin-left: 40px;
+}
+a:link {
+	text-decoration: underline;
+	color: blue;
+}
+
+
+html, body, ol, p, .par, li {
+	background: #CCC;
+}
+h1 {
+	background-color: #000;
+	color: #FFF;
+	border-top: 4px solid #C00;
+	border-bottom: 4px solid #C00;
+}
+h2 {
+	color: #000;
+	background-color: #C00;
+	margin: 0 auto;
+}
+p, .par, li {
+	color: green;
+}
+a:link {
+	color: red;
+}

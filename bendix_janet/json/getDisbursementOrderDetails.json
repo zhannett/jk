@@ -1,0 +1,41 @@
+[
+	{
+			"order"				: "Spot Trade #ST001007",
+			"date"				: "01/01/2012",
+			"action"			: "BUY",
+			"currency1"			: "USD",
+			"currency2"			: "GBP",
+			"amount1"			: 18500000,
+			"amount2"			: 10000000,
+			"rate"				: 0.7536,
+			"payment"			: "PAD CBG-825",
+			"numOfPayments"		: "SINGLE",
+			"fee"				: 200
+	},
+	{
+			"order"				: "Spot Trade #ST001008",
+			"date"				: "02/02/2012",
+			"action"			: "SELL",
+			"currency1"			: "EUR",
+			"currency2"			: "CAD",
+			"amount1"			: 500000,
+			"amount2"			: 10000,
+			"rate"				: 0.7536,
+			"payment"			: "PAD CBG-825",
+			"numOfPayments"		: "SINGLE",
+			"ee"				: 300
+	},
+	{
+			"order"				: "Spot Trade #ST001009",
+			"ate"				: "03/03/2012",
+			"action"			: "BUY",
+			"currency1"			: "USD",
+			"currency2"			: "EUR",
+			"amount1"			: 10000000,
+			"amount2"			: 18500000,
+			"rate"				: 0.7536,
+			"payment"			: "PAD CBG-825",
+			"numOfPayments"		: "SINGLE",
+			"ee"				: 300
+	}
+]

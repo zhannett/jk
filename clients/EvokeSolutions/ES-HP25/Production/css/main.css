@@ -1,0 +1,152 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent}
+body {line-height: 1}
+ol, ul {list-style: none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none}
+:focus {outline: 0}
+ins {text-decoration: none}
+del {text-decoration: line-through}
+table {border-collapse: collapse; border-spacing: 0}
+/*end reset.css  */
+
+body {background-color:#FFF; text-align:center}
+a {font: 0.65em Arial, Helvetica, sans-serif; color:#EC0B8D; text-decoration:none}
+a:visited {color:#EC0B8D; text-decoration:none}
+a:hover {color:#EC0B8D; text-decoration:underline}
+a:active {color:#EC0B8D; text-decoration:underline}
+
+.left {text-align:left}
+.center {text-align:center}
+
+ul.gallery {list-style: none; padding:0px; overflow: auto; margin-top: 0px; clear:both}
+ul.gallery li {width:107px; height:107px; float:left; padding:4px 0px}
+ul.gallery li img {width:88px; height:88px; padding:5px; border:1px solid #CCC}
+/*ul.gallery li.normal img {width:88px; height:88px; margin-top: 5px; margin-left: 17px}
+ul.gallery li.tall img {width:88px; height:88px; margin-top: 5px; margin-left: 17px}
+ul.gallery li.wide img {width:88px; height:88px; margin-top: 5px; margin-left: 17px}*/
+
+.spacer25 {height:25px; clear:both}
+.h5 {height:5px}
+.h10 {height:10px}
+.h15 {height:15px}
+.h20 {height:20px}
+.spacer100 {height:100px; clear:both}
+.top_h25 {padding-top:25px}
+
+#mainWrapper {width:930px; margin-left:auto; margin-right:auto; text-align:center; clear:both}
+
+#header {width:900px; height:20px; margin:0px auto; clear:both; text-align:left; padding-top:35px}
+#header #logo {float:left; clear:left; width:350px; height:50px}
+#header #logo img {position:relative; left:34px; top:7px}
+#header #logotype {position:relative; left:-7px; top:24px; z-index:100}
+#header #mainNav {float:left; clear:right; width:500px}
+#header #mainNav ul {position:relative; top:6px}
+#header #mainNav ul li {display:inline; list-style:none; padding: 0px 12px; text-align:center; position:relative; top:-45px}
+#header #mainNav ul li span.navItem {position:relative; top:20px}
+/*.bg_swirl, .bg_active {background:url(../img/swirl.gif) no-repeat bottom center}*/
+.over {height:50px; background:url(../img/swirl.gif) top center no-repeat}
+/*#header #mainNav ul li span {height:50px; position:relative; top:-25px; background:url(../img/swirl.gif) top center no-repeat}*/
+#header #mainNav ul li span.navItem span {position:relative; top:20px}
+
+#header #mainNav ul li a {font: 1.0em Arial, Helvetica, sans-serif; color:#EC0B8D; text-decoration:none}
+#header #mainNav ul li a:visited {color:#EC0B8D; text-decoration:none}
+#header #mainNav ul li a:hover {color:#EC0B8D; text-decoration:underline}
+#header #mainNav ul li a:active {color:#EC0B8D; text-decoration:none}
+
+#header_top {background:url(../img/header-top.jpg) no-repeat; width:930px; height:16px; margin:5px auto}
+#header_bottom {background:url(../img/header-bot.jpg) no-repeat;width:930px; height:11px; margin:0px auto}
+#banner_home {width:900px; height:208px; background:url(../img/banner-home.jpg) no-repeat; margin:7px auto}
+#banner_event_gallery {width:900px; height:105px; background:url(../img/banner-105.jpg) no-repeat; margin:7px auto}
+#banner_case_studies {width:900px; height:120px; background:url(../img/banner_casestudies.gif) no-repeat; margin:7px auto}
+#banner_services {width:900px; height:105px; background:url(../img/banner-105.jpg) no-repeat; margin:7px auto}
+#banner_about {width:900px; height:208px; background:url(../img/banner-208.jpg) no-repeat; margin:7px auto}
+#banner_clientlist {width:900px; height:120px; background:url(../img/banner_clientlist.gif) no-repeat; margin:7px auto}
+#banner_dff_event {width:900px; height:108px; background:url(../img/dff_event_banner.jpg) no-repeat; margin:7px auto}
+#banner_vinifera_event {width:900px; height:108px; background:url(../img/vinifera_banner.jpg) no-repeat; margin:7px auto}
+#banner_pc_event {width:900px; height:108px; background:url(../img/president_cup_event_banner.jpg) no-repeat; margin:7px auto}
+
+
+
+#content {width:900px; margin: 0px auto; clear:both}
+
+#content #leftCol {float:left; clear:left; width:364px}
+#content #leftCol #leftColWrapper {width:302px; padding-bottom:31px; background:url(../img/gradient.jpg) no-repeat; text-align:left}
+#content #leftCol #subnav {text-align:left; position:relative; left:34px}
+#content #leftCol #subnav ul {padding-top:25px}
+#content #leftCol #subnav ul li {width:227px; padding:3px 0px; text-transform:uppercase}
+#content #leftCol #subnav ul li a {color:#666}
+#content #leftCol #subnav ul li a:visited {color:#666}
+#content #leftCol #subnav ul li a:hover {color:#EC0B8D}
+#content #leftCol #subnav ul li a:active {color:#EC0B8D}
+
+#content #leftCol #quote  {}
+#content #leftCol #quote #quotation {width:227px; display:block; font: italic 0.9em/1.5em Georgia, "Times New Roman", Times, serif; color:#582700; position:relative; left:34px}
+#content #leftCol #quote #quotation .quotes {font-size:2.5em; color:#EC0B8D; position:relative; top:15px; line-height:0px}
+#content #leftCol #quote #author {width:227px; display:block; font: 0.8em/1.4em Georgia, "Times New Roman", Times, serif; color:#594747; padding-top:20px; position:relative; left:34px}
+#content #leftCol #quote #ornament {background:url(../img/ornament.gif) no-repeat; height:19px; background-position:center; margin-top:25px}
+#content #leftCol #learn_services {width:227px; color:#582700; font: 1.1em/1.4em Georgia, "Times New Roman", Times, serif; padding-top:50px; position:relative; left:34px}
+#content #leftCol #logo_bell  {margin-top:80px; margin-bottom:25px; position:relative; left:34px}
+#content #leftCol #home_bell  {margin-top:80px; margin-bottom:25px; position:relative; left:0px}
+#content #leftCol ul {padding-top:10px}
+#content #leftCol ul#services_for_event {padding-top:0px}
+#content #leftCol ul#services_for_client {padding-top:0px}
+#content #leftCol ul li.link {position:relative; left:34px}
+
+#content #rightCol {width:536px; float:left; clear:right; padding-bottom:45px}
+#content #rightCol #rightColWrapper {padding-top:25px; padding-bottom:20px}
+#content #rightCol #rightColWrapper h1 {font: 2.1em/1.1em Georgia, "Times New Roman", Times, serif; color:#582700; text-align:left; letter-spacing:-1px; padding-bottom:20px}
+#content #rightCol #rightColWrapper p {width:500px; font: 1.1em/1.4em Georgia, "Times New Roman", Times, serif; color:#582700; text-align:left}
+#content #rightCol #rightColWrapper p.intro {font: 0.8em/1.5 Georgia, "Times New Roman", Times, serif; color:#594747}
+#content #rightCol #rightColWrapper #featured {width:482px; padding-top:51px; clear:both}
+#content #rightCol #rightColWrapper #featured .column {float:left; width:160px; text-align:left}
+#content #rightCol #rightColWrapper #featured .column .title {padding-bottom:15px; text-align:left; font: 0.65em/1.5 Arial, Helvetica, sans-serif; color:#582700; letter-spacing: 1px}
+#content #rightCol #rightColWrapper #featured .column .link {text-align:left; padding-top:15px}
+#content #rightCol #rightColWrapper #featured .column .link a {line-height:1.5}
+
+#content #rightCol #rightColWrapper #cases, #content #rightCol #rightColWrapper #services {width:480px; padding-top:35px; display:block; clear:both}
+#content #rightCol #rightColWrapper .desc {text-align:left; padding-top:20px; display:block; clear:both}
+#content #rightCol #rightColWrapper .spacer {height:20px; border-bottom:1px solid #D6CAC0; margin-bottom:20px; clear:both}
+#content #rightCol #rightColWrapper .case_img {float:left; width:175px; padding:5px 0px}
+#content #rightCol #rightColWrapper #cases .case_img {clear:left; text-align:left}
+#content #rightCol #rightColWrapper #services .case_img {clear:right; text-align:right}
+#content #rightCol #rightColWrapper .case_title {font: italic 0.9em Georgia, "Times New Roman", Times, serif; color:#582700; padding:20px 0px 8px 0px}
+#content #rightCol #rightColWrapper .case_desc {float:left; width:305px; text-align:left}
+#content #rightCol #rightColWrapper #cases .case_desc {clear:right}
+#content #rightCol #rightColWrapper #services .case_desc {clear:left}
+#content #rightCol #rightColWrapper .case_desc p, #content #rightCol #rightColWrapper .desc p {font: 0.8em/1.5em Georgia, "Times New Roman", Times, serif; color:#594747; padding:5px 0px}
+#content #rightCol #rightColWrapper .case_desc p {width:305px}
+#content #rightCol #rightColWrapper .link {padding:0px}
+#content #rightCol #rightColWrapper ul.pink_bullet {list-style-image:url(../img/pink_bullet.gif)}
+#content #rightCol #rightColWrapper .desc a {text-transform:uppercase}
+#content #rightCol #rightColWrapper .desc ul {list-style-position:inside; list-style-type:disc; padding-bottom:20px}
+#content #rightCol #rightColWrapper .desc ul li {font: 0.8em Georgia, "Times New Roman", Times, serif; line-height:1.5; color:#594747}
+#content #rightCol #rightColWrapper .desc ul.gallery {list-style: none; padding:0px; overflow: auto; margin-top: 0px; clear:both}
+#content #rightCol #rightColWrapper .desc ul.gallery li {width:107px; height:107px; float:left; padding:4px 0px}
+
+#content #rightCol #rightColWrapper .event_gallery {width:536px; padding-top:36px; clear:both}
+#content #rightCol #rightColWrapper .event_gallery .column {float:left; width:164px; text-align:left} 
+#content #rightCol #rightColWrapper .event_gallery .column .link {width:145px; text-align:left; padding-top:15px; text-transform:uppercase} 
+#content #rightCol #rightColWrapper .event_gallery .column .link a {line-height:1.4} 
+#content #rightCol #rightColWrapper #videoplayerblock {clear:both; padding-top:25px}
+#content #rightCol #rightColWrapper #videoplayer {float:left; width:330px; clear:left; position:relative; left:-14px} /*{width:350px; float:left; clear:left; background:url(../img/bg_videoplayer.gif) no-repeat}*/
+#content #rightCol #rightColWrapper #videoplayer img {} /*{position:relative; left:-13px; top:15px; clear:left}*/
+#content #rightCol #rightColWrapper #videoplayer_comment {width:170px; float:left; clear:right; text-align:left; font: 0.8em/1.4em Georgia, "Times New Roman", Times, serif; color:#594747; padding-top:25px}
+#content #rightCol #rightColWrapper #img_gallery_title {text-align:left; clear:both; font: 1.1em/1.4em Georgia, "Times New Roman", Times, serif; color:#582700; padding-bottom:3px; padding-top:25px}
+#content #rightCol #rightColWrapper .gallery {position:relative; left:-3px; padding:10px 0px}
+
+
+#footer {width:900px; clear:both; margin-bottom:31px; margin:0px auto}
+#footer #footerWrapper {border-top: 3px solid #EC0B8D; padding-top:31px}
+#footer #col_left {float:left; clear:left; width:364px; text-align:left}
+#footer #col_left img {position:relative; left:34px}
+#footer #col_right {float:left; clear:right; width:491px; text-align:left}
+#footer #col_right #contactinfo {padding-bottom:29px}
+#footer #col_right #contactinfo #contacttext, #footer #col_right #copyright{font: 0.8em/1.5 Georgia, "Times New Roman", Times, serif; color:#594747}
+#footer #col_right #bottomNav {float:left; clear:right}
+#footer #col_right #bottomNav ul {padding-bottom:31px}
+#footer #col_right #bottomNav ul li {display:inline; list-style:none; padding-right:12px}

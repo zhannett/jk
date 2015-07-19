@@ -1,0 +1,182 @@
+body {
+					font-family: Arial, Helvetica, sans-serif;
+				}
+				h2 {
+					font-family: "Arial Black", Gadget, sans-serif;
+					font-size: 1.5em;
+					text-align: left;
+					letter-spacing: 4px;	
+				}
+				button {
+					border: 0;	
+				}
+				.content {
+					background-color: #f6cf96;	
+				}
+				.col_left {
+					float: left;
+					width: 450px;
+					clear: left;
+					margin: 25px 35px 20px 10px;	
+				}
+				.col_right {
+					width: 460px;
+					float: right;
+					clear: right;
+					margin: 25px 15px 20px 0;	
+				}
+				.col_left ul {
+					list-style: none;
+					text-align: left;
+					padding-left: 0;
+					margin: 0 0 20px 0;
+				}
+				.col_left li {
+					height: 32px;
+					padding: 10px 0;
+					clear: both;	
+				}
+				.btn_home {
+					width: 409px;
+					height: 32px;
+					background: url(../img/btn_home.png)0 4px  no-repeat;
+					color: #FFF;
+					text-align: left;
+					font-weight: bold;
+					padding-left: 20px;
+					letter-spacing: 1px;
+				}
+				.count {
+					float: right;
+					clear: right;
+					width: 33px;
+					height: 32px;
+					background: url(../img/bg_count.png)0 4px  no-repeat;
+					font-weight: bold;
+					color: #FFF;
+					text-align: center;
+				}
+				.count span {
+					position: relative;
+					top: 9px;
+					font-size: 1.0em;
+				}
+				#news1_container, #news2_container {
+					width: 450px;
+					height: 250px;
+					border: 1px solid #666;	
+					text-align: left;
+					margin: 15px 0 10px 0;
+					overflow-y: scroll;
+					background: #d8d8d8;
+				}
+				#news2_container {
+					height: 95px;
+				}
+				.my-new-list {
+					list-style: none;
+				}
+				.my-new-list li {
+					font-size: 0.9em;
+					line-height: 1.5em;	
+				}
+				.from {
+					font-size: 1.5em;
+					font-weight: bold;
+					margin: 0 0 0 50px;
+				}	
+				#target {
+					margin: 0 0 20px 10px;
+				}
+				#rates {
+					text-align: center; 
+					width: 100%;
+					margin: 10px auto;
+				}
+				h3 {
+					font-family: "Arial Black", Gadget, sans-serif;
+					font-size: 1.5em;
+					color: #005898;	
+					letter-spacing: 10px;
+					word-spacing: 20px;
+					word-space: 20px;
+					margin: 10px 0;
+				}
+				form {
+					margin: 0 auto;	
+					text-align: center;	
+				}
+				fieldset {
+					width: 95%;
+					margin: 0 auto;	
+				}
+				fieldset select {
+					position: relative;
+					top: 1px;	
+				}
+				fieldset span {
+					position: relative;
+					top: 2px;
+				}
+				fieldset button {
+					position: relative;
+					top: 2px;
+					cursor: pointer;	
+				}
+				#selectAction {
+					float: left; 
+					clear: left;
+					margin: 0 5px;	
+				}
+				#rate {
+					float: left;
+					width: 100px; 
+					height: 20px;
+					text-align: left;
+					padding: 0 0 0 5px;
+					margin: 0 5px; 
+					background-color: #CCC;
+					font-size: 1.0em;
+					font-family: Arial black, Helvetica, sans-serif;
+					color: #C00;
+				}
+				#theaction, #currencies, #therate {
+					margin: 0 5px;	
+				}
+				#amount1,
+				#amount2 {
+					width: 120px;	
+				}
+				.currency1, .currency2 {
+					float: left;
+					margin: 0 5px;	
+				}
+				#btn_quote{
+					float: left; 
+					margin: 0 5px;
+				}
+				#btn_lockin {
+					float: left;
+					margin: 0 5px;
+				}
+				#progressbar {
+					float: left;
+					clear: right;
+					width: 150px;
+					height: 18px;
+					text-align: center;
+					margin: 0 auto;
+				}
+				.ui-progressbar {height:2em; text-align: left; overflow: hidden; }
+				.ui-progressbar .ui-progressbar-value {margin: -1px; height:100%; background: url(../img/pbar-ani.gif) }
+				.red {
+					color: #C00;	
+				}
+				#leftnav button {
+					cursor: pointer;
+				}
+				#leftnav a {
+					color: #fff;
+					text-decoration: none;
+				}
+

@@ -1,0 +1,30 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {  
+2	    margin:0; 
+3	    padding:0; 
+4	} 
+5	table { 
+6	    border-collapse:collapse; 
+7	    border-spacing:0; 
+8	} 
+9	fieldset,img {  
+10	    border:0; 
+11	} 
+12	address,caption,cite,code,dfn,em,strong,th,var { 
+13	    font-style:normal; 
+14	    font-weight:normal; 
+15	} 
+16	ol,ul { 
+17	    list-style:none; 
+18	} 
+19	caption,th { 
+20	    text-align:left; 
+21	} 
+22	h1,h2,h3,h4,h5,h6 { 
+23	    font-size:100%; 
+24	    font-weight:normal; 
+25	} 
+26	q:before,q:after { 
+27	    content:''; 
+28	} 
+29	abbr,acronym { border:0; 
+30	} 

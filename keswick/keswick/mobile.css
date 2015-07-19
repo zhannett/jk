@@ -1,0 +1,679 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	color:#fff;
+	text-decoration:underline;
+}
+
+input,textarea {
+	font-size:12px;
+	line-height:20px;
+	font:inherit;
+	resize:none;
+}
+
+[placeholder]:active,
+[placeholder]:focus{
+	cursor:text;
+	color:#bfbfbf;
+	font-family: 'Molengo', sans-serif;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	2.	Document Setup (body, common classes, structure etc)
+/*-----------------------------------------------------------------------------------*/
+
+/* Museo Font - http://www.fontspring.com/fonts/exljbris/museo#fontface_license */
+
+body {
+	font: 0.75em/1.25em 'Molengo', sans-serif, Helvetica, Arial, sans-serif;
+	margin:0;
+	padding:0;
+	color:#bfbfbf;
+	background:#222;
+}
+
+
+#wrapper {
+	width: 100%;
+	height:100%;
+	overflow: hidden;
+	background:url(images/gallery/slide1.jpg) no-repeat scroll;
+	padding: 0.5em 0 0 1.0em;
+	url(images/gallery/slide4.jpg) no-repeat scroll;
+	/*position: fixed;*/
+	/*text-align:left;
+	/* [disabled]background:url(images/patterns/pat6.png) repeat scroll 0 0; */
+	/*z-index:10;
+	*/
+}
+a.logo {
+	text-align: center;
+	display: block;
+}
+h2 {
+	font-size: 1.0em;
+	line-height: 1.3em;
+	color:#fff;
+}
+h3 {
+	color:#fff;
+	font-size:14px;
+	margin-bottom:5px;
+}
+#container {
+	float: left;
+	width: 280px;
+	clear: both;
+	position: relative;
+	top: 0;
+	background:url(images/container-bg.png) repeat scroll 0 0;
+	overflow:hidden;
+	display: block;
+	z-index:1000;
+	text-align: center;
+	margin: 0.5em auto 0 auto;
+	padding: 0.5em 0 0 0;
+}
+#totoggle {
+	margin: 0 auto;
+}
+.content {
+	padding: 0.5em 1.5em;
+	text-align:left;
+}
+.content p {
+	margin-bottom:0.5em;
+}
+.one-half { 
+	width: 48%; 
+}
+.one-half  {
+	position: relative;
+	margin-right: 4%;
+	float: left;
+}
+.last {
+	margin-right: 0!important;
+	clear: right;
+}
+.clear {
+	clear:both;
+}
+.separator {
+	display: none;
+}
+
+.text {
+	/*position:absolute;*/
+	top:0;
+	left:20px;
+	height:31px;
+	line-height:31px;
+}
+
+.top-buttons {
+	display: none;
+}
+.buttons {
+	height:31px;
+	width:100%;
+}
+.buttons a {
+	opacity:0.5;
+    display: block;
+	width:31px;
+	height:31px;
+	cursor:pointer;
+}
+.buttons a, .top-buttons a {
+	display: none;
+}
+
+a.trigger {
+	background:url(images/toggle-minus.png) no-repeat scroll 0 0;
+	top:0;
+	right:0;
+}
+
+a.active {
+    background:url(images/toggle-plus.png) no-repeat scroll 0 0;
+}
+
+a.drag {
+	background:url(images/drag.png) no-repeat scroll 0 0;
+	top:0;
+	right:32px;
+}
+
+a.contact, a.infocontact {
+	background:url(images/contact.png) no-repeat scroll 0 0;
+	bottom:0;
+	right:0;
+}
+a.info, a.contactinfo {
+	background:url(images/info.png) no-repeat scroll 0 0;
+	bottom:0;
+	right:32px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	3.	Main Content Styles
+/*-----------------------------------------------------------------------------------*/
+
+/* 3.1 Countdown */
+
+#countdown {
+	float:left;
+	padding:0;
+	position:relative;
+	width:400px;
+	margin-left:70px;
+}
+
+.hasCountdown {
+	height:70px;
+	margin-bottom:40px;
+	margin-top:20px;
+}
+
+.item {
+	float:left;
+	text-align:center;
+	margin:0 15px;
+	width:67px;
+	height:67px;
+	position:relative;
+	background:url(images/countdown-item.png) no-repeat scroll 0 0;
+}
+
+.item span {
+	font-size:14px;
+	clear:both;
+	color:#fff;
+	width:85px;
+	height:20px;
+	display:inline-block;
+	text-transform:lowercase;
+}
+
+.item p {
+	text-align:center;
+	margin:13px 0 5px;
+	font-size:24px;
+}
+
+
+/* 3.2. Contact Form & Subscribe Form */
+
+#subscribe {
+	clear:both;
+	margin-top: 0.7em;
+}
+
+.error_message {
+	margin-bottom:10px;
+	text-align:center;
+}
+
+#subscribeform {
+	margin-bottom:10px;
+	width:380px;
+	margin-left:auto;
+	margin-right:auto;
+	overflow:hidden;
+	position:relative;
+}
+
+#contactform {
+	overflow:hidden;
+	position:relative;	
+}
+
+#contactform input[type="text"] {
+	background:url(images/bg-form.png) repeat scroll 0 0;
+	width:90%;
+	height:15px;
+	border:0 none;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:5%;
+	padding-right:5%;
+	float:left;
+	color:#bfbfbf;
+	margin-bottom:5px;
+}
+
+#contactform textarea {
+	background:url(images/bg-form.png) repeat scroll 0 0;
+	width:90%;
+	height:100px;
+	border:0 none;
+	padding:5%;
+	float:left;
+	color:#bfbfbf;
+	margin-bottom:5px;	
+}
+
+#subscribeform input#subemail {
+	background:url(images/bg-form.png) repeat scroll 0 0;
+	width:265px;
+	height:15px;
+	border:0 none;
+	padding:10px;
+	float:left;
+	color:#bfbfbf;
+}
+
+input[type="submit"] {
+	border:0 none;
+	color:#fff;
+	height:35px;
+	width:70px;
+	float:right;
+	cursor:pointer;
+	-webkit-transition:background 0.2s linear; 
+	-moz-transition:background 0.2s linear;
+	-0-transition:background 0.2s linear;
+	transition:background 0.2s linear;	
+}
+
+.cf {
+	margin-bottom:30px;
+}
+.contact-loader {
+	position:relative;
+	float: right;
+	margin-top: 13px;	
+	margin-right:10px;
+}
+
+#subscribeform input#subsubmit {
+	height:35px;
+	width:95px;
+	float:left;
+}	
+
+#subscribeform .subscribe-loader {
+	/*position:absolute;*/
+	top:12px;
+	right:103px;
+}
+
+/* 3.2. Contact Form & Subscribe Form */
+
+#subscribe {
+	clear:both;
+}
+
+.error_message {
+	margin-bottom:10px;
+	text-align:center;
+}
+
+#mc-embedded-subscribe-form {
+	margin-bottom:10px;
+	width:95%;
+	margin-left:auto;
+	margin-right:auto;
+	overflow:hidden;
+	position:relative;
+}
+
+#contactform {
+	overflow:hidden;
+	position:relative;	
+}
+
+#contactform input[type="text"] {
+	/*background:url(images/bg-form.png) repeat scroll 0 0;*/
+	width:90%;
+	height:15px;
+	border:0 none;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:5%;
+	padding-right:5%;
+	float:left;
+	color:#bfbfbf;
+	margin-bottom:5px;
+}
+#contactform textarea {
+	/*background:url(images/bg-form.png) repeat scroll 0 0;*/
+	width:90%;
+	height:100px;
+	border:0 none;
+	padding:5%;
+	float:left;
+	color:#bfbfbf;
+	margin-bottom:5px;	
+}
+#mc-embedded-subscribe-form input#mce-EMAIL {
+	background: #fff;
+	width:160px;
+	height:15px;
+	border:0 none;
+	padding: 5px 0 5px 5px;
+	float:left;
+	color:#333;
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+input[type="submit"] {
+	border:0 none;
+	color:#fff;
+	height:35px;
+	width:70px;
+	float:right;
+	cursor:pointer;
+	-webkit-transition:background 0.2s linear; 
+	-moz-transition:background 0.2s linear;
+	-0-transition:background 0.2s linear;
+	transition:background 0.2s linear;	
+}
+
+.cf {
+	margin-bottom:30px;
+}
+.contact-loader {
+	position:relative;
+	float: right;
+	margin-top: 13px;	
+	margin-right:10px;
+}
+#mc-embedded-subscribe {
+	float:left;
+	width:100px;
+	height:25px;
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+#mc-embedded-subscribe-form .subscribe-loader {
+	/*position:absolute;*/
+	top:12px;
+	right:103px;
+}
+
+/* 3.3. Social Links */
+
+#social {
+	/*position:absolute;*/
+	left:120px;
+}
+#social h4 {
+	/*position:absolute;*/
+	left:-100px;
+	height:31px;
+	line-height:31px;
+	width:90px;
+}
+#social ul li {
+	display:inline;
+	float:left;
+	margin-right:1px;
+	text-align:center;
+	-webkit-transition:background 0.2s linear; 
+	-moz-transition:background 0.2s linear;
+	-0-transition:background 0.2s linear;
+	transition:background 0.2s linear;
+}
+#social ul li img {
+	padding-top:9px;
+}
+#social ul li a {
+	width:31px;
+	height:31px;
+	display:block;
+}
+
+
+/* 3.4. Full Screen Slider - http://buildinternet.com/project/supersized/ */
+
+#supersized-loader {
+    /*position: absolute;*/
+    top: 40px;
+    right: 30px;
+    z-index: 0;
+    width: 31px;
+    height: 31px;
+    margin: -16px 0 0 -16px;
+    text-indent: -999em;
+    background: url(images/progress.gif) no-repeat center center;
+}
+
+#supersized {
+    display: none;
+}
+
+#supersized img {
+    display: none;
+}
+
+#supersized.quality img {
+   display: none;
+} /*Quality*/
+
+#supersized li {
+    display: none;
+}
+#supersized a {
+    display: none;
+}
+#supersized li.prevslide { z-index: -20 }
+#supersized li.activeslide { z-index: -10 }
+
+#supersized li.image-loading {
+    display: none;
+}
+
+#supersized li.image-loading img { display: none; }
+
+#supersized li.prevslide img, #supersized li.activeslide img { display: none; }
+
+#controls-wrapper {
+    margin: 0.5em auto 0 auto;
+    height: 31px;
+    width: 100%;
+    z-index: 4;
+    background: url(images/bg-form.png) repeat;
+}
+
+#controls {
+    overflow: hidden;
+    /*height: 100%;*/
+    /*position: relative;*/
+    text-align: left;
+    z-index: 5;
+	display: block;
+	margin: 7px 0 5px 0;
+}
+
+#slidecounter {
+    float: left;
+    color: #999;
+    font: 12px;
+    text-shadow: #000 0 -1px 0;
+    margin: 0px 10px 0 15px;
+    line-height: 31px;
+}
+
+#slidecaption {
+    overflow: hidden;
+    float: left;
+    color: #FFF;
+    font: 400 12px;
+    text-shadow: #000 1px 1px 2px;
+    margin: 0 20px 0 0;
+    line-height: 31px;
+}
+
+#navigation {
+    float: right;
+    margin: 0px 20px 0 0;
+}
+
+#play-button { 
+	float: left; 	
+}
+
+#prevslide, #nextslide {
+    position: relative;
+}
+
+ul#slide-list {
+    padding: 15px 0;
+    float: left;
+   /* position: absolute;*/
+    left: 50%;
+}
+
+ul#slide-list li {
+    list-style: none;
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+ul#slide-list li.current-slide a { 
+	background-position: 0 0px 
+}
+
+ul#slide-list li a {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url('images/nav-dot.png') no-repeat 0 -24px;
+}
+
+#tray-button,
+#tray-arrow {
+   display: none;
+}
+
+/* Slider Progress Bar
+    ----------------------------*/
+#progress-back,
+#progress-bar {
+    display: none;
+}
+
+/* Thumbnail Navigation
+    ----------------------------*/
+.centered-controls, 
+.centered-controls a,
+#nextthumb, 
+#prevthumb,
+#nextthumb,
+#prevthumb,
+#nextthumb img, 
+#prevthumb img {
+	display: none;
+}
+/* Thumbnail Tray
+    ----------------------------*/
+	
+#thumb-tray,
+#thumb-back, 
+#thumb-forward,
+#thumb-back,
+#thumb-forward,
+ul#thumb-list,
+ul#thumb-list li,
+ul#thumb-list li img {
+    display: none;
+}
+
+.exclusive {
+	font-family: 'Crimson Text', serif;
+	font-size: 1.5em;
+	font-weight: lighter;
+	text-transform: uppercase;
+	letter-spacing: 50%;
+}
+
+.exclusivetoo {
+	font-family: 'Crimson Text', serif;
+	font-size: 1.1em;
+	font-style: italic;
+	font-weight: lighter;
+}
+
+.exclusiveSmall
+{
+	font-family: 'Crimson Text', serif;
+	font-size: 95%;
+	font-style: italic;
+	font-weight: lighter;
+}
+
+.exclusivetooPiano
+{
+	font-family: 'Crimson Text', serif;
+	font-size: 1.3em;
+	font-style: normal;
+	font-weight: bold;
+}
+.comingsoon {
+	margin-bottom: 2.0em;	
+}
+.top-buttons {
+	display: none;	
+}
+#thumb-tray,
+#progress-back,
+#thumb-back,
+#thumb-forward {
+	display: none;	
+}
+.beautiful {
+	margin: 0 0.2em 0.5em 0.2em;	
+}

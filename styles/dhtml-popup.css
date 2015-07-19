@@ -1,0 +1,49 @@
+.popupContainer {
+	border:							1px solid black;
+	width:							400px;
+	height:							174px;
+	z-index:						200000;
+	position:						absolute;
+}
+
+#innerContainer {
+	width:							400px;
+	height:							174px;
+}
+
+#imageSpacer {
+	background-color:				black;
+	margin-top:						24px;
+	filter:                         progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+	width:							151px;
+	height:							150px;
+	float:							left;
+}
+
+#closeTab {
+	float:							right;
+	margin-top:						-26px;
+	padding:						0px;
+	padding-top:					0px;
+	padding-bottom:					2px;
+	margin-right:					-2px;
+	text-align:						center;	
+	background-color:   			black;
+	color:							white;
+	width:							20px;
+	border:                         1px solid black;
+}
+
+#textCell {
+	background-color:				#e2eee2;
+	width:                          248px;
+    height:                         174px;
+	z-index:                        200002;
+	float:							right;
+	overflow:						auto;
+	font-size:						12px;
+}
+	
+#textCell > div {
+	text-align:						left;
+}

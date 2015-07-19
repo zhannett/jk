@@ -1,0 +1,1 @@
+[24-Mar-2009 20:38:32] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../../code/reg_connect.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/janetkul/public_html/reg/reg_register.php on line 10

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<variables>
+	<variable>
+		<id>4252</id>	
+		<name>White+Non-Hispanic+HH+Inc.+Per+Capita+%28%24%29%2C+2006</name>	
+		<description>Obtained+by+dividing+aggregate+white+non-hispanic+household+income+by+the+white+non-hispanic+total+population+of+an+area.</description>
+	</variable>	
+	<variable>
+		<id>8463</id>
+		<name>%25+White+Non-Hispanic+Pop%2C+Females+25+to+34+Years%2C+2006</name>
+		<description>Females+aged+25+to+34+who+indicate+their+race+as+%22White%22+but+do+not+have+any+%22Hispanic%2C%22+%22Spanish%2C%22+or+%22Latino%2C%22+origins.</description>
+	</variable>
+	<variable>
+		<id>4037</id>	
+		<name>%23+White+Non-Hispanic+Pop%2C+Females+35+to+44+Years%2C+2006</name>
+		<description>Females+aged+35+to+44+who+indicate+their+race+as+%22White%22+but+do+not+have+any+%22Hispanic%2C%22+%22Spanish%2C%22+or+%22Latino%2C%22+origins.</description>
+	</variable>
+</variables>

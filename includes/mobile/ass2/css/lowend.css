@@ -1,0 +1,21 @@
+h1 {
+	
+}
+
+p {
+	color: #333;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.offer { 
+	color: #AC6FA1;
+	font-weight: bold;
+}
+a {
+	text-decoration: underline;
+	color: #D08B30;
+}
+li {
+	padding: 10px 0;
+}

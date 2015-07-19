@@ -1,0 +1,186 @@
+<?xml version="1.0" ?>
+
+<resume>
+
+
+	<heading>
+		<name>JANET (ZHANNA) KULYK</name>
+		<streetaddress>601-22 Walmer Rd.  </streetaddress>
+		<cityprovincepostal>Toronto, Ontario  M5R 2W5</cityprovincepostal>
+		<country>Canada</country>
+		<phonefax>Phone/Fax:  416-929-4372</phonefax>
+		<cellphone>Cell Phone: 416-841-4372</cellphone>
+		<email>
+			<emailword>E-mail: </emailword>
+			<emailaddress><mail>janetkulyk@yahoo.com</mail></emailaddress>
+		</email>
+	</heading>
+	<maincontent>	
+		<title name="objective">
+			<titletext name="objective">OBJECTIVE</titletext>
+			<titlecontent name="objective" >To obtain a position of a Web Developer </titlecontent>
+		</title>
+		<title name="computerskills">
+			<titletext name="computerskills">COMPUTER SKILLS</titletext>
+			<titlecontent>
+				<skill name="operatingsystems">
+					<skillname>Operating Systems:</skillname> 
+					<skillcontent>Windows 95/98/ME/NT/2000/XP, MS DOS, Red Hat Linux 8/9 </skillcontent>
+				</skill>		  
+				<skill name="programminglanguages">
+					<skillname>Programming Languages:</skillname> 
+					<skillcontent>
+						<line id="1">PHP4/5, VB Script, JavaScript;</line>
+						<line id="2">php/CSS/Xphp; XML/DOM/XSL(XPath,XSLT); </line>
+						<line id="3">C, Java, Visual Basic, VB.NET, C++, VBA;</line>
+						<line id="4">SQL, Oracle PL/SQL</line>
+					</skillcontent> 
+				</skill>
+				<skill name="technologies">
+					<skillname>Technologies: </skillname> 
+					<skillcontent>XML, ASP, OOD, RDBMS, ADO</skillcontent>
+				</skill>	  
+				<skill name="databases">
+					<skillname>Databases:</skillname>  
+					<skillcontent>Oracle 8i/9i, MySQL, Access 2000/2003, Microsoft SQL Server</skillcontent>
+				</skill>
+				<skill name="software">
+					<skillname>Software:</skillname>
+					<skillcontent>MS Office 2003 (MS Word, MS Excel, MS Access, MS Power Point), Macromedia Dreamweaver, phpMyAdmin, WSFTP, WinSCP, Adobe Acrobat</skillcontent>
+				</skill> 
+				<skill name="internet">
+					<skillname>Internet:</skillname>  
+					<skillcontent >Microsoft IIS, Apache, Tomcat, TCP/IP, HTTP, SMTP, FTP</skillcontent>
+				</skill> 	  	  	  
+ 				<skill name="webdesign">
+					<skillname>Web Design:</skillname> 
+					<skillcontent>Adobe Photoshop/ImageReady, Adobe Illustrator, Swish, Paint Shop Pro</skillcontent>
+				</skill>	  
+				<skill name="newmedia">
+					<skillname>New Media:</skillname> 						
+					<skillcontent>Macromedia Flash, Macromedia Authorware  </skillcontent>
+				</skill> 	  
+				<skill name="hardware">
+					<skillname>Hardware:</skillname>  						
+					<skillcontent name="hardware"> Knowledge of computer hardware and networking</skillcontent>
+				</skill>			 
+				<skill name="qa">
+					<skillname>QA:</skillname>						 
+					<skillcontent> Experience designing test cases and test plans </skillcontent>
+				</skill> 
+			</titlecontent>
+		</title>  
+		<title name="experience">
+			<titletext name="experience">EXPERIENCE</titletext>
+			<titlecontent>			  
+ 				<position name="iflurtz"> 
+					<positionname>PHP Developer</positionname> 
+ 					<date name="iflurtz">May 2004 - current </date>
+ 					<company name="iflurtz">iFlurtz, Toronto, Canada (contract) <web id="1"> www.iflurtz.com</web> </company>
+ 					<content name="iflurtz">
+						<line id="1"> - Developed ematching software for high school students based on the results of hard copy questionnaires </line> 
+					</content>
+ 					<environment name="iflurtz"> Environment: Windows XP, Red Hat Linux 9, MS IIS, PHP4/5, XML/DOM/XSL(XPath, XSLT), Xphp, WinSCP</environment>  	 
+				</position>
+ 				<position name="leicanada"> 
+					<positionname>New Media Developer/QA Analyst </positionname>
+ 					<date name="leicanada">Oct.2003 - March 2004 </date>
+ 					<company name="leicanada">Learning Enterprises Canada, Inc., Toronto, Canada (contract)  </company>
+ 					<content name="leicanada">
+						<line id="1"> - Developed and tested elearning web applications for Prentice Hall editing house project (training web modules for MS Office 2003: MS Access 2003, MS Excel 2003, MS Word 2003, MS Power Point 2003) <web id="2">www.cci-eschool.com</web> </line>
+					</content>
+ 					<environment name="leicanada"> Environment: Windows 2000/XP, MS Office 2003, MS IIS, Macromedia Authorware, Adobe Photoshop, Macromedia Fireworks, Paint Shop Pro</environment>  	 
+				</position>
+ 				<position  name="exploreweb"> 
+					<positionname>Web Developer</positionname> 
+ 					<date name="exploreweb">Sep.2003 - Dec.2003 </date>
+ 					<company name="exploreweb">Exploreweb Technologies Inc., Mississauga, Canada (consultant)</company>
+ 					<content name="exploreweb">
+						<line id="1"> - Created back end, admin sites, connected back end and front end, modified code for following websites: <web id="3">www.desiconnection.ca</web>, <web id="4">www.preetlari.com</web>, <web id="5">www.bhajanawali.com</web>, <web id="6">www.punjabilehran.com</web>, <web id="7">www.hamdardweekly.com</web>. </line>
+					</content>
+ 					<environment name="exploreweb">Environment: Windows 2000, Linux Red Hat 7/8, MS IIS, Apache, PHP4, MySQL, SQL Server, SQL, JavaScript, Xphp/CSS, Dreamweaver MX, phpMyAdmin, TextPad, WSFTP, WinSCP</environment>  	 
+				</position>
+ 				<position name="laboterm"> 
+					<positionname>Web Developer /Designer</positionname> 
+ 					<date name="laboterm"> March 2003 - June 2003 </date>
+ 					<company name="laboterm">LaboTerm Ltd., Toronto, Canada (contract) </company>
+ 					<content name="laboterm"> 
+						<line id="1"> - Built PHPMySQLbased web application, full life cycle (<a href = "http://www.laboterm.com">www.laboterm.com</a>)</line>
+						<line id="2"> - Designed a database schema and implemented a database for online catalogue</line>
+						<line id="3"> - Developed search engine and shopping cart for the site</line>
+						<line id="4"> - Implemented web design for the site</line>
+					</content>
+ 					<environment name="laboterm"> Environment: Windows 2000/XP, Linux Red Hat 7/8, MS IIS, Apache, PHP4, MySQL, SQL, JavaScript, Xphp/CSS, SMTP, MS Excel, Adobe Photoshop </environment>  	 
+				</position>
+ 				<position name="iaod"> 
+					<positionname>ASP.NET Developer</positionname> 
+ 					<date name="iaod"> Feb.2003 - March 2003 </date>
+ 					<company name="iaod">International Academy of Design and Technology, Toronto, Canada (project)</company>
+ 					<content name="iaod"> 
+						<line id="1">- Developed a search engine for Admission Department web site </line>
+					</content>
+ 					<environment name="iaod"> Environment: Windows 2000, MS IIS, ASP.NET, ADO.NET, VisualBasic.NET, php/CSS, SQL Server2000</environment>  	 
+				</position>
+ 				<position name="eban"> 
+					<positionname>MultiMedia Support Services Representative</positionname>
+ 					<date name="eban">2001 - 2002 </date>
+ 					<company name="eban">eBan Commerce Inc., Toronto, Canada </company>
+ 					<content name="eban">
+						<line id="1"> - Responsible for online customer support via email, live chat and phone</line>
+				 		<line id="2"> - Created intranet site for MultiMedia Support Services (php/ CSS)</line>
+					</content>
+ 					<environment name="eban"> Environment: Windows 2000, MS Office 2000, php/CSS, Adobe Photoshop 6</environment>  	 
+				</position>
+ 				<position name="topazinform"> 
+					<positionname>Computer Programmer</positionname> 
+ 					<date name="topazinform">1997 - 2000  </date>
+ 					<company name="topazinform">TOPAZINFORM, Kiev, Ukraine</company>
+ 					<content name="topazinform"> 
+						<line id="1"> - Designed database schemas: tables, queries, forms, reports for construction companies</line>
+						<line id="2"> - Developed and maintained the company's web site</line>
+						<line id="3"> - Tested and debugged applications</line>
+					</content>
+ 					<environment name="topazinform"> Environment: IBMPC; Windows 95/98/NT, SQL Server 6.5, SQL, ASP, Visual Basic 5/4, VBA, php, JavaScript, Java (JDK1.2 ,AWT), MS Office 97, Adobe Photoshop 5.0</environment>  	 
+				</position>
+ 				<position name="ipan"> 
+					<positionname>Engineer Researcher</positionname>
+ 					<date name="ipan">1992 - 1997 </date>
+ 					<company name="ipan">INSTITUTE FOR SEMICONDUCTORS under Academy of Sciences of Ukraine, Kiev, Ukraine </company>
+ 					<content name="ipan"> 
+						<line id="1"> - Responsible for conceptual design and implementation simulation of liquidphase epitaxial crystal growth processes for A2B6 semiconductor thin films </line>
+					</content>
+ 					<environment name="ipan"> Environment: IBM360 (4331), IBM370 (4341), BESM6, CAMAK; MS DOS, ALGOL 60, FORTRAN, Pascal</environment>  	 
+				</position>
+			</titlecontent>
+		</title>	
+		<title name="education"> 
+			<titletext name="education">EDUCATION </titletext>
+			<titlecontent>
+				<education id="iaod"> 
+					<school>International Academy of Design and Technology, Toronto, Canada</school> 
+					<diploma> Diploma in ECommerce </diploma>
+				</education>
+				<education id="kgu"> 
+					<school>National Taras Shevchenko University of Kyiv, Kiev, Ukraine </school>		
+					<diploma> Diploma in Fiber Optics Communication Systems </diploma>
+				</education>
+				<education> 
+					<school>National Technical University of Ukraine "KPI", Kiev, Ukraine</school> 
+					<diploma> M.Sc. in Electrical Engineering </diploma>
+				</education>
+			</titlecontent>
+		</title>
+		<title name="certificates"> 
+			<titletext name="certificates>">CERTIFICATES</titletext>
+			<titlecontent>
+ 				<certificate id="oracle"> 2002  Certificate (Oracle, "SQL and PL/SQL") </certificate>
+				<certificate id="sqlserve"> 2000  Certificate (Brainbench.com, MS SQL Server 6.5 Programmer) </certificate>
+			</titlecontent>
+		</title>
+		<title name="references">
+			<titletext name="references">REFERENCES</titletext>
+			<titlecontent>Available upon request </titlecontent>
+		</title>
+	</maincontent>	
+</resume>
+

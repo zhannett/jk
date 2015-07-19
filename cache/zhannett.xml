@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<statuses type="array">
+  <status>
+    <created_at>Tue Dec 04 17:19:56 +0000 2012</created_at>
+    <id>276012976249634816</id>
+    <text>@webdevjob  Hi! Nice to hear from you. I'am a freelance web developer looking for new clients. http://t.co/hf7BngrW</text>
+    <source>web</source>
+    <truncated>false</truncated>
+    <in_reply_to_status_id></in_reply_to_status_id>
+    <in_reply_to_user_id>798026185</in_reply_to_user_id>
+    <in_reply_to_screen_name>webdevjob</in_reply_to_screen_name>
+    <possibly_sensitive>false</possibly_sensitive>
+    <user>
+      <id>22057740</id>
+      <name>Janet Kulyk</name>
+      <screen_name>zhannett</screen_name>
+      <location></location>
+      <profile_image_url>http://a0.twimg.com/sticky/default_profile_images/default_profile_5_normal.png</profile_image_url>
+      <profile_image_url_https>https://si0.twimg.com/sticky/default_profile_images/default_profile_5_normal.png</profile_image_url_https>
+      <url>http://www.janetkulyk.com</url>
+      <description>I'm a freelance web / mobile developer specialized in HTML5, CSS3, JavaScript, PHP.
+My interests include art, music, yoga, cooking, pets.</description>
+      <protected>false</protected>
+      <followers_count>2</followers_count>
+      <profile_background_color>C0DEED</profile_background_color>
+      <profile_text_color>333333</profile_text_color>
+      <profile_link_color>0084B4</profile_link_color>
+      <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+      <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+      <friends_count>2</friends_count>
+      <created_at>Thu Feb 26 20:34:40 +0000 2009</created_at>
+      <favourites_count>0</favourites_count>
+      <utc_offset></utc_offset>
+      <time_zone></time_zone>
+      <profile_background_image_url>http://a0.twimg.com/images/themes/theme1/bg.png</profile_background_image_url>
+      <profile_background_image_url_https>https://si0.twimg.com/images/themes/theme1/bg.png</profile_background_image_url_https>
+      <profile_background_tile>false</profile_background_tile>
+      <profile_use_background_image>true</profile_use_background_image>
+      <geo_enabled>false</geo_enabled>
+      <verified>false</verified>
+      <statuses_count>4</statuses_count>
+      <lang>en</lang>
+      <contributors_enabled>false</contributors_enabled>
+      <is_translator>false</is_translator>
+      <listed_count>0</listed_count>
+      <default_profile>true</default_profile>
+      <default_profile_image>true</default_profile_image>
+      <following></following>
+      <follow_request_sent></follow_request_sent>
+      <notifications></notifications>
+    </user>
+    <geo/>
+    <coordinates/>
+    <place/>
+    <contributors/>
+    <retweet_count>0</retweet_count>
+    <favorited>false</favorited>
+    <retweeted>false</retweeted>
+  </status>
+  <status>
+    <created_at>Mon Dec 03 17:51:36 +0000 2012</created_at>
+    <id>275658557205118976</id>
+    <text>Achieve an Extensible, Multilayered Scrolling Parallax Effect in Minutes http://t.co/SeWNnmLT</text>
+    <source>&lt;a href=&quot;http://twitter.com/tweetbutton&quot; rel=&quot;nofollow&quot;&gt;Tweet Button&lt;/a&gt;</source>
+    <truncated>false</truncated>
+    <in_reply_to_status_id></in_reply_to_status_id>
+    <in_reply_to_user_id></in_reply_to_user_id>
+    <in_reply_to_screen_name></in_reply_to_screen_name>
+    <possibly_sensitive>false</possibly_sensitive>
+    <user>
+      <id>22057740</id>
+      <name>Janet Kulyk</name>
+      <screen_name>zhannett</screen_name>
+      <location></location>
+      <profile_image_url>http://a0.twimg.com/sticky/default_profile_images/default_profile_5_normal.png</profile_image_url>
+      <profile_image_url_https>https://si0.twimg.com/sticky/default_profile_images/default_profile_5_normal.png</profile_image_url_https>
+      <url>http://www.janetkulyk.com</url>
+      <description>I'm a freelance web / mobile developer specialized in HTML5, CSS3, JavaScript, PHP.
+My interests include art, music, yoga, cooking, pets.</description>
+      <protected>false</protected>
+      <followers_count>2</followers_count>
+      <profile_background_color>C0DEED</profile_background_color>
+      <profile_text_color>333333</profile_text_color>
+      <profile_link_color>0084B4</profile_link_color>
+      <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+      <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+      <friends_count>2</friends_count>
+      <created_at>Thu Feb 26 20:34:40 +0000 2009</created_at>
+      <favourites_count>0</favourites_count>
+      <utc_offset></utc_offset>
+      <time_zone></time_zone>
+      <profile_background_image_url>http://a0.twimg.com/images/themes/theme1/bg.png</profile_background_image_url>
+      <profile_background_image_url_https>https://si0.twimg.com/images/themes/theme1/bg.png</profile_background_image_url_https>
+      <profile_background_tile>false</profile_background_tile>
+      <profile_use_background_image>true</profile_use_background_image>
+      <geo_enabled>false</geo_enabled>
+      <verified>false</verified>
+      <statuses_count>4</statuses_count>
+      <lang>en</lang>
+      <contributors_enabled>false</contributors_enabled>
+      <is_translator>false</is_translator>
+      <listed_count>0</listed_count>
+      <default_profile>true</default_profile>
+      <default_profile_image>true</default_profile_image>
+      <following></following>
+      <follow_request_sent></follow_request_sent>
+      <notifications></notifications>
+    </user>
+    <geo/>
+    <coordinates/>
+    <place/>
+    <contributors/>
+    <retweet_count>0</retweet_count>
+    <favorited>false</favorited>
+    <retweeted>false</retweeted>
+  </status>
+  <status>
+    <created_at>Sun Dec 02 06:36:18 +0000 2012</created_at>
+    <id>275126225108865024</id>
+    <text>Ukrainian girl-superstar &#1053;&#1072;&#1089;&#1090;&#1103; &#1055;&#1077;&#1090;&#1088;&#1080;&#1082; - Oh Darling (&#1053;&#1086;&#1074;&#1072;&#1103; &#1042;&#1086;&#1083;&#1085;&#1072; 2011): http://t.co/MckYVRCW via @youtube</text>
+    <source>&lt;a href=&quot;http://twitter.com/tweetbutton&quot; rel=&quot;nofollow&quot;&gt;Tweet Button&lt;/a&gt;</source>
+    <truncated>false</truncated>
+    <in_reply_to_status_id></in_reply_to_status_id>
+    <in_reply_to_user_id></in_reply_to_user_id>
+    <in_reply_to_screen_name></in_reply_to_screen_name>
+    <possibly_sensitive>false</possibly_sensitive>
+    <user>
+      <id>22057740</id>
+      <name>Janet Kulyk</name>
+      <screen_name>zhannett</screen_name>
+      <location></location>
+      <profile_image_url>http://a0.twimg.com/sticky/default_profile_images/default_profile_5_normal.png</profile_image_url>
+      <profile_image_url_https>https://si0.twimg.com/sticky/default_profile_images/default_profile_5_normal.png</profile_image_url_https>
+      <url>http://www.janetkulyk.com</url>
+      <description>I'm a freelance web / mobile developer specialized in HTML5, CSS3, JavaScript, PHP.
+My interests include art, music, yoga, cooking, pets.</description>
+      <protected>false</protected>
+      <followers_count>2</followers_count>
+      <profile_background_color>C0DEED</profile_background_color>
+      <profile_text_color>333333</profile_text_color>
+      <profile_link_color>0084B4</profile_link_color>
+      <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+      <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+      <friends_count>2</friends_count>
+      <created_at>Thu Feb 26 20:34:40 +0000 2009</created_at>
+      <favourites_count>0</favourites_count>
+      <utc_offset></utc_offset>
+      <time_zone></time_zone>
+      <profile_background_image_url>http://a0.twimg.com/images/themes/theme1/bg.png</profile_background_image_url>
+      <profile_background_image_url_https>https://si0.twimg.com/images/themes/theme1/bg.png</profile_background_image_url_https>
+      <profile_background_tile>false</profile_background_tile>
+      <profile_use_background_image>true</profile_use_background_image>
+      <geo_enabled>false</geo_enabled>
+      <verified>false</verified>
+      <statuses_count>4</statuses_count>
+      <lang>en</lang>
+      <contributors_enabled>false</contributors_enabled>
+      <is_translator>false</is_translator>
+      <listed_count>0</listed_count>
+      <default_profile>true</default_profile>
+      <default_profile_image>true</default_profile_image>
+      <following></following>
+      <follow_request_sent></follow_request_sent>
+      <notifications></notifications>
+    </user>
+    <geo/>
+    <coordinates/>
+    <place/>
+    <contributors/>
+    <retweet_count>0</retweet_count>
+    <favorited>false</favorited>
+    <retweeted>false</retweeted>
+  </status>
+  <status>
+    <created_at>Sat Dec 01 14:44:07 +0000 2012</created_at>
+    <id>274886600423534592</id>
+    <text>David Garrett - ROCK PRELUDE (composed by  D. Garrett and Franck Van Der...: http://t.co/upPhOlvh via @youtube</text>
+    <source>&lt;a href=&quot;http://twitter.com/tweetbutton&quot; rel=&quot;nofollow&quot;&gt;Tweet Button&lt;/a&gt;</source>
+    <truncated>false</truncated>
+    <in_reply_to_status_id></in_reply_to_status_id>
+    <in_reply_to_user_id></in_reply_to_user_id>
+    <in_reply_to_screen_name></in_reply_to_screen_name>
+    <possibly_sensitive>false</possibly_sensitive>
+    <user>
+      <id>22057740</id>
+      <name>Janet Kulyk</name>
+      <screen_name>zhannett</screen_name>
+      <location></location>
+      <profile_image_url>http://a0.twimg.com/sticky/default_profile_images/default_profile_5_normal.png</profile_image_url>
+      <profile_image_url_https>https://si0.twimg.com/sticky/default_profile_images/default_profile_5_normal.png</profile_image_url_https>
+      <url>http://www.janetkulyk.com</url>
+      <description>I'm a freelance web / mobile developer specialized in HTML5, CSS3, JavaScript, PHP.
+My interests include art, music, yoga, cooking, pets.</description>
+      <protected>false</protected>
+      <followers_count>2</followers_count>
+      <profile_background_color>C0DEED</profile_background_color>
+      <profile_text_color>333333</profile_text_color>
+      <profile_link_color>0084B4</profile_link_color>
+      <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+      <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+      <friends_count>2</friends_count>
+      <created_at>Thu Feb 26 20:34:40 +0000 2009</created_at>
+      <favourites_count>0</favourites_count>
+      <utc_offset></utc_offset>
+      <time_zone></time_zone>
+      <profile_background_image_url>http://a0.twimg.com/images/themes/theme1/bg.png</profile_background_image_url>
+      <profile_background_image_url_https>https://si0.twimg.com/images/themes/theme1/bg.png</profile_background_image_url_https>
+      <profile_background_tile>false</profile_background_tile>
+      <profile_use_background_image>true</profile_use_background_image>
+      <geo_enabled>false</geo_enabled>
+      <verified>false</verified>
+      <statuses_count>4</statuses_count>
+      <lang>en</lang>
+      <contributors_enabled>false</contributors_enabled>
+      <is_translator>false</is_translator>
+      <listed_count>0</listed_count>
+      <default_profile>true</default_profile>
+      <default_profile_image>true</default_profile_image>
+      <following></following>
+      <follow_request_sent></follow_request_sent>
+      <notifications></notifications>
+    </user>
+    <geo/>
+    <coordinates/>
+    <place/>
+    <contributors/>
+    <retweet_count>0</retweet_count>
+    <favorited>false</favorited>
+    <retweeted>false</retweeted>
+  </status>
+</statuses>

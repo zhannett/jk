@@ -1,0 +1,24 @@
+#header #logotype {position:relative; top:15px}
+#header #mainNav ul li {display:inline; list-style:none; padding: 0px 12px; text-align:center; position:relative; top:-30px}
+#header #mainNav ul li {display:inline; list-style:none; padding: 0px 12px; text-align:center; position:relative; top:-25px}
+#header #mainNav ul li span.navItem {position:relative; top:20px}
+
+.over {height:50px; position:relative; top:-25px; background:url(../img/swirl.gif) top center no-repeat}
+#header #mainNav ul li span.navItem span {padding-top:20px; position:relative; top:10px}
+
+#content #leftCol #leftColWrapper {position:relative; left:-32px}
+#content #leftCol #quote #quotation .quotes {font-size:1.5em; position:relative; top:0px}
+
+#content #rightCol #rightColWrapper p {position:relative; left:-28px}
+#content #rightCol #rightColWrapper #cases {padding-top:40px}
+#content #rightCol #rightColWrapper #cases .case_img {float:left; width:175px; clear:left; text-align:left; position:relative; left:-28px}
+#content #rightCol #rightColWrapper #cases .spacer {height:5px; margin-bottom:20px; position:relative; left:-28px}
+#content #rightCol #rightColWrapper .desc p {position:relative; left:0px}
+#content #rightCol #rightColWrapper #services .case_title {position:relative; left:-28px}
+#content #rightCol #rightColWrapper #services .link {position:relative; left:-28px}
+#content #rightCol #rightColWrapper #services .spacer {height:5px; margin-bottom:20px; position:relative; left:-28px}
+
+
+
+
+

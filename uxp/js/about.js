@@ -1,0 +1,18 @@
+﻿$('#exe').css('display','none');
+$('#investors').css('display','none');
+$('#mission').css('display','block');
+$('#missionlink').click(function(){
+	$('#exe').css('display','none');
+	$('#investors').css('display','none');
+	$('#mission').css('display','block');
+});
+$('#exelink').click(function(){
+	$('#mission').css('display','none');
+	$('#investors').css('display','none');
+	$('#exe').css('display','block');
+});
+$('#investorslink').click(function(){
+	$('#mission').css('display','none');
+	$('#exe').css('display','none');
+	$('#investors').css('display','block');
+});

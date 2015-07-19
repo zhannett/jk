@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^m\.janetkulyk\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.m\.janetkulyk\.com$
+RewriteRule ^/?$ "http\:\/\/m\.janetkulyk\.com" [R=301,L]
+

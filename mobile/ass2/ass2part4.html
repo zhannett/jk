@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" 
+"http://www.wapforum.org/DTD/xhtml-mobile10.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Conditional Media Queries</title>
+		<link type="text/css" rel="stylesheet" media="screen" href="css/basic.css" />
+		<!--[if !IE]>-->
+			<link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 128px)" href="css/lowend.css" />
+			<link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 176px)" href="css/midend1.css" />
+			<link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 240px)" href="css/midend2.css" />
+			<link type="text/css" rel="stylesheet" media="only screen and (min-device-width: 240px) and (min-device-height: 480px)" href="css/highend.css" />
+			<link type="text/css" rel="stylesheet" media="only screen and (min-device-width: 640px)" href="css/desktop.css" />
+		<!--<![endif]-->
+		<!--[if lt IE 9]>-->
+			<link type="text/css" rel="stylesheet" media="screen" href="css/desktop.css" />
+		<!--<![endif]-->
+		<style type="text/css">
+			p {
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: normal;
+			}
+		</style>
+	</head> 
+	<body> 
+		<div id="header">
+			<h1>YOUR DREAM VACATIONS!</h1>
+		</div>
+		<div id="content">
+			<h2>OUR VACATIONS PLANNING TOOL</h2>
+			<p>
+				Now you can plan your vacations using our specially designed vacations planning tool. 
+				You can book air tickets, hotels, different tours, show tickets, diving course, etc.
+				You can see all the maps on <a href="http://maps.google.com">Google Maps</a>.
+				You can buy all you need for your vacations on <a href="http://www.amazon.ca">www.amazon.ca</a>.
+				You can also check website <a href="http://www.expedia.ca">www.expedia.ca</a>.
+			</p>
+			<p>What to do next:</p>
+			<ol id="nav">
+				<li><a href="mainmenu.html" accesskey="1">Main menu</a></li>
+				<li><a href="setup.html" accesskey="2">Set up</a></li>
+				<li><a href="help.html" accesskey="3">Help</a></li>
+			</ol>
+		</div>
+		<div id="footer">
+		</div>
+	</body>
+</html> 

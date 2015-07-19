@@ -1,0 +1,333 @@
+/* YAHOO! reset.css */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin:0; padding:0} 
+	table {border-collapse:collapse; border-spacing:0} 
+	fieldset,img {border:0} 
+	address,caption,cite,code,dfn,em,strong,th,var {font-style:normal; font-weight:normal} 
+	ol,ul {list-style:none} 
+	caption,th {text-align:left} 
+	h1,h2,h3,h4,h5,h6 {font-size:100%; font-weight:normal} 
+	q:before,q:after {content:''} 
+	abbr,acronym {border:0} 
+/*end reset.css  */
+
+
+/* HTML Selectors  */  
+	body {width:100%; margin:0; text-align:center; overflow:auto; background: url(../img/EosMosaic1b.gif); font-family:Calibri,"Lucida Grande",Arial,Helvetica,sans-serif; color:#727272}	/* bg_body; bg_xmas.gif */
+	h1,h2,h3,h4,h5,h6 {font-family:Georgia, "Times New Roman", Times, serif; font-style:italic; font-weight:normal; color:#725050}
+	h1,h2,h3,h4 {letter-spacing:-1px}
+	h1,h2 {padding-bottom:10px}
+	h3,h4 {padding-bottom:7px}
+	h5,h6 {padding-bottom:5px}
+	h1 {font-size:2.0em}
+	h2 {font-size:2.0em}
+	h3 {font-size:1.4em; text-align:center; clear:both}
+	h4 {font-size:1.2em; padding-top:15px}
+	h5 {font-size:1.0em}
+	h6 {font-size:0.8em}
+	p {font: 0.75em/1.5 Calibri,"Lucida Grande",Arial,Helvetica,sans-serif; color:#727272; text-align:justify; padding: 5px 0 5px 3px}	
+	img {border:0}
+	ol {list-style-type: upper-alpha; padding-left:45px}
+	ol li {font: 0.7em/1.4 Calibri,"Lucida Grande",Arial,Helvetica,sans-serif; color:#727272; padding: 3px 0px}
+	ul {text-align:left; padding-left:17px}
+	ul.list {text-align:left; list-style-image:url(../img/arrow_off.gif); padding-left:17px}
+	ul.noimg {list-style-image:none}
+	ul li {font: 0.7em/1.6 Calibri,"Lucida Grande",Arial,Helvetica,sans-serif; color:#727272; margin-bottom:5px}
+	#photogallery .no_list_img img {padding:2px; border: 1px solid #CCCCCC; background-color:#FFFFFF}	
+	blockquote {font: italic 0.7em/1.8 Georgia, "Times New Roman", Times, serif; color:#626262; padding:10px}
+	blockquote .author {font-style:normal; color:#999999; padding-top:10px}
+	code {font: 0.6em Verdana, Arial, Helvetica, sans-serif; color:#005A9C; position:relative; left:15px; clear:left}	
+	table {font: 0.7em Calibri,"Lucida Grande",Arial,Helvetica,sans-serif; color:#727272; padding:5px; border: 1px solid #CCC}
+	tr {}
+	th {font-weight:bold; text-align:center; border: 1px solid #CCC; padding:3px}
+	td {text-align:center; border: 1px solid #CCC; padding:2px}			
+	acronym {border-bottom: 1px dotted #727272}
+	caption {margin:20px 0; font: bold italic 1.4em Georgia, "Times New Roman", Times, serif; color:#725050}
+	
+	
+	/* Generic Page Components */	
+	#banner {clear:both}
+	#logo {background-color:#E8E8E8; padding: 5px 0px}		
+	#logo a {font: bold 1.3em Verdana, Arial, Helvetica, sans-serif; color:#005A9C; letter-spacing:5px; position:relative; top:5px}		
+	#date_time {text-align:right; padding-bottom:5px; background-color:#E8E8E8; font: 0.7em Georgia, "Times New Roman", Times, serif; text-align:right; padding-right:10px; color:#999}
+	#clock {padding-left:15px}	
+	
+	#switcher {float:right; width:350px; padding-bottom:5px; clear:right; padding-right:2px}
+	#switcher .button {float:right; width:15px; padding:3px; margin: .5em .5em 0em 0em; position: relative; display:inline; background-color:#B2CDE0; font-size:0.75em; cursor: pointer; color:#727272; text-align:center}
+	#switcher div.label {float:right; width:125px; margin-right:5px; cursor: pointer; position: relative; top:5px}
+	#switcher div.label span.txt {font:0.7em Calibri,"Lucida Grande",Arial,Helvetica,sans-serif; color:#999; border-bottom: 1px solid #CCC}
+	
+	#w3c {width:110px; clear:both}
+	
+	#newwindowlinks fieldset {float:right; width:175px; position:relative; top:-60px; padding:5px; clear:right}
+	#newwindowlinks input {}
+	label.openlinks {width:140px; font: italic 0.7em/1.6 Calibri,"Lucida Grande",Arial,Helvetica,sans-serif; color:#626262; text-align:left}	
+	
+			
+	/* Navigation */		
+	.bg_nav {width:1000px; margin: 0px auto; clear:both}	
+	#navtop {height:50px; position:relative; top:-3px; z-index:2}
+	#navbottom {height:29px; clear:both}
+	#topNav {float:left; clear:both; background-color:#E2E2E2}
+	#topNav {position:relative; top:-1px}			
+	#topNav ul {list-style:none; padding:0}
+	#topNav ul li {display:inline; margin:0; padding:0; float:left}
+	#topNav ul li {border-bottom: 1px solid #CCC}
+	#topNav a {text-decoration:none; display: block; padding: 5px 15px; color:#005A9C; float:left; letter-spacing:0.5px}
+	.active {color:#035C9D; background-color:#B2CDE0}	
+	#menu_login li {float:left;display:inline; padding:2px 10px; background-color:#FFFFFF; border-left: 1px solid #CCCCCC}
+	#footer_nav {background-color:#E2E2E2; height:9.5em; position:relative; top:-5px}
+	#footer_nav_container {background-color:#EFEFEF; width:800px; margin: auto; padding:10px; border: 1px solid #CCCCCC}
+	#footer_nav .footer_container_box {height:7.0em}
+	#footer_nav_container .main_menu_item a {font-weight:bold}
+	#footer_nav_container ul {padding-left:0; list-style-image:none}
+	#footer_nav_container ul li {float:left; display:inline; padding:5px 25px}
+	#footer_nav_container ul li ul {margin:0; padding:0}
+	#footer_nav_container ul li ul li {float:none; display:block; padding:0; clear:both; font-size:100%}
+	#footer_nav_container .main_menu_item li a {font-weight:normal}
+	#footer_nav_container .main_menu_item span {color:#659BC2; font-weight:bold}
+	
+	
+	/*  Layout  */
+	.page {width:1000px; margin: 0px auto}
+	#header {}
+	#login_menu {float:right; padding-bottom:5px; clear:right; padding-right:2px}
+	#content {width:1000px; margin: 0px auto; border-collapse:separate; table-layout:fixed; border-left:1px solid #CCC; border-right: 1px solid #CCC}
+	#content_container {width:1000px; background-color:#F2F2F2; color:#727272; display:table-row; text-align:left}
+	#col_left {float:left; clear:left; width:145px; display:table-cell; padding: 0 15px}
+	#col_left ul {padding:5px 0; padding-left:1.0em}
+	#col_middle {float:left; width:650px; padding-bottom:20px; display:table-cell; z-index:1} 
+	#col_middle p {width:600px; padding-right:30px}
+	#col_right {float:left; width:143px; padding-bottom:20px; clear:right; display:table-cell; padding: 0 15px}	
+	#col_right ul {text-align:left; list-style-image:none; padding-left:0; position:relative; left:-55px}
+	#col_right img {padding:5px 0; clear:both; margin-bottom:20px}
+	#col1 {float:left; clear:left; width:300px; padding: 0 15px}
+	#col2 {float:left; width:290px; padding-bottom:20px; clear:right; padding: 0 15px}
+	#col1 ul, #col2 ul {width:275px; padding-left:0; list-style-position:outside}
+	#col1 ul li, #col2 ul li {}
+	#copyright {height:1.5em; background-color:#E2E2E2; font: 0.7em Georgia, "Times New Roman", Times, serif; text-align:center; padding-right:10px; color:#999; clear:both; position:relative; top:-5px}
+
+	
+	/* Hypertext Links */
+	a {text-decoration:none; font: 1.0em Arial, Helvetica, sans-serif}
+	a:link		{color:#005A9C; text-decoration:none} /* #659BC2 */
+	a:visited {color:#95BAD5; text-decoration:none} /* #95BAD5 */
+	a:hover 	{color:#00355C; cursor:pointer; text-decoration:underline} 
+	a:active 	{color:#00355C; background-color:#B2CDE0; border-bottom: 1px solid #005A9C}
+	
+	/*.external {list-style-image:none}*/
+	a.external {padding-left: 15px; background: url(../img/remote.gif) center left no-repeat}
+	a.external:hover {background: #E2E2E2 url(../img/remote_a.gif) center left no-repeat}
+	a.mysite {background:none}	
+
+	.mailto a:link {color:#FE7A69; font-size:0.85em; line-height:1.6em}
+	.mailto a:hover {color:#FE7A69; text-decoration:none; background-color:#E2E2E2}
+	
+	a.pdflink {color:#090; background: url(img/pdf.png) no-repeat right top; padding-right:18px}	
+	
+	a img {text-decoration:none}
+	
+	#footer_nav_container .main_menu_item a:link {color:#659BC2; text-decoration:none}
+	#footer_nav_container .main_menu_item a:visited {color:#659BC2; text-decoration:none}
+	#footer_nav_container .main_menu_item a:hover {color:#005A9C; text-decoration:none}
+	#footer_nav_container .main_menu_item a:active {color:#005A9C; text-decoration:none}
+	
+	/* Forms */		
+	form {}
+	legend {}
+	fieldset {border: 1px solid #CCC; padding:20px; margin:20px 0; background-color:#E3E3E3; padding:20px}
+	fieldset .textinput {width:550px; height:20px}
+	fieldset p {clear: both}	
+	textarea {padding:10px}
+	label {float:left; width:100px; text-align:right; padding-right:10px; font-size:110%}
+	input {float:left; clear:right; margin-right:5px}
+	label.error {color:#F00; border:0}	
+	#register fieldset, #login fieldset {width:590px}
+	#register fieldset p, #login fieldset p {width:570px}
+	#register label, #login label {clear:left}
+	#register form p, #login form p {margin-bottom:20px}
+	.form_forum label {float:left; width:70px; text-align:left; padding-right:10px; font-size:120%}
+	#forgot_password fieldset, #change_password fieldset {width:550px}
+	#forgot_password fieldset p, #change_password fieldset p {width:500px}
+	#forgot_password fieldset .textinput {width:220px}	
+		
+
+/* Classes - global */
+	.hidden_seo { position: absolute; left: -9000px; top:0px}
+	.hidden {display:none}
+	.inline {display:inline}
+	.h10 {height:10px}
+	.h20 {height:20px; clear:both}
+	.h50 {height:50px; clear:both}
+	.quotation {background-color:#E2E2E2; border: 1px solid #CCCCCC}	
+	.clear {clear:both}
+	.bg_top {background:url(../img/bg_header_top.gif) repeat-x; height:16px; clear:both}
+	.bg_bottom {background:url(../img/bg_header_bottom.gif) repeat-x; height:6px; clear:both}
+	.bg_top_footer {background:url(../img/bg_footer_top.gif) repeat-x; height:5px; clear:both; position:relative; top:-4px; z-index:0}	
+	.bg_bottom_footer {background:url(../img/bg_header_bottom.gif) repeat-x; height:6px; clear:both; position:relative; top:-5px}
+	.chapter {background-color:#F8F8F8; padding:20px; clear:both}
+	.term {padding-top:5px; font: bold 0.7em/1.6 Calibri,"Lucida Grande",Arial,Helvetica,sans-serif; color:#727272; padding-left:10px}
+	.definition {padding:10px; font: 0.7em/1.6 Calibri,"Lucida Grande",Arial,Helvetica,sans-serif; color:#727272}
+	.comm {color:#999}
+	.error {line-height:40px; background: #FFF4F2 url(../img/icon_error_inline.png) no-repeat scroll 5px 12px; border: 1px solid #FF0000}	
+	.error p {line-height:1.5em; padding: 10px 10px 10px 30px}
+	span.error {color:#F00 ; margin-left:10px; background-image:none; border:0; padding:0; line-height:1.0em}
+	.attention {line-height:40px; background: #F9FCAB url(../img/icon.png) no-repeat scroll 5px 5px; border: 1px solid #F9D879; margin: 10px 0}
+	.attention p {padding: 10px 10px 10px 40px; font-weight:bold}	
+	.feedback_yes {line-height:40px; background: #E6F8DE url(../img/icon_yes.png) no-repeat scroll 5px 5px; border: 1px solid #93AB88}	
+	.feedback_yes p {line-height:1.6em; padding: 10px 20px 10px 40px}
+	.note {font: 0.85em/1.0 Calibri,"Lucida Grande",Arial,Helvetica,sans-serif; color:#727272; letter-spacing:0; text-align:left}
+	.left {text-align: left}
+	.center {text-align:center}
+	.hello {float:right; width:150px; text-align:right; font-size: 0.8em; color:#727272; padding-top:5px; font-style:italic}
+	.shift {padding-left:1.0em}
+	.doubleshift {padding-left:2.0em}
+	.tripleshift {padding-left:3.0em}
+	.quadshift {padding-left:4.0em}
+			
+	
+/* Specific Page Components */ 
+	
+	/* home */	
+	#welcome {width:100%; clear:both; background-color:#F8F8F8; padding:10px 0; border: 1px solid #CCCCCC}
+	#welcome .welcome_box {height:290px}
+	#welcome h2, #welcome p {padding-left:15px; background-color:#F8F8F8}	
+	#welcome p {float:left; width:290px; text-align: left; font-size:0.75em; line-height:1.8}	
+	#welcome_img {float:left; width:280px; padding: 10px 15px 0 15px; background-color:#F8F8F8}
+	#welcome_img img {padding:2px; border: 1px solid #CCCCCC; background-color:#FFFFFF}	
+	#welcome_text {float:left; width:300px}
+	#index .column {float:left; width:175px; padding:10px}
+	.col_box {height:11.0em}	
+	#index .column p {width:160px; font-size:0.75em; line-height:1.5em}
+	#index h5 {height:2.0em; padding-left:35px}
+	#index_hire {background-color:#F9FCAB; margin:10px 29px 10px 0; border: 1px solid #F9D879}
+	#index_hire h5 {background: url(../img/icon_dollar.gif) no-repeat}
+	#index_developer {background-color:#BCD9ED; margin:10px 29px 10px 0; border: 1px solid #005A9C}
+	#index_developer h5 {background: url(../img/icon_dev.png) no-repeat}	
+	#index_friend {background-color:#E6F8DE; margin:10px 0; border: 1px solid #93AB88}
+	#index_friend h5 {background: url(../img/icon_friends.png) no-repeat}
+	
+	/* skills  */
+	#certificates_images {clear:both; background-color:#F8F8F8; height:220px}
+	#imglist li {padding:5px 0; margin:5px 0; display:inline}	
+	.certimg {display:block; float:left; border: 1px solid #999; margin:1em}
+	#computerskills {margin-top:20px}
+	#skillset {clear:both}
+	#skillset .term {float:left; width:150px; padding: 5px 15px 5px 0; font-weight:bold; clear:left}
+	#skillset .definition {float:left; width:440px; padding: 5px 0; clear:right}
+	
+	/* portfolio  */
+	#latest_projects {padding-left:35px}
+	#BofA li {font-size:100%; list-style-image:none}
+	.more {font: italic 0.7em/1.6 Calibri,"Lucida Grande",Arial,Helvetica,sans-serif; cursor:pointer; color:#6097C0; padding:30px 0; text-align:center}	
+	
+	/* education  */
+	.diploma {color:#1567A4; font-size:0.85em; letter-spacing:0.5px}
+	#schools ul {padding-left:18px}
+	#schools ul li {padding:20px 20px; clear:both}
+	.school_logo {float:left; width:140px; clear:left}
+	.school_diploma {float:left; width:400px; clear:right; padding-bottom:15px}
+	
+	/* contact  */
+	#contact_info {float:left; width:300px; margin-bottom:20px}		
+	#contact_email {background: url(../img/icon_email.gif) no-repeat 10px 8px}
+	#contact_phone {background: url(../img/phone.gif) no-repeat 10px 5px}
+	#contact_mobile {background: url(../img/mobile.gif) no-repeat 10px 0}
+	#contact_skype {background: url(../img/skype.gif) no-repeat 10px 8px}
+	#contact_home {background: url(../img/home.gif) no-repeat}
+	#contact_info span {line-height:40px; padding-left:50px; font-size: 0.75em; letter-spacing:0.5px}
+	#contact .map {float:right; clear:right; width:280px; height:280px; border:1px solid #CCC; margin-left:15px}
+	
+	/* photogalleries  */
+	.photogallery li {padding:2px 0}
+	
+	/*  galleries */	
+	#gallery ul.gallery {padding: 20px 0; text-align:center}
+	#gallery ul.gallery li {display:inline}
+	#gallery .gallery img {padding:1px; border: 1px solid #CCCCCC; background-color:#FFFFFF}
+	
+	/*  ref */
+	ul.ref_nav {list-style-image:url(../img/arrow_off.gif); padding-left:3.0em}
+	#ref .term {padding-top:5px; padding-left:10px}
+	#ref .definition {padding:10px}
+	#ref ul li {width: 600px; padding:2px 0}
+	.loading {border: 1px #000 solid; background-color: #B2CDE0; padding:20px; margin: 100px 0 0 200px; position:absolute; display:none; font: 0.9em Arial, Helvetica, sans-serif; cursor:pointer; color:#005A9C}
+	#termin, #props, #pageevent, #dyn {float:left; width:220px; padding-right:15px}
+	#termin ul, #props ul, #pageevent ul, #dyn ul {padding-left:0}
+	#dictionary, #properties, #pageevents, #dynamic_elem {float:right; width:370px; clear:right; background-color:#FFF; border:1px solid #B2CDE0; margin:20px 0}
+	#properties .p1, #dictionary .p1, #pageevents .p1, #dynamic_elem .p1 {font: 0.7em/1.5 Calibri,"Lucida Grande",Arial,Helvetica,sans-serif; color:#727272; text-align:justify; padding: 0 15px}
+	#properties h5, #dictionary h5, #pageevents h5, #dynamic_elem h5 {padding-left:15px}
+	.p2 {color:#999; padding-top:5px; padding-bottom:5px}
+	.code {font: 0.7em Verdana, Arial, Helvetica, sans-serif; color:#005A9C; padding: 0 15px}						
+	div#event_object {clear:both}
+	div#page_events {clear:both}
+	.lib {background:url(../img/book.gif) no-repeat; position:relative; margin-top:15px; clear:both; margin-top:10px}
+	.lib h4 {position:relative; left:40px; top:-5px}
+	.codeline {padding-left:15px}
+	.comment {padding-left:15px; color:#999}
+	.codetitle {font-weight:bold; padding:5px 0}
+	#readystatestates tr td {text-align:left}
+	.http_term {float:left; width:11.0em; padding-left:15px; clear:left; font: bold 0.65em Verdana, Arial, Helvetica, sans-serif; color:#005A9C}
+	.http_definition {float:left; width:41.0em; padding-left:15px; clear:right; font: 0.65em Verdana, Arial, Helvetica, sans-serif; color:#005A9C}
+
+	
+	/* forum */
+	#forum .col_middle {padding-left:20px}
+	form#lang input {width:120px}
+	.message_info {color:#005A9C; font-style:italic; font-weight:bold; padding: 5px 3px}
+	.message_body {}
+	.thread {text-align:left; color:#FE7A69; font: italic bold 1.4em/ 1.6em Georgia, "Times New Roman", Times, serif; letter-spacing:-1px}
+	div.postreply {width:650px; text-align:center; font: italic 1.2em/1.5em Georgia, "Times New Roman", Times, serif; color:#725050; letter-spacing:-1px}
+	#forum_main {font-size:0.75em}
+	#forum_main caption {line-height:3.0em}
+	#forum_main td, #forum_main th {padding:5px}
+	
+	
+	/*** SUPERFISH STYLES ***/
+	.sf-menu, .sf-menu * {margin:0; padding:0; list-style:none}
+	.sf-menu {line-height:1.0}
+	.sf-menu ul {position:absolute; top:-999em; width:10em; /* left offset of submenus need to match (see below) */}
+	.sf-menu ul li {width:100%}
+	.sf-menu li:hover {visibility:inherit; /* fixes IE7 'sticky bug' */}
+	.sf-menu li {float:left; position:relative}
+	.sf-menu a {display:block; position:relative}
+	.sf-menu li:hover ul, .sf-menu li.sfHover ul {left:0; top:2.5em; /* match top ul list item height */ z-index:99}
+	ul.sf-menu li:hover li ul, ul.sf-menu li.sfHover li ul {top:-999em}
+	ul.sf-menu li li:hover ul, ul.sf-menu li li.sfHover ul {left:10em; /* match ul width */	top:0}
+	ul.sf-menu li li:hover li ul, ul.sf-menu li li.sfHover li ul {top:-999em}
+	ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {left:10em; /* match ul width */ top:0}
+	
+	/*** DEMO SKIN ***/
+	.sf-menu {float:left; margin-bottom: 1.0em}
+	.sf-menu a {border-left: 1px solid #BBBBBB; border-top:1px solid #BBBBBB; padding: .75em 1em; text-decoration:none}
+	.sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/ color:#005A9C}
+	.sf-menu li {background:#C8C8C8}
+	.sf-menu li li {background:#E2E2E2}
+	.sf-menu li li li {background:#EFEFEF}
+	.sf-menu li:hover, .sf-menu li.sfHover,
+	.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {background:#AFAFAF; outline:0}
+	
+	/*** arrows **/
+	.sf-menu a.sf-with-ul {padding-right:2.25em; min-width:1px; /* trigger IE7 hasLayout so spans position accurately */}
+	.sf-sub-indicator {position:absolute; display:block; right:.25em; top:0.95em; /* IE6 only */ width:10px; height:10px; text-indent:-999em; overflow:hidden; background:url('../img/arrows-ffffff.png') no-repeat -10px -100px; /* 8-bit indexed alpha png. IE6 gets solid image only */}
+	a > .sf-sub-indicator {  /* give all except IE6 the correct values */ top:.8em; background-position: 0 -100px; /* use translucent arrow for modern browsers*/}
+	/* apply hovers to modern browsers */
+	a:focus > .sf-sub-indicator,
+	a:hover > .sf-sub-indicator,
+	a:active > .sf-sub-indicator,
+	li:hover > a > .sf-sub-indicator,
+	li.sfHover > a > .sf-sub-indicator {background-position: -10px -100px; /* arrow hovers for modern browsers*/ }
+	
+	/* point right for anchors in subs */
+	.sf-menu ul .sf-sub-indicator { background-position:  -10px 0; }
+	.sf-menu ul a > .sf-sub-indicator { background-position:  0 0; }
+	.sf-menu li li {font-size:100%}
+	
+	/* apply hovers to modern browsers */
+	.sf-menu ul a:focus > .sf-sub-indicator, .sf-menu ul a:hover > .sf-sub-indicator, .sf-menu ul a:active > .sf-sub-indicator, .sf-menu ul li:hover > a > .sf-sub-indicator, .sf-menu ul li.sfHover > a > .sf-sub-indicator {background-position: -10px 0; /* arrow hovers for modern browsers*/ }
+	
+	/*** shadows for all but IE6 ***/
+	.sf-shadow ul {background:	url('../img/shadow.png') no-repeat bottom right; padding: 0 8px 9px 0; -moz-border-radius-bottomleft: 17px; -moz-border-radius-topright: 17px; -webkit-border-top-right-radius: 17px; -webkit-border-bottom-left-radius: 17px}
+	.sf-shadow ul.sf-shadow-off {background: transparent}
+	
+	
+	

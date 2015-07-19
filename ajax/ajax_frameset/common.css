@@ -1,0 +1,18 @@
+a:active {color:#0000FF}
+a:visited {color:#0000FF}
+a:hover {color:#800080; text-decoration:none}
+
+body {background-color:#F0F8FF; font-family:Tahoma; font-size:12px}
+button {cursor:hand; font-family:Tahoma; font-size:12px}
+input {cursor:hand; font-family:Tahoma; font-size:12px}
+h1 {font-family:Tahoma; font-size:18px}
+table {border:collapse}
+th {font-family:Tahoma; font-size:12px}
+td {font-family:Tahoma; font-size:12px}
+
+.cellAlert {color:#FF0000; font-weight:bold}
+.pageHeader {background-color: #000080}
+.pageCell {color:#FFFFFF; font-family:Tahoma; font-size:16px; font-weight:bold}
+.rowHeader {background-color:#6495ED; color:#FFFFFF; font-weight:bold}
+.rowData {background-color:#D3D3D3}
+.numeric {font-family:Tahoma; text-align:right}

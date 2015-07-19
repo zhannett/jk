@@ -1,0 +1,209 @@
+﻿@model PIA.Module_TestimonialListModule
+       
+
+<div class="testimonial">
+    <h3 class="testimonial">Anita's Story</h3>
+	<br />   
+
+    <div id="videocontainer1"> 
+            <a id="video1" href=""><img src="http://pia-addfdfd6.s3.amazonaws.com/rotator/video/Slide1.jpg" width="470" height="264" alt=""></a>
+	</div>
+    </div>
+	<p>Anita lived an active family lifestyle, but after her car accident she was unsure if she'd ever be able to return to it.  The law firms of the Personal Injury Alliance&trade; helped Anita win her case and she's been able to focus oce again on her family.</p>
+    <hr />
+    <p>&nbsp;</p>
+ 
+    <h3 class="testimonial">Bill's Story</h3>
+	<br />   
+    <div id="videocontainer2"> 
+        <a id="video2" href=""><img src="http://pia-addfdfd6.s3.amazonaws.com/rotator/video/Slide2.jpg" width="470" height="264" alt=""></a>
+    </div>
+	<p>Bill lost his leg in a motorcycle accident, but he never lost his spirit.  He contacted a Personal Injury Alliance&trade; law firm to help him with his case and after being able to focus on adjusting to his new life, he has since gotten back on the road.</p>
+    <hr />
+    <p>&nbsp;</p>
+
+    <h3 class="testimonial">Taylor's Story</h3>    
+    <br />
+	<div id="videocontainer3"> 
+        <a id="video3" href=""><img src="http://pia-addfdfd6.s3.amazonaws.com/rotator/video/Slide3.jpg" width="470" height="264" alt=""></a>
+    </div> 
+	<p>Taylor was an aspiring gymnast, but after breaking her neck during practice doctors were unsure if she'd survive.  Her family contacted a Personal Injury Alliance&trade; law firm to better understand her rights and after winning her case, she has gone on to inspire others with her spirit.</p>
+    <hr />
+
+</div>
+
+
+
+<script type="text/javascript">
+
+	$('#video1').click(function(){
+		jwplayer('videocontainer1').setup({
+			flashplayer: "/player.swf",
+			image: "http://pia-addfdfd6.s3.amazonaws.com/rotator/video/Slide1.jpg",
+			width: 470,
+			height: 264, 
+			events: {
+				onComplete: function() {
+					this.remove();              
+				},
+				onReady: function() {this.play();}
+			},
+			modes: [
+				{type: "html5"},
+				{type: "flash", src: "/player.swf"},
+				{type: "download"}
+			],
+			levels: [
+				{file: "http://pia-addfdfd6.s3.amazonaws.com/videos/PIA_anita_rev.mp4"},
+				{file: "http://pia-addfdfd6.s3.amazonaws.com/videos/PIA_anita_rev-PIA_Website.webm"}
+			],
+			plugins: 'gapro-2, captions',
+			'gapro-2.accountid': 'UA-28932409-10',
+			'gapro-2.accountid': 'UA-28932409-10',
+			'gapro-2.trackingobject': _gaq,
+			'gapro-2.trackstarts': true,
+			'gapro-2.trackpercentage': true,
+			'gapro-2.tracktime': true,
+			'captions.file': '/Content/Captions/video1.srt'
+		});
+		return false;
+	});
+
+	$('#video2').click(function(){
+		jwplayer('videocontainer2').setup({
+			flashplayer: "/player.swf",
+			image: "http://pia-addfdfd6.s3.amazonaws.com/rotator/video/Slide2.jpg",
+			width: 470,
+			height: 264,
+			events: {
+				onComplete: function() {
+					this.remove();
+				},
+				onReady: function() {this.play();}
+			},
+			modes: [
+				{type: "html5"},
+				{type: "flash", src: "/player.swf"},
+				{type: "download"}
+			],
+			levels: [
+				{file: "http://pia-addfdfd6.s3.amazonaws.com/videos/PIA_bill_rev.mp4"},
+				{file: "http://pia-addfdfd6.s3.amazonaws.com/videos/PIA_bill_rev-PIA_Website.webm"}
+			],
+			plugins: 'gapro-2, captions',
+			'gapro-2.accountid': 'UA-28932409-10',
+			'gapro-2.accountid': 'UA-28932409-10',
+			'gapro-2.trackingobject': _gaq,
+			'gapro-2.trackstarts': true,
+			'gapro-2.trackpercentage': true,
+			'gapro-2.tracktime': true,
+			'captions.file': '/Content/Captions/video2.srt'	
+		});
+		return false;
+	});
+	$('#video3').click(function(){
+		jwplayer('videocontainer3').setup({
+			flashplayer: "/player.swf",
+			image: "http://pia-addfdfd6.s3.amazonaws.com/rotator/video/Slide3.jpg",
+			width: 470,
+			height: 264, 
+			events: {
+				onComplete: function() {
+					this.remove();
+				},
+				onReady: function() {this.play();}
+			},
+			modes: [
+				{type: "html5"},
+				{type: "flash", src: "/player.swf"},
+				{type: "download"}
+			],
+			levels: [
+				{file: "http://pia-addfdfd6.s3.amazonaws.com/videos/PIA_taylor_rev.mp4"},
+				{file: "http://pia-addfdfd6.s3.amazonaws.com/videos/PIA_taylor_rev-PIA_Website.webm"}
+			],
+			plugins: 'gapro-2, captions',
+			'gapro-2.accountid': 'UA-28932409-10',
+			'gapro-2.accountid': 'UA-28932409-10',
+			'gapro-2.trackingobject': _gaq,
+			'gapro-2.trackstarts': true,
+			'gapro-2.trackpercentage': true,
+			'gapro-2.tracktime': true,
+			'captions.file': '/Content/Captions/video3.srt'	
+		});
+		return false;
+	});
+
+
+</script>
+
+
+@*    
+<div class="testimonial">
+@foreach (var item in Model.TestimonialListModule.Items())
+{
+    <h3 class="testimonial">@item.Title</h3>    
+    <p><img id="TestimonialListImageItem_@(item.ContentID)" src='@try {@(item.Image.URL.ToString())} catch (Exception) {<text></text>} finally {<text></text>}' width='220' height='160'  onerror="this.parentNode.removeChild(this);" />@item.Content</p>
+    <div id="TestimonialListAttribution_@(item.ContentID)"><p>- @(item.Attribution)</p></div>
+    <hr />
+}
+</div>
+*@
+
+
+
+@*
+@{
+        int pageSize = 2;
+        int pageNumber = 1;
+        int itemsToSkip = 0;
+
+        try
+        {
+            pageNumber = Int32.Parse(Request.QueryString["page"].ToString());
+            itemsToSkip = (pageSize * pageNumber) - 1;
+        }
+        catch (Exception)
+        {
+            //throw;
+        }
+
+    }
+<div class="testimonial">
+@foreach (var item in Model.TestimonialListModule.Items().Skip(itemsToSkip-1).Take(pageSize))
+{
+    <h3 class="testimonial">@item.Title</h3>    
+    <p><img id="TestimonialListImageItem_@(item.ContentID)" src='@try {@(item.Image.URL.ToString())} catch (Exception) {<text></text>} finally {<text></text>}' width='220' height='160'  onerror="this.parentNode.removeChild(this);" />@item.Content</p>
+    <div id="TestimonialListAttribution_@(item.ContentID)"><p>- @(item.Attribution)</p></div>
+    <hr />
+}
+</div>
+@{
+    if (pageNumber > 1)
+    {
+       <text><a href="?page=@(pageNumber-1)">&lt; Previous Page</a></text> 
+    }
+    else
+    {
+        // nothing to display - we're at the start of the paging
+    }
+}
+
+@{
+    if (pageNumber <= (Model.TestimonialListModule.Items().Count / pageSize))
+    {
+        if ((Model.TestimonialListModule.Items().Count - ((pageNumber * pageSize))) < 1)
+        {
+            // nothing to display - we're at the end of the paging
+        }
+        else
+        {
+           <text><a href="?page=@(pageNumber + 1)">Next Page &gt;</a></text> 
+        }
+    }
+    else
+    {
+        // nothing to display - we're at the end of the paging
+    }
+}
+*@

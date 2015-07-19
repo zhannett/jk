@@ -1,0 +1,41 @@
+h1, h2 {
+	font-size: small;
+}
+p, a, li , div {
+	font-size: x-small;
+}
+h1{
+	padding: 7px 20px;
+	background-color: #C00;
+	color: white;
+	border-top: 4px solid #500;
+	border-bottom: 4px solid #500;
+}
+
+h2 {
+	color: #C00;
+	margin: 7px auto;
+	padding-top: 5px;
+}
+
+p {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	color: #333;
+}
+.par {
+	padding: 1px 5px;
+	margin-left: 30px;
+}
+li {
+	padding: 5px 0;
+	margin-left: 40px;
+}
+a:link {
+	text-decoration: underline;
+	color: blue;
+}
+ol {
+	margin: 2px 5px 5px 0;
+}

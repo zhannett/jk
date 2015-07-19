@@ -1,0 +1,186 @@
+/* reset CSS */
+	 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {  
+		margin:0; 
+		padding:0; 
+	}
+	fieldset,img {  
+		border:0; 
+	} 
+	address,caption,cite,code,dfn,em,strong,th,var { 
+		font-style:normal; 
+		font-weight:normal; 
+	} 
+	ol,ul { 
+		list-style:none; 
+	} 
+	caption,th { 
+		text-align:left; 
+	} 
+	h1,h2,h3,h4,h5,h6 { 
+		font-size:100%; 
+		font-weight:normal; 
+	}
+/*end reset CSS */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;	
+}
+h1 {
+	width: 308px;
+	height: 21px;
+	background: url(../img/EditEmail.gif) no-repeat;
+	margin: 10px 0 16px 8px;	
+}
+h2 {
+	color: #346ead;
+	font-size: 1.0em;
+	margin: 10px 0 5px 8px;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+p,
+label,
+.input {
+	font-size: 0.75em;
+}
+.input {
+	font-weight: bold;	
+}
+.notyou {
+	font-size: 0.7em;
+	color: #333;
+}
+.notyou a {
+	color: #333;	
+}
+p.intro {
+	font-size: 0.8em;
+	padding: 0 0 20px 8px;
+}
+fieldset {
+	background-color: #eff5fa;
+	border: 1px solid #b6cfe6;
+	border-radius: 5px;	
+	padding: 25px 0;
+	background: -webkit-gradient(linear, center top, center bottom, from(#fff), to(#eff5fa));
+}
+.row {
+	clear: both;
+	padding: 5px 0;
+}
+.input {
+	float: left;
+	margin-left: 15px;
+	font-weight: bold;
+	color: #333;
+}
+label {
+	float: left;
+	width: 250px;
+	text-align: right;
+	color: #666;
+	font-weight: bold;
+}
+input {
+	float: left;
+	width: 268px;
+	margin-left: 15px;
+}
+.notyou {
+	float: left;
+	width: 538px;
+	text-align: right;
+	padding-top: 20px;
+}
+button {
+	cursor: pointer;
+	border: 0;	
+}
+a {
+	color: #666;	
+}
+.page {
+	width: 960px;
+	padding: 9px 13px 12px 13px;
+	margin: 0 auto;
+}
+#header {
+	border-bottom: 1px solid #aecdeb;
+	clear: both;
+}
+#content {
+	padding: 18px 0 0 0;
+	clear: both;
+}
+#footer {
+	text-align: center;
+	clear: both;
+	color: #666;
+	padding: 10px 0 12px 0;
+	border-top: 1px solid #ccc;
+}
+#footer span {
+	font-weight: bold;	
+}
+#footer p {
+	font-size: 0.7em;
+	padding: 5px 0;	
+}
+.col_left {
+	float: left;
+	width: 750px;
+}
+.col_right {
+	float: right;
+	width: 165px;
+}
+.body {
+	border: 1px solid #b6cfe6;
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+}
+.title {
+	height: 28px;
+	line-height: 28px;
+	background-color: #346ead;
+	border-top-right-radius:5px;
+	border-top-left-radius:5px;	
+	color: #fff;
+	padding-left: 15px;
+	font-family:"Arial Black", Gadget, sans-serif;
+}
+.widget ul {
+	list-style: url(../img/plus.png);
+	list-style-position: outside;
+	padding: 15px 25px 20px 17px;
+}
+.widget li {
+	margin: 3px 0;
+	font-size: 0.7em;
+	font-weight: bold;
+}
+.widget li a {
+	color: #333;
+}
+.right {
+	text-align: right;
+	padding: 0 15px 10px 0;
+	font-size: 0.7em;
+}
+.right a {
+	color: #346fac;	
+}
+#back {
+	float: right;
+	width: 162px;
+	height: 21px;
+	background: url(../img/BackToAccount.gif);
+	margin: 20px 0;
+}
+#update {
+	float: right;
+	width: 99px;
+	height: 21px;
+	background: url(../img/Update.gif);
+	margin: 20px 0 20px 15px;
+}

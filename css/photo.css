@@ -1,0 +1,14 @@
+/* CSS Document */
+body {width:100%; margin:0; text-align:center; overflow:scroll; background: url(../images/dot_repeat.gif)}
+img {border:0px}	
+
+.clear { clear:both}
+.date {text-align:right; color:#FF0099; padding-right:10px}
+.icons{text-align:center}
+.fl { float:left}
+.fr { float:right}
+.page { width:760px; background-color:#FFF; margin: 0px auto}
+.photo {width:120px; height:120px; float:left; padding: 5px 25px 5px 10px; } 
+.r {text-align:right}			
+.row{padding: 0 20px 20px 20px}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>Organise JS</title>
+		<link href="/stylesheets/m1312.css" rel="stylesheet" />	
+	</head>
+	<body>
+		<div>
+			<h1>Organise JS</h1>
+			<p>This demo loads content into the page, using dust.js, a json document of content, using the data-behavior and javascript organisation as described in my .net magazine article. It needs to be run from a webserver, MAMP, etc.</p>
+			<p>The list below has a data attribute of <i>data-behavior</i> that has the value <i>show_articles</i>. The <i>data-behavior</i> attributes are looked for in the <i>application.js</i> and a method <i>show_articles</i> is triggered. <i>show_articles</i> loads in the dust template and loads in the json, it then passes these off to a function, <i>m1312.Functions.generate_html()</i> to generate the html. The results of this are returned to the <i>show_articles</i> behavior and are inserted into the page.</p>
+			<p>All the javascript is nicely organised, kept in small, readable chunks and is easy to pick through. There could be many templates and many data feeds, all of which only need one generic generate html function. The javascript here is also annotated so you can pick through easier.</p>
+			<p>And I'll answer any questions I can: <a href="http://www.twitter.com/13twelve">@13twelve</a></p>
+			<ul id="article_listing" class="article_listing" data-behavior="show_articles"></ul>
+			<p>This is only tested in Chrome :-)</p>
+			<small><a href="http://www.thirteentwelve.com/">www.thirteentwelve.com</a></small>
+		</div>
+			
+		<!-- javascript -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.7.1.min.js">\x3C/script>')</script>
+		<script src="js/application.js"></script>
+		<script src="js/vendor/dust-full-0.3.0.min.js"></script>
+		<script src="js/behaviors/show_articles.js"></script>
+		<script src="js/functions/generate_html.js"></script>
+		<!-- page js -->
+
+	</body>
+</html>

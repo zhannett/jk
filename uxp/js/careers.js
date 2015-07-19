@@ -1,0 +1,18 @@
+﻿$('#career1').css('display','none');
+$('#career2').css('display','none');
+$('#careers').css('display','block');
+$('#careerslink').click(function(){
+	$('#career1').css('display','none');
+	$('#career2').css('display','none');
+	$('#careers').css('display','block');
+});
+$('#careerlink1').click(function(){
+	$('#careers').css('display','none');
+	$('#career2').css('display','none');
+	$('#career1').css('display','block');
+});
+$('#careerlink2').click(function(){
+	$('#careers').css('display','none');
+	$('#career1').css('display','none');
+	$('#career2').css('display','block');
+});

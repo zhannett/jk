@@ -1,0 +1,87 @@
+﻿@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('League_Gothic-webfont.eot');
+    src: local('&'),
+         url('League_Gothic-webfont.woff') format('woff'),
+         url('League_Gothic-webfont.ttf') format('truetype'),
+         url('League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;	
+}
+html {
+	background: #ede5d8;	
+}body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+:focus {
+	outline: 0;	
+}
+
+
+
+#wrapper {
+	display: block;
+	padding: 5% 0;
+}
+#content {
+	display: block;
+	margin: 0 auto;
+	padding: 0 0 80px 0;
+	width: 80%;
+	height: auto;
+	background: #fffdf9;
+	-moz-box-shadow: 0 0 4px rgba(160,128,73,0,50);
+	-khtml-box-shadow: 0 0 4px rgba(160,128,73,0,50);
+	-webkit-box-shadow: 0 0 4px rgba(160,128,73,0,50);
+}
+.ribbon {
+	float: left;
+	position: relative;
+	height: 65px;
+	width: auto;
+	left: -15px;
+	top: 30px;
+	background: #da3d26;
+	-moz-box-shadow: 4px 4px 0 rgba(160,128,73,0,20);
+	-khtml-box-shadow: 4px 4px 0 rgba(160,128,73,0,20);
+	-webkit-box-shadow: 4px 4px 0 rgba(160,128,73,0,20);
+}
+.ribbon h2 {
+	display: block;
+	padding: 0 20px 0 80px;
+	color: #fffdf9;
+	font: normal normal 2.8em/68px 'LeagueGothicRegular', sans-serif;
+	font-size-adjust: 0.55;
+	text-transform: uppercasel;
+	text-align: right;	
+}
+.triangle {
+	position: relative;
+	height: 0;
+	width: 0;
+	left: -35px;
+	top: 75px;
+	border-style: solid;
+	border-width: 20px;
+	border-color: transparent #8f191c transparent transparent;
+	z-index: -1;
+}
+p {
+	padding: 80px 70px 0 70px;
+	font: italic normal 15px/22px Georgia, "Times New Roman", times, serif;
+	color: #938462;
+}

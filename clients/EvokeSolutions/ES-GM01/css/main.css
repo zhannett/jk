@@ -1,0 +1,205 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent}
+body {line-height: 1}
+ol, ul {list-style: none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none}
+:focus {outline: 0}
+ins {text-decoration: none}
+del {text-decoration: line-through}
+table {border-collapse: collapse; border-spacing: 0}
+/*end reset.css  */
+
+body {text-align:center}
+a {text-decoration:none}
+a:visited {text-decoration:none}
+a:hover {text-decoration:underline}
+a:active {text-decoration:underline}
+
+.left {text-align:left}
+.hidden {visibility:hidden}
+.spacer25 {height:25px; clear:both}
+.spacer100 {height:100px; clear:both}
+
+#mainWrapper {width:960px; margin-left:auto; margin-right:auto; text-align:center; clear:both; margin-top:20px}
+
+#header {padding:10px 0px 10px 0px; clear:both; text-align:left; border-top:3px solid #007DC3; border-bottom: 1px dotted #007DC3; height:100px}
+#header #logo {float:left; clear:left; width:250px}
+#header #logo img {position:relative; left:23px; top:40px}
+
+#header #mainNav {float:left; width:513px}
+#header #mainNav div.wrapper {float:left; width:159px; padding:5px 0px; margin:0px 5px; border-left: 1px dotted #6E6E6E}
+
+#header #mainNav div a {text-decoration:none; font-size:0.75em; color:#1A1A1A}
+#header #mainNav div a:visited {text-decoration:none}
+#header #mainNav div a:hover {text-decoration:none}
+#header #mainNav div a:active {text-decoration:none}
+
+#header #mainNav #understand_container {position:relative; left:5px}
+#header #mainNav #understand {padding:5px 0px}
+#header #mainNav #understand a {font: 0.7em Arial, Helvetica, sans-serif; position:relative; left:16px}
+.understand_active {background: #F46B1B url(../img/understand_active.gif) no-repeat left}
+.understand_active a {font: 0.7em Arial, Helvetica, sans-serif; position:relative; left:16px; color:#FFF}
+#header #mainNav #understand.understand_active a  {position:relative; left:16px; color:#FFF}
+#header #mainNav #understand.understand_active a:visited {color:#FFF}
+#header #mainNav #understand.understand_active a:hover {color:#FFF}
+#header #mainNav #understand.understand_active a:active {color:#FFF}
+
+#header #mainNav #develop_container {position:relative; left:5px}
+#header #mainNav #develop {padding:5px 0px}
+#header #mainNav #develop a {font: 0.7em Arial, Helvetica, sans-serif; position:relative; left:16px}
+#header #mainNav #develop.develop_active {background: #F46B1B url(../img/develop_active.gif) no-repeat left}
+#header #mainNav #develop.develop_active a  {position:relative; left:16px; color:#FFF}
+#header #mainNav #develop.develop_active a:visited {color:#FFF}
+#header #mainNav #develop.develop_active a:hover {color:#FFF}
+#header #mainNav #develop.develop_active a:active {color:#FFF}
+
+#header #mainNav #succeed_container {position:relative; left:5px; border-right: 1px dotted #6E6E6E}
+#header #mainNav #succeed {padding:5px 0px}
+#header #mainNav #succeed a {font: 0.7em Arial, Helvetica, sans-serif; position:relative; left:16px}
+.succeed_active {background: #F46B1B url(../img/succeed_active.gif) no-repeat left}
+.succeed_active a {font: 0.7em Arial, Helvetica, sans-serif; position:relative; left:16px; color:#FFF}
+#header #mainNav #succeed.succeed_active a  {position:relative; left:16px; color:#FFF}
+#header #mainNav #succeed.succeed_active a:visited {color:#FFF}
+#header #mainNav #succeed.succeed_active a:hover {color:#FFF}
+#header #mainNav #succeed.succeed_active a:active {color:#FFF}
+
+#header #mainNav .wrapper div ul {padding-top:10px; padding-left:16px}
+#header #mainNav .wrapper div ul li {color:#6E6E6E}
+
+#header #mainNav .wrapper #subnav_understand ul li a {color:#1A1A1A; text-decoration:none; font: 0.7em Arial, Helvetica, sans-serif}
+#header #mainNav .wrapper #subnav_understand ul li a:visited {color:#1A1A1A; text-decoration:none}
+#header #mainNav .wrapper #subnav_understand ul li a:hover {color:#F46B1B; text-decoration:none}
+#header #mainNav .wrapper #subnav_understand ul li a:active {color:#F46B1B; text-decoration:none}
+
+#header #mainNav .wrapper #subnav_develop ul li a {color:#1A1A1A; text-decoration:none; font: 0.7em Arial, Helvetica, sans-serif}
+#header #mainNav .wrapper #subnav_develop ul li a:visited {color:#1A1A1A; text-decoration:none}
+#header #mainNav .wrapper #subnav_develop ul li a:hover {color:#9FB600; text-decoration:none}
+#header #mainNav .wrapper #subnav_develop ul li a:active {color:#9FB600; text-decoration:none}
+
+#header #mainNav .wrapper #subnav_succeed ul li a {color:#1A1A1A; text-decoration:none; font: 0.7em Arial, Helvetica, sans-serif}
+#header #mainNav .wrapper #subnav_succeed ul li a:visited {color:#1A1A1A; text-decoration:none}
+#header #mainNav .wrapper #subnav_succeed ul li a:hover {color:#A5001D; text-decoration:none}
+#header #mainNav .wrapper #subnav_succeed ul li a:active {color:#A5001D; text-decoration:none}
+
+.arrow_orange {list-style: outside url(../img/arrow_orange.gif)}
+.arrow_green {list-style: outside url(../img/arrow_green.gif)}
+.arrow_red {list-style: outside url(../img/arrow_red.gif)}
+
+#header #links {float:left; clear:right; width:197px}
+#header #links ul {position:relative; left:77px}
+#header #links ul li{list-style-type:none}
+#header #links ul li a {color:#1A1A1A; text-decoration:none; font: 0.7em Arial, Helvetica, sans-serif}
+#header #links ul li a:visited {color:#1A1A1A; text-decoration:none}
+#header #links ul li a:hover {color:#007DC3; text-decoration:none}
+#header #links ul li a:active {color:#007DC3; text-decoration:none}
+
+
+
+#content {clear:both; padding-top:45px}
+#content #leftCol {float:left; clear:left; width:267px}
+#content #leftCol #leftColWrapper {width:214px; text-align:left; padding:0px 0px 31px 33px}
+#content #leftCol #leftColWrapper ul {position:relative; left:14px}
+#content #leftCol #leftColWrapper ul li {padding: 2px 0px}
+#content #leftCol #leftColWrapper ul li.orange {color:#F46B1B}
+#content #leftCol #leftColWrapper ul li.green {color:#9FB600}
+#content #leftCol #leftColWrapper ul li a {color:#1A1A1A; text-decoration:none; font: 0.7em Arial, Helvetica, sans-serif}
+#content #leftCol #leftColWrapper ul li a:visited {color:#1A1A1A; text-decoration:none}
+
+#content #leftCol #leftColWrapper form {text-align:center}
+#content #leftCol #leftColWrapper form select {width:157px; margin-top:10px; font: 0.7em Arial, Helvetica, sans-serif}
+
+#content #leftCol #leftColWrapper ul li a:hover {color:#F46B1B; text-decoration:none}
+#content #leftCol #leftColWrapper ul li a:active {color:#F46B1B; text-decoration:none}
+
+#content #leftCol #leftColWrapper #view_case {width:165px; height:35px; background:url(../img/bg_orange.gif) no-repeat; text-align:center; position:relative; left:13px; margin-top:135px}
+#content #leftCol #leftColWrapper #view_case a {position:relative; top:10px; font: 0.7em Arial, Helvetica, sans-serif; color:#FFF}
+
+#content #leftCol #leftColWrapper #img_tools {float:left; clear:left; width:30px; height:143px; background:url(../img/tools.gif) no-repeat; position:relative; left:25px; top:7px}
+#content #leftCol #leftColWrapper ul#tools li {line-height:27px; position:relative; left:20px}
+#content #leftCol #leftColWrapper ul#tools li a {color:#007DC3; text-decoration:none}
+#content #leftCol #leftColWrapper ul#tools li a:visited {color:#007DC3; text-decoration:none}
+#content #leftCol #leftColWrapper ul#tools li a:hover {color:#007DC3; text-decoration:underline}
+#content #leftCol #leftColWrapper ul#tools li a:active {color:#007DC3; text-decoration:underline}
+#content #leftCol #leftColWrapper .bg_red {width:208px; height:35px; background-color:#A5001D; color:#FFF; text-align:left}
+#content #leftCol #leftColWrapper .bg_red span {font: 0.7em Arial, Helvetica, sans-serif; position:relative; top:7px; left:14px; letter-spacing:1px}
+
+
+#content #rightCol {width:650px; float:left; clear:right; padding-bottom:45px}
+#content #rightCol #rightColWrapper {width:650px; clear:both}
+#content #rightCol #rightColWrapper h1 {width:308px; font: bold 1.3em/1.5 Arial, Helvetica, sans-serif; color:#007DC3; padding-bottom:33px; text-align:left}
+#content #rightCol #rightColWrapper h2 {font: 0.8em/1.5 Arial, Helvetica, sans-serif; color:#007DC3; padding-bottom:5px; text-align:left; letter-spacing:2px}
+#content #rightCol #rightColWrapper p {width:650px; font: 0.75em/1.5 Arial, Helvetica, sans-serif; color:#2B2B2B; text-align:left}
+#content #rightCol #rightColWrapper p.p_narrow {width:308px; font: 0.75em/1.5 Arial, Helvetica, sans-serif; color:#2B2B2B; text-align:left}
+#content #rightCol #rightColWrapper p a {font: 1.0em Arial, Helvetica, sans-serif; color:#007DC3}
+
+
+#content #rightCol #rightColWrapper .content_txt {clear:both}
+#content #rightCol #rightColWrapper .content_txt .col_left {float:left; clear:left; width:342px}
+#content #rightCol #rightColWrapper .content_txt .col_right {float:left; clear:right; width:308px}
+
+#content #rightCol #rightColWrapper .thumbs {clear:both; padding:25px 0px}
+#content #rightCol #rightColWrapper .thumbs .col_left {float:left; clear:left; width:342px}
+#content #rightCol #rightColWrapper .thumbs .col_left .thumb1 {float:left; width:173px; text-align:left}
+#content #rightCol #rightColWrapper .thumbs .col_left .thumb2 {float:left; width:135px; text-align:left}
+#content #rightCol #rightColWrapper .thumbs .col_right {float:left; clear:right; width:308px}
+#content #rightCol #rightColWrapper .thumbs .col_right .thumb1 {float:left; width:173px; text-align:left}
+#content #rightCol #rightColWrapper .thumbs .col_right .thumb2 {float:left; width:135px; text-align:left}
+
+
+
+#dvl #content {clear:both; padding-top:45px}
+#dvl #content #leftCol {float:left; clear:left; width:438px}
+#dvl #content #leftCol #leftColWrapper {width:385px; text-align:left; padding:0px 0px 31px 47px}
+#dvl #content #leftCol #leftColWrapper ul {position:relative; left:0px}
+#dvl #content #leftCol #leftColWrapper ul li {padding: 2px 0px}
+#dvl #content #leftCol #leftColWrapper ul li.green {color:#9FB600}
+#dvl #content #leftCol #leftColWrapper ul li a {color:#1A1A1A; text-decoration:none; font: 0.7em Arial, Helvetica, sans-serif}
+#dvl #content #leftCol #leftColWrapper ul li a:visited {color:#1A1A1A; text-decoration:none}
+#dvl #content #leftCol #leftColWrapper ul.green li a:hover {color:#9FB600; text-decoration:none}
+#dvl #content #leftCol #leftColWrapper ul.green li a:active {color:#9FB600; text-decoration:none}
+#dvl #content #leftCol #leftColWrapper h1 {width:360px; font: bold 1.3em/1.5 Arial, Helvetica, sans-serif; color:#007DC3; padding-bottom:33px; text-align:left; padding-top:60px; letter-spacing:-1px}
+#dvl #content #leftCol #leftColWrapper p {width:360px; font: 0.75em/1.5 Arial, Helvetica, sans-serif; color:#2B2B2B; text-align:left}
+
+#dvl #content #rightCol {width:522px; float:left; clear:right; position:relative; top:-40px}
+#dvl #content #rightCol #rightColWrapper {width:522px; clear:both}
+#dvl #content #rightCol #rightColWrapper #img_gallery {border-bottom:1px dotted #6E6E6E; clear:both; margin-bottom:20px; padding-bottom:10px}
+#dvl #content #rightCol #rightColWrapper #img_gallery #gallery_image {float:left; clear:left; width:350px; height:230px; text-align:left}
+ul.gallery {list-style:none; padding:5px}
+ul.gallery li {float:left; margin:6px; width:10px; height:10px; display:inline}
+#dvl #content #rightCol #rightColWrapper #img_gallery #right_quot {float:left; clear:right; width:142px; height:200px; background-color:#9FB600; padding:15px; color:#FFF; text-align:left} 
+#dvl #content #rightCol #rightColWrapper #img_gallery #right_quot blockquote {font: 0.9em/1.5 Arial, Helvetica, sans-serif}
+#dvl #content #rightCol #rightColWrapper #img_gallery #right_quot #author {font: 0.7em/1.5 Arial, Helvetica, sans-serif; padding-top:15px}
+#dvl #content #rightCol #rightColWrapper #img_gallery #pagination {padding:5px 0px; font: 0.7em Arial, Helvetica, sans-serif; text-align:left}
+#dvl #content #rightCol #rightColWrapper #img_gallery #pagination img {position:relative; top:4px}
+#dvl #content #rightCol #rightColWrapper h2 {font: 0.8em/1.5 Arial, Helvetica, sans-serif; color:#007DC3; padding-bottom:5px; text-align:left; letter-spacing:2px}
+#dvl #content #rightCol #rightColWrapper p {width:522px; font: 0.75em/1.5 Arial, Helvetica, sans-serif; color:#2B2B2B; text-align:left; padding-bottom:20px}
+#dvl #content #rightCol #rightColWrapper p a {font: 1.0em Arial, Helvetica, sans-serif; color:#007DC3}
+
+
+#content #rightCol3 {width:693px; float:left; clear:right; padding-bottom:45px}
+#content #rightCol3 .col_left3 {float:left; clear:left; width:515px; text-align:left; padding:10px 0px 0px 0px}
+#content #rightCol3 .col_left3 h1 {width:477px; font: bold 1.3em/1.5 Arial, Helvetica, sans-serif; color:#007DC3; padding-bottom:15px; letter-spacing:-1px; position:relative; top:-17px}
+#content #rightCol3 .col_left3 p {width:477px; font: bold 0.9em/1.5 Arial, Helvetica, sans-serif; color:#2B2B2B; padding-bottom:25px; position:relative; top:-17px}
+#content #rightCol3 ul li {padding:0px; margin:0px}
+#content #rightCol3 ul li {border-top: 1px dotted #6E6E6E; clear:both}
+#content #rightCol3 ul li .col_left3 h2 {font: 0.8em/1.5 Arial, Helvetica, sans-serif; color:#007DC3; text-align:left; letter-spacing:2px; padding-bottom:20px}
+#content #rightCol3 ul li .col_left3 p {width:477px; font: 0.75em/1.5 Arial, Helvetica, sans-serif; color:#2B2B2B; margin:0px; padding:4px 0px}
+#content #rightCol3 ul li .col_right3 {float:left; clear:right; width:178px; padding:13px 0px}
+#content #rightCol3 ul li .col_left3 p a {color:#007DC3; text-decoration:none}
+#content #rightCol3 ul li .col_left3 p a:visited {color:#007DC3; text-decoration:none}
+#content #rightCol3 ul li .col_left3 p a:hover {color:#007DC3; text-decoration:underline}
+#content #rightCol3 ul li .col_left3 p a:active {color:#007DC3; text-decoration:underline}
+
+
+
+#footer {float:right; width:693px; clear:both; margin-bottom:31px; margin-top:31px; text-align:left; border-top:1px dotted #A1A1A1; padding-top:10px}
+#footer #copyright {float:left; clear:left; width:200px; font: 0.7em Arial, Helvetica, sans-serif; color:#1A1A1A}
+#footer #bottomNav {float:left; clear:right}
+#footer #bottomNav ul {padding-bottom:31px}
+#footer #bottomNav ul li {display:inline; list-style:none; padding-right:12px}
+#footer #bottomNav ul li a {font: 0.7em Arial, Helvetica, sans-serif; color:#007DC3}

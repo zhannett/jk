@@ -1,0 +1,9 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+#recaptcha_widget_div {
+	display: block;
+	width: 500px;
+	height: 300px;
+	margin: 0 auto;
+}

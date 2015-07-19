@@ -1,0 +1,21 @@
+PKG=SUNWcsr
+NAME=Core Solaris, (Root)
+ARCH=sparc
+VERSION=11.8.0,REV=2000.01.08.18.12
+SUNW_PRODNAME=SunOS
+SUNW_PRODVERS=5.8/Generic
+SUNW_PKGTYPE=root
+SUNW_OBSOLETES=111211-01
+MAXINST=1000
+CATEGORY=system
+DESC=core software for a specific instruction-set architecture
+VENDOR=Sun Microsystems, Inc.
+HOTLINE=Please contact your local service provider
+EMAIL=
+CLASSES=none
+BASEDIR=/
+SUNW_PKGVERS=1.0
+SUNW_REQUIRES=108528-01
+SUNW_INCOMPAT=
+SUNW_PATCHID=108995-02
+PSTAMP=on28-patch20010408084150

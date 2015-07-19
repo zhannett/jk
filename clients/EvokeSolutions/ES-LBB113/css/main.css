@@ -1,0 +1,118 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent}
+body {line-height: 1}
+ol, ul {list-style: none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none}
+:focus {outline: 0}
+ins {text-decoration: none}
+del {text-decoration: line-through}
+table {border-collapse: collapse; border-spacing: 0}
+/*end reset.css  */
+
+body {background-color:#FFF; text-align:center}
+#mainWrapper {width:960px; margin: 0px auto; text-align:center; clear:both}
+h1 {color:#404040; font: 1.0em Georgia, "Times New Roman", Times, serif; letter-spacing:1px; padding-bottom:5px}
+p {font: 0.7em/1.6 Trebuchet MS,Arial,sans-serif; letter-spacing:0.5px}
+
+a {color:#3998B1; text-decoration:none}
+a:visited {color:#3998B1; text-decoration:none}
+a:hover {color:#3998B1; text-decoration:none}
+a:active {color:#3998B1; text-decoration:none}
+.h25 {height:25px}
+.h35 {height:35px}
+.h55 {height:55px}
+.h113 {height:113px}
+
+.h113 {height:113px}
+
+.left {text-align:left}
+.center {text-align:center}
+
+#content {width:960px; margin: 0px auto; clear:both}
+
+#leftCol {float:left; clear:left; width:200px}
+#leftCol #leftColWrapper {padding-top:58px; padding-bottom:25px}
+#nav {text-align:center; padding-bottom:95px}
+#nav ul {}
+#nav ul li {padding:3px 0px}
+#nav ul li a {color:#404040; letter-spacing:1px; font: 0.65em Georgia, "Times New Roman", Times, serif}
+#nav ul li a:visited {color:#404040}
+#nav ul li a:hover {color:#3998B1}
+#nav ul li a:active {color:#3998B1}
+#nav #subnav {}
+#nav ul li #subnav {padding-top:0px}
+#nav ul li #subnav li {padding:0px}
+#nav ul li #subnav li a {font: 0.7em/1.3 Trebuchet MS,Arial,sans-serif; letter-spacing:0.5px}
+.brackets {color:#fff}
+.active {color:#3998B1}
+
+p.copyright {width:120px; padding-bottom:10px; border-bottom:1px solid #CCC; margin:10px auto}
+p.es {width:120px; margin:10px auto}
+
+
+
+#rightCol {width:759px; float:left; clear:right; padding-bottom:20px; border-left:1px solid #CCC}
+#rightCol #rightColWrapper {padding-top:0px; padding-bottom:20px}
+#rightCol #rightColWrapper img {text-align:right; padding-bottom:25px}
+#rightCol #rightColWrapper #col1 {float:left; clear:left; width:460px; height:650px}
+#main_image {height:650px;width:450px; float:right}
+#rightCol #rightColWrapper #col2 {float:left; clear:right; width:299px; text-align:left}
+#rightCol #rightColWrapper #col2 ul.gallery {width:295px; height:130px clear:both; padding-top:58px}
+#rightCol #rightColWrapper #col2 ul.gallery li {display:inline}
+#rightCol #rightColWrapper #col2 #txt {width:250px; position:relative; left:40px; padding-top:25px}
+#rightCol #rightColWrapper #col2 #txt p {padding:10px 0px}
+#rightCol #rightColWrapper #col2 #txt p#print {padding:0px}
+#rightCol #rightColWrapper #col2 #txt p#email {padding:0px}
+#rightCol #rightColWrapper .txtWrapper {width:600px; padding-left:50px; text-align:left}
+#rightCol #rightColWrapper .txtWrapper .col1 {float:left; clear:left; width:315px}
+#rightCol #rightColWrapper .txtWrapper .col2 {float:left; clear:right; width:285px}
+#rightCol #rightColWrapper .txtWrapper p {width:280px; padding:10px 0px}
+#rightCol #rightColWrapper #contact {text-align:left}
+#rightCol #rightColWrapper #contact h2 {font:0.75em/1.6 Georgia, "Times New Roman", Times, serif; text-align:left}
+#rightCol #rightColWrapper #contact .col1 {float:left; clear:left; width:215px}
+#rightCol #rightColWrapper #contact .col1 h2 {padding-left:50px}
+#rightCol #rightColWrapper #contact .col1 p {width:140px; padding-left:50px}
+#rightCol #rightColWrapper #contact .col2 {float:left; width:170px}
+#rightCol #rightColWrapper #contact .col2 p {width:150px}
+#rightCol #rightColWrapper #contact .col3 {float:left; width:184px}
+#rightCol #rightColWrapper #contact .col3 p {width:140px}
+#rightCol #rightColWrapper #contact .col4 {float:left; clear:right; width:px}
+#rightCol #rightColWrapper #contact .col4 p {width:155px}
+#rightCol #trunkshows {text-align:left}
+#rightCol #trunkshows .col1 h2 {font: bold 0.85em/1.6 Georgia, "Times New Roman", Times, serif; letter-spacing:1px; padding-bottom:10px}
+#rightCol #trunkshows .col1 h3 {font:0.75em/1.6 Georgia, "Times New Roman", Times, serif; padding-bottom:3px}
+#rightCol #trunkshows .col1 {float:left; clear:left; width:250px}
+#rightCol #trunkshows .col1 .wrapper {padding-left:50px; padding-top:87px}
+#rightCol #trunkshows .col1 .wrapper #shows {padding-top:35px}
+#rightCol #trunkshows .col1 .wrapper #shows ul li {padding:10px 0px}
+#rightCol #trunkshows .col1 .wrapper .totop {width:160px; padding-top:10px; border-top:1px solid #CCC}
+#rightCol #trunkshows .col2 {float:left; clear:right; width:509px}
+.galleria{list-style:none; width:260px; height:130px}
+.galleria li{display:block; width:90px; height:130px; overflow:hidden; float:left}
+.galleria li a{display:none}
+.galleria li div{position:absolute; display:none; top:0; left:180px}
+.galleria li div img {cursor:pointer}
+.galleria li.active div img,.galleria li.active div {display:block}
+.galleria li img.thumb {cursor:pointer; top:auto; left:auto; display:block; width:auto; height:auto}
+* html .galleria li div span {width:400px} /* MSIE bug */
+
+form {width:295px; margin-top:20px}	
+form fieldset {font:0.75em/1.6 Georgia, "Times New Roman", Times, serif; margin-bottom: 10px; clear:both}	
+form legend {font-weight: bold; font-size: 1.1em}	
+form fieldset label {display:block; font: 1.0em/1.3 Trebuchet MS,Arial,sans-serif; letter-spacing:0.5px}
+form fieldset input.txt {width:200px; display:block; margin: 5px 0px}	
+form fieldset input.submit {width:60px; float:left; color:#3998B1; margin:10px 0px}
+form input.text {padding: 0 0 0 3px; width: 172px}	
+
+
+.hidden {display:none}
+
+
+			
+
+

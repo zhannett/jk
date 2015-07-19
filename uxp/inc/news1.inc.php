@@ -1,0 +1,24 @@
+﻿<p class="date">Author: Gemini Waghmare, CEO of UXP Systems, Inc.</p>
+<p>To convergent service providers who deliver wireline & wireless phone service, high speed internet connectivity and digital television, the holy grail of the household has always been owning the bundle.  Being the sole provider of services to an individual or family, meant that you achieved full penetration of an addressable household, maximizing revenue, ARPU and driving good margins.</p>
+<p>The battle for the bundle has been a relatively simple proposition – give a household the best price for 2, 3 or 4 services and they'll likely bring all of their services to you.  It's still the way the battle's being fought today.  Don't believe me?  Check out the latest offerings from <a href="http://www.att.com/gen/general?pid=9147#fbid=hD9dHB_WR38" target="_blank">AT&T</a>, <a href="http://www.comcast.com/Corporate/Learn/Bundles/bundles.html" target="_blank">Comcast</a>  and <a href="http://www22.verizon.com/residential/bundles/" target="_blank">Verizon</a>.</p>
+<p>If you make the price really attractive, you might even be able to lock the household into a two or three year contract.  Couple that with decent customer service, and good quality services like high definition channels and fast pipe into the house, and you stand a coin toss chance of being victorious.  After all, looking at the relative offerings in the market – these bundles are a commodity with no real differentiation across companies.</p>
+<p>I guess that would make it more inevitable that this model of competing on price to win the 'combo' pack into the household is no longer sustainable.  Three unstoppable forces are changing the rules of the battle, and service providers need to take note:</p>
+<ul class="solutionslist">
+	<li>
+    	<h3>The Economics of Increasing Bandwidth will Drive Prices Higher</h3>
+        <p>You can't compete on price when outside forces are driving your internal costs higher at an unprecedented rate.  With HD video, cloud based services, and multimedia travelling over data lines like never before, there can no longer be a $100 all-you-can-eat bundle. Just look at the new <a href="http://www.engadget.com/2011/03/13/atandt-will-cap-dsl-u-verse-internet-and-impose-overage-fees/" target="_blank">bandwidth capping</a> and excess charging policies being put forth by the big guys.</p>
+    </li>
+    <li>
+    	<h3>Over the Top Services are Cheaper and at Times, Better</h3>
+        <p>While the communications giants continue to duke out who wins the household with the triple or quadruple play – they stand the risk of being shown up by new and innovative players like Netflix, Google Voice, Ribbit, WhatsApp, Apple and others who are offering the same services, at better prices, and with much better service experiences.   While these players have a long way to go to build up the same repertoire of offerings, small shares taken by small players can add up to material impacts to the incumbents.</p>
+    </li>
+    <li>
+    	<h3>"Everywhere" Services Mess Up the Bundle Proposition</h3>
+        <p>The old bundle was TV services on my TV, wireless services on my wireless device, and home phone services on my home phone.   What happens in a world with tablets, laptops, desktops, interactive TVs and smartphones, where I want all of my services available on all of my devices?  Does the bundle give me all of my communications services channels on my tablet and my TV?  Anywhere? When Netflix can offer TV on every device for under ten dollars a month, service providers had better have a way to do the same thing.</p>
+    </li>
+</ul>
+<p>Going forward, price will always be an issue in selling the bundle.   But as innovations limit the ability to compete on price, give users non-traditional choices for better services, and drive the need to enable services on all devices, there has to be a new battleground for the bundle.</p>
+<h3>Enter the User Experience.</h3>
+<p>The household is filling up with many devices like the tablet, pc, smartphone and TV, and several connections to the outside world – WiFi, 3G/4G, DSL, and even Fiber.   The new bundle won't be sold on how to get services for less, the new bundle will be sold by the service provider that makes all of my services available on all of my devices on all of my connections.   We're already dying for things like universal log-ins, consistent service experiences, and anywhere applications.</p>
+<p>When Comcast, AT&T, Verizon and the others can say that your SMS, Calling, Messaging and TV are usable on any device via a universal log-in, a consistent service experience, and true personalization, they won't need to keep pitching the $99 triple play.</p>
+<a href="http://twitter.com/share" class="twitter-share-button" data-text="UXP Systems - the Bundle's Next Battleground" data-count="vertical" data-via="UXPSystems">Tweet</a>

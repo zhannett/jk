@@ -1,0 +1,145 @@
+<html>
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+		<title>Hidden Frame</title>
+
+		<script type="text/javascript">
+
+			var reBrowser = new RegExp('internet explorer','gi');
+
+			
+
+			/* Perform page initialization, waits for the visible frame to load and clones the hidden form to the visible form */
+
+			function initialize() {
+
+				var hiddenForm = document.getElementById('hidden_form');
+
+				if(reBrowser.test(navigator.appName)) {
+
+					while(parent.document.frames.item(0).document.readyState != 'complete') {}
+
+					parent.frames[0].document.getElementById('visible_form').innerHTML = hiddenForm.innerHTML;
+
+				}
+
+				else {
+
+					var complete = false;
+
+					while(!complete) {
+
+						try {
+
+							parent.frames[0].document.getElementById('visible_form').appendChild(hiddenForm.cloneNode(true));
+
+							complete = true;
+
+						}
+
+						catch(e) {}
+
+					}
+
+				}				
+
+			}
+
+		</script>
+
+	</head>
+
+	
+
+	<body onLoad="initialize()">
+
+	Hidden Frame
+
+		<form name="hidden_form" id="hidden_form" action="foo.php">
+
+		<h1>Address Information</h1>
+
+		<table border="0" width="100%">
+
+			<tr>
+
+				<th width="30%" align="right">Name: </th>
+
+				<td align="left">
+
+					<input type="text" name="name" id="name" value="" onChange="changeEvent(this)" />
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<th width="30%" align="right">Address Line 1: </th>
+
+				<td align="left">
+
+					<input type="text" name="address1" id="address1" value="" onChange="changeEvent(this)" />
+
+				</td>
+
+			</tr>
+
+				<th width="30%" align="right">Address Line 2: </th>
+
+				<td align="left">
+
+					<input type="text" name="address2" id="address2" value="" onChange="changeEvent(this)" />
+
+				</td>
+
+			<tr>
+
+				<th width="30%" align="right">City: </th>
+
+				<td align="left">
+
+					<input type="text" name="city" id="city" value="" onChange="changeEvent(this)" />
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<th width="30%" align="right">State: </th>
+
+				<td align="left">
+
+					<input type="text" name="state" id="state" value="" onChange="changeEvent(this)" />
+
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<th width="30%" align="right">Zip Code: </th>
+
+				<td align="left">
+
+					<input type="text" name="zip" id="zip" value="" onChange="changeEvent(this)" />
+
+				</td>
+
+			</tr>
+
+		</table>
+
+		<br/>
+
+		<input type="button" value="Submit" onclick="submitForm()">
+
+		</form>
+
+	</body>
+
+</html>

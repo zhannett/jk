@@ -1,0 +1,302 @@
+/* Drop-Down Navigation */
+
+/* || font import */
+/*	
+@font-face {
+    font-family: 'SansationRegular';
+    src: url('fonts/sansation_regular-webfont.eot');
+    src: url('fonts/sansation_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sansation_regular-webfont.woff') format('woff'),
+         url('fonts/sansation_regular-webfont.ttf') format('truetype'),
+         url('fonts/sansation_regular-webfont.svg#SansationRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*/    
+    /* || Animation keyframes */
+    
+    @-webkit-keyframes menu-move {
+      from { -webkit-transform: translateY(-200px); }
+      to { -webkit-transform: translateY(0); }
+    }
+    @-moz-keyframes menu-move {
+      from { -moz-transform: translateY(-200px); }
+      to { -moz-transform: translateY(0); }
+    }
+    @-ms-keyframes menu-move {
+      from { -ms-transform: translateY(-200px); }
+      to { -ms-transform: translateY(0); }
+    }
+    @-o-keyframes menu-move {
+      from { -o-transform: translateY(-200px); }
+      to { -o-transform: translateY(0); }
+    }
+    @keyframes menu-move {
+      from { transform: translateY(-200px); }
+      to { transform: translateY(0); }
+    }
+    
+    @-webkit-keyframes button-glow {
+	  0%   { color: #333; background-color: #cdcdbd; }
+	  50%  { color: #fff; background-color: #666; }
+	  100% { color: #333; background-color: #cdcdbd; }  
+    }
+    @-moz-keyframes button-glow {
+	  0%   { color: #333; background-color: #cdcdbd; }
+	  50%  { color: #fff; background-color: #666; }
+	  100% { color: #333; background-color: #cdcdbd; }	  
+    }
+    @-ms-keyframes button-glow {
+	  0%   { color: #333; background-color: #cdcdbd; }
+	  50%  { color: #fff; background-color: #666; }
+	  100% { color: #333; background-color: #cdcdbd; }	  
+    }
+    @-o-keyframes button-glow {
+	  0%   { color: #333; background-color: #cdcdbd; }
+	  50%  { color: #fff; background-color: #666; }
+	  100% { color: #333; background-color: #cdcdbd; }	  
+    }
+    @keyframes button-glow {
+	  0%   { color: #333; background-color: #cdcdbd; }
+	  50%  { color: #fff; background-color: #666; }
+	  100% { color: #333; background-color: #cdcdbd; }  
+    }
+    
+   
+    @-ms-keyframes panel-button-glow {
+	  0%   { color: #ccc; background-color: #000; }
+	  50%  { color: #fff; background-color: #666; }
+    }
+    @keyframes panel-button-glow {
+	  0%   { color: #ccc; background-color: #000; }
+	  50%  { color: #fff; background-color: #666; }
+    }
+    @keyframes panel-button-glow {
+	  0%   { color: #ccc; background-color: #000; }
+	  50%  { color: #fff; background-color: #666; }
+    }
+ 
+ .wrapper_topnav {
+    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.4);
+    height: 2.5em;
+    text-align: center;
+    width: 100%;
+    z-index: 777;
+ }
+.topnav {
+      display: block;
+      border-left: 1px solid #ccc;
+      z-index: 888;
+      padding: 0;
+      text-align: left;
+      position: static;
+      background: rgba(51, 51, 51, 0.4);
+}
+.chrome .topnav {
+    width: 100%;
+}
+.dropdown {
+      float: left;
+      background: #fff;
+      border: 1px solid #999;
+      padding: 1px 0 0 1px;
+      margin: 0;
+      z-index: 100;
+}
+.dropdown a,
+.dropdown a:visited {
+	display: block;
+	height: calc(2.5em - 3px);
+	border: 1px solid #fff;
+	border-top-width: 0;
+	color: #333;
+	line-height: 2em;
+	overflow: hidden;
+	text-decoration: none;
+	background: -webkit-linear-gradient(top,rgba(255,255,255,0),rgba(205,205,189,0.4) 70%);
+        background: -moz-linear-gradient(top,rgba(255,255,255,0),rgba(205,205,189,0.4) 70%);
+        background: -ms-linear-gradient(top,rgba(255,255,255,0),rgba(205,205,189,0.4) 70%);
+        background: -o-linear-gradient(top,rgba(255,255,255,0),rgba(205,205,189,0.4) 70%);
+        background: linear-gradient(top,rgba(255,255,255,0),rgba(205,205,189,0.4) 70%);
+        background-color: #cdcdbd;
+        box-shadow: inset 0 -10px 25px rgba(0,0,0,0.4);
+        text-shadow: 1px 1px -1px rgba(255,255,255,0.4);
+}
+.dropdown a:hover,
+.dropdown a:focus {
+	color: #fff;
+	background-color: #666;
+	text-shadow: 1px 1px -1px rgba(255,255,255,0.4);
+        
+        -webkit-animation-name: button-glow;
+        -moz-animation-name: button-glow;
+        -ms-animation-name: button-glow;
+        -o-animation-name: button-glow;
+        animation-name: button-glow;
+        
+        -webkit-animation-duration: 2s;
+        -moz-animation-duration: 2s;
+        -ms-animation-duration: 2s;
+        -o-animation-duration: 2s;
+        animation-duration: 2s;
+        
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -ms-animation-iteration-count: infinite;
+        -o-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+        -ms-animation-timing-function: linear;
+        -o-animation-timing-function: linear;
+        animation-timing-function: linear;
+}
+.dropdown a:active {
+        box-shadow: inset 3px 3px 10px rgba(205,205,189,0.7), inset 0 -10px 25px rgba(205,205,189,0.4);
+}
+.dropdown ul {
+	position: absolute;
+	top: 2.0em;
+	left: -1px;
+	display: none;
+	background: #fff;
+	border: 1px solid #999;
+	border-top-width: 0;
+	z-index: 9999;
+	margin: 0;
+	padding: 0;
+}
+.dropdown ul a {
+	background: #eee;
+	padding: 0 0 0 5px;
+}
+.dropdown li {
+	list-style: none;
+	position: relative;
+	text-align: left;
+	width: 7.2em;
+	margin: 0;
+	font-size: 1em;
+}
+.dropdown li.dropdown_trigger ul li {
+	height: 2em;
+	border-bottom: 1px solid #999;
+}
+.dropdown li li a {
+	font-size: 1em;
+	height: 2em;
+	line-height: 2em;
+}
+.dropdown li.dropdown_trigger {
+	display: inline;
+	float: left;
+	margin: 0 0 0 -1px;
+	text-align: center;
+}
+.dropdown li.dropdown_trigger:hover ul {
+	display: block;
+}
+
+/* Rounded Corners */
+.dropdown li.dropdown_trigger ul,
+.dropdown li.dropdown_trigger ul li:last-child a {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.topnavpanel {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.topnavpanel .dropdown a,
+.topnavpanel .dropdown a:visited {
+	display: block;
+	height: 2em;
+	border: 1px solid #fff;
+	border-top-width: 0;
+	color: #ccc;
+	line-height: 2em;
+	overflow: hidden;
+	text-decoration: none;
+        background-color: #000;
+        box-shadow: inset 0 -10px 25px rgba(0,0,0,0.4);
+        text-shadow: 1px 1px -1px rgba(255,255,255,0.4);
+}
+.topnavpanel .dropdown a:hover,
+.topnavpanel .dropdown a:focus {
+	color: #fff;
+	background-color: #666;
+	text-shadow: 1px 1px -1px rgba(255,255,255,0.4);
+        
+        -webkit-animation-name: panel-button-glow;
+        -moz-animation-name: panel-button-glow;
+        -ms-animation-name: panel-button-glow;
+        -o-animation-name: panel-button-glow;
+        animation-name: panel-button-glow;
+        
+        -webkit-animation-duration: 2s;
+        -moz-animation-duration: 2s;
+        -ms-animation-duration: 2s;
+        -o-animation-duration: 2s;
+        animation-duration: 2s;
+        
+        -webkit-animation-iteration-count: 1;
+        -moz-animation-iteration-count: 1;
+        -ms-animation-iteration-count: 1;
+        -o-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+        -ms-animation-timing-function: linear;
+        -o-animation-timing-function: linear;
+        animation-timing-function: linear;
+}
+.topnavpanel .dropdown a:active {
+        box-shadow: inset 3px 3px 10px rgba(153,153,153,0.7), inset 0 -10px 25px rgba(153,153,153,0.4);
+}
+.topnav_panel {
+  width: 100%;
+  height: calc(2.2em + 1px);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: fixed;
+  left:  0;
+  top:0;
+  z-index: 888;
+}
+.topnav_panel_movedown {
+     -webkit-animation-name: menu-move;
+    -moz-animation-name: menu-move;
+    -ms-animation-name: menu-move;
+    -o-animation-name: menu-move;
+    animation-name: menu-move;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+}
+.panel_logo {
+    background: #000;
+    float: left;
+    font-weight: bold;
+    height: 34px;
+    line-height: 34px;
+    margin: 0;
+    padding: 0 1em;
+    text-align: left;
+    z-index: 100;
+}
+.panel_logo span:first-child {
+    color: #e44d26;
+}
+.panel_logo span:last-child {
+    color: #fff;
+    font-size: 1em;
+}
+
+

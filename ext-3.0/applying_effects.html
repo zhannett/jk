@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>ExtJS - Bubbling and Custom Contest Menu</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />		
+		<link rel="stylesheet" type="text/css" href="resources/css/ext-all.css" /> <!-- 1 -->
+		<script type="text/javascript" src="adapter/ext/ext-base.js"></script> <!-- 2 -->
+		<script type="text/javascript" src="ext-all-debug.js"></script>
+		<script type="text/javascript"> // 3
+			Ext.BLANK_IMAGE_URL = 'resources/images/default/s.gif';
+			
+			Ext.onReady(function(){				
+				Ext.get('div7').on('click', function() {
+					this.fadeOut({
+						scope : this,
+						callback : function() {
+							this.fadeIn.defer(500, this);
+						}
+					});
+				});
+			});
+		</script>
+	</head>
+	
+	<body>		
+		<div id='div7' class="myDiv">
+			Click to fade me out
+		</div>
+	</body>
+</html>

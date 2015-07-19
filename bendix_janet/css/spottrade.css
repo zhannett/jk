@@ -1,0 +1,401 @@
+fieldset {
+	border: none;
+}
+fieldset ul {
+	list-style: none;
+	clear: both;
+}
+fieldset li {
+	float: left;
+	padding: 5px 10px 5px 0;	
+}
+label {
+	font-size: 0.9em;	
+}
+.first {
+	width: 130px;	
+}
+#tradedata2 label {
+	clear: both;
+}
+#tradedata2 select {
+	clear: both;	
+}
+.saved {
+	text-align: left;
+	padding: 1px 5px;
+	background-color: #e2e2e2;
+	border: 1px solid #bfbfbf;	
+}
+#savedFee {
+	width: 1px;
+	height: 1px;	
+}
+#beneficiary li {
+	width: auto;
+	display: inline;
+	margin: 0px;		
+},
+#trad
+#beneficiary select,
+#beneficiary input,
+#beneficiary div,
+#beneficiary span {
+	float: left;
+	display: inline;
+	margin: 0 10px;	
+}
+#savedBenNotes {
+	border: 1px solid #CCC;padding: 1px 2px;
+	width: 280px;
+	height: 25px;
+}
+#currency1,
+currency2 {
+	width: 35px;	
+}
+#rate {
+	float: left;
+	width: 120px;
+	height: 18px;
+}
+#amount1,
+#amount2,
+#origAmount,
+#remBalance,
+#disbAmount {
+	float: left;
+	width: 100px;	
+	height: 18px;
+}
+#tradedata1, #tradedata2 {
+	clear: both;
+	padding: 10px 0 30px 0;	
+}
+#tradedata2 li {
+	float: left;
+	padding: 0 7px;
+	margin: 0 0;	
+}
+
+#rate {
+	width: 100px;	
+}
+#title_progressbar,
+.title {
+	background: #666;
+	height: 25px;
+	padding: 5px;
+	clear: both;
+}
+.title h2 {
+	float: left;
+	width: 300px;
+	display: inline;
+	margin: 0;
+	padding: 0 0 0 5px;	
+}
+.title2 h2 {
+	float: left;
+	width: 500px;
+	display: inline;
+	margin: 0;
+	padding: 0 0 0 5px;	
+}
+.title span {
+	width: 400px;
+	float: right;
+	clear: right;
+	padding-right: 10px;
+	text-align: right;
+	color: #fff;
+	font-size: 0.8em;
+}
+.title .ref {
+	width: 250px;
+	float: right;
+	clear: right;
+	padding-right: 10px;
+	text-align: right;
+	color: #fff;
+	font-size: 0.8em;
+}
+
+
+
+
+#title_progressbar h2 {
+	float: left;
+	width:200px;
+	display: inline;
+	margin: 0;
+	padding: 0 0 0 5px;	
+}
+#progressbar {
+	float: left;
+	width: 200px;
+	height: 20px;
+	text-align: right;
+	border: 1px solid #CCC;
+	margin-right: 10px;
+}
+#progressnum {
+	float: left;
+	width: 175px;
+	height: 20px;
+	text-align: right;
+	margin-right: 10px;
+	color: #fff;
+	font-size: 0.8em;
+}
+.ui-progressbar {height:2em; text-align: left; overflow: hidden; }
+.ui-progressbar .ui-progressbar-value {margin: -1px; height:100%; background: url(../img/pbar-ani.gif) }
+#recordsHead {
+	font-weight: bold;	
+}
+.buttons {
+	padding: 15px 0;
+	clear: both;
+	margin: auto;
+	text-align: center;
+}
+#order_grand_total {
+	
+}
+#recordsHead li {
+	border-bottom: 1px solid #333;	
+}
+.new_record {
+	list-style: none;	
+	clear: both; 
+	padding: 0;
+	font-size: 0.85em;
+	width: 100%;
+}
+.new_record li {
+	list-style: none;
+	float: left;
+	padding: 3px;
+	font-size: 0.85em;
+}
+.li_line {
+	width: 25px;
+	text-align: center;	
+	clear: left;
+}
+.li_ref {
+	width: 65px;
+	text-align: center;	
+}
+.li_date {
+	width: 60px; 
+	text-align: center;	
+}
+.li_action {
+	width: 35px;
+	text-align: center;	
+}
+.li_amount1,
+.li_amount2,
+.li_benAmount,
+.li_total {
+	width: 90px;
+	text-align: center;	
+}
+.li_currency1,
+.li_currency2 {
+	width: 60px;
+	text-align: center;	
+}
+.li_benProduct {
+	width: 50px;
+	text-align: center;	
+}
+.li_beneficiary {
+	width: 69px;
+	text-align: center;	
+}
+.li_rate {
+	width: 100px;
+	text-align: center;	
+}
+.li_fee {
+	width: 50px;
+	text-align: center;	
+}
+.li_status {
+	width: 40px;
+	text-align: center;		
+}
+.li_amend,
+li_approve {
+	width: 20px;
+	text-align: center;	
+}
+.li_info {
+	width: 20px;
+	text-align: center;	
+}
+.li_delete {
+	width: 20px;
+	text-align: center;	
+}
+#dialog-form fieldset {
+	border: none;
+	background-color: #CCC;	
+}
+#dialog-form li {
+	margin: 5px 0;
+	clear: both;
+	font-size: 1.0em;
+}
+#benAmountPop,
+#benAmountRemPop {
+	width: 120px;	
+}
+#savedBenNotesPop,
+#newBenNotesPop {
+	width: 280px;
+	overflow: scroll;
+}
+#beneficiaryBankInfo {
+	width: 700px;
+	height: 100px;	
+}
+#dialog-form,
+#dialog-remove {
+	display: none;	
+}
+ .ui-widget  {
+	font-size: 0.8em;	
+}
+#benAmountPop {
+	width: 100px;
+}
+#beneficiaryPop {
+	background: #CCC;	
+}
+#dialog-form {
+	background: #CCC;	
+}
+#grandtotal {
+	float: left; 
+	width: 150px;
+	height: 30px; 
+	text-align: right; 
+	padding: 0 10px;
+	color: #fff;	
+}
+#grandtotalCur2 {
+	float: left; 
+	width: 45px;
+	height: 30px; 
+	color: #fff;
+}
+#dialog-two-amounts {
+	display: none;
+	text-align: center;	
+}
+
+
+#dialog-info {
+	background-color: #e2e2e2;
+	display: none;
+}
+#dialog-info h2 {
+	clear: both;
+	background-color: #e2e2e2;
+	padding: 2px;
+	color: #333;
+}
+#dialog-info h2.left {
+	float: left; 
+	display: inline; 
+	width: 300px; 
+	clear: left;
+}
+#dialog-info ul {
+	list-style: none;
+	clear: both;
+}
+#dialog-info ul.vendor {
+	float: right; 
+	display: inline;
+	 width: 200px; 
+	 clear: right;
+}
+#dialog-info li {
+	float: left;
+	display: inline;
+	padding: 0 15px 0 0;
+	margin: 7px 0;
+}
+#dialog-info .first {
+	width: 135px;	
+}
+#dialog-info .shortinput {
+	width: 35px;	
+}
+#dialog-info .midinput {
+	width: 300px;	
+}
+#dialog-info .longinput {
+	width: 500px;	
+}
+#dialog-info .phoneinput {
+	width: 120px;	
+}
+#dialog-info .cityinput {
+	width: 120px;	
+}
+#dialog-info label {
+	padding-right: 5px;	
+}
+#dialog-info #btnExitWindow {
+	margin: 25px auto 0 auto;
+	clear: both;
+	text-align: center;
+}
+#dialog-info .intBanks {
+	padding-top: 10px;
+	border-top: 1px solid #ccc;
+}
+#dialog-info .center {
+	text-align: center;	
+}
+
+#topnav {
+	height: 28px;
+	clear: both;
+	background: url(../img/bg_topnav.png) repeat-x;
+}
+#topnav ul {
+	height: 28px;
+	list-style: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+#topnav li {
+	float: left;
+	display: inline;
+	height: 28px;
+	padding: 0 35px;
+	line-height: 28px;
+	
+}
+#topnav li a {
+	font-family:"Arial Black", Gadget, sans-serif;
+	color: #000;
+	text-decoration: none;	
+}
+#topnav li.active {
+	background: url(../img/bg_topnav_active.png) repeat-x;	
+}
+#topnav li.active a {
+	color: #fff;
+}
+button.prim {
+	background: #ad6666;	
+}

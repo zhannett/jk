@@ -1,0 +1,9 @@
+[09-Aug-2010 08:05:59] PHP Warning:  file_get_contents(http://www.sitepoint.com/blogs/category/news/feed/) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed!  in /home/janetkul/public_html/news/feed.php on line 3
+[16-Jun-2011 00:17:17] PHP Warning:  file_get_contents(http://www.sitepoint.com/blogs/category/news/feed/) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/janetkul/public_html/news/feed.php on line 3
+[17-Jun-2011 11:55:52] PHP Warning:  file_get_contents(http://www.sitepoint.com/blogs/category/news/feed/) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 404 Feed not found error: FeedBurner cannot locate this feed URI.
+ in /home/janetkul/public_html/news/feed.php on line 3
+[17-Jun-2011 18:32:46] PHP Warning:  file_get_contents(http://www.sitepoint.com/blogs/category/news/feed/) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 404 Feed not found error: FeedBurner cannot locate this feed URI.
+ in /home/janetkul/public_html/news/feed.php on line 3
+[19-Jun-2011 16:50:17] PHP Warning:  file_get_contents(http://www.sitepoint.com/blogs/category/news/feed/) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 404 Feed not found error: FeedBurner cannot locate this feed URI.
+ in /home/janetkul/public_html/news/feed.php on line 3

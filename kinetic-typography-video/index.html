@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>The Magic of CSS3</title>
+		<link href="http://fonts.googleapis.com/css?family=Loved+by+the+King" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/blp.css" />
+	</head>
+	<body>
+		<h1>The Magic of CSS3</h1>
+		<div id="instructions">
+			<p>Click on the stage below to play the song.</p>
+		</div>
+		<div id="layout">
+			<div class="verse" id="verse1">
+				<div class="line"><span>Your</span> <span>life</span> <span>was</span> <span>not</span> <span>complete</span></div>
+				<div class="line"><span>And</span> <span>for</span> <span>some</span> <span>reason</span> <span>I <strong>believed</strong></span></div>
+				<div class="line"><span>I</span> <span>could</span> <span>colour</span> <span>in</span> <span>your</span> <span>felt-tip</span> <span>tears</span> <span>with</span> <span>imagine</span> <span>stationery</span></div>
+				<div class="line"><span>So</span> <span>I</span> <span>cut</span> <span>around</span> <span>your</span> <span>lines</span></div>
+				<div class="line"><span>And</span> <span>I</span> <span>super</span><span>-</span><span>glued</span> <span>our</span> <span>lives</span></div>
+				<div class="line"><span>And</span> <span>if</span> <span>love</span> <span>is</span> <span>for</span> <span>the</span> <span>living</span> <span>baby</span></div>
+				<div class="line"><span>You</span> <span>must</span> <span>be</span> <span>alive</span></div>
+				<div class="line"><span>And</span> <span>I</span> <span>know</span> <span>I</span> <span>dream</span> <span>in</span> <span>colour</span> </div>
+				<div class="line"><span>But</span> <span>my</span> <span>life</span> <span>is</span> <span>black</span> <span>and</span> <span>white</span></div>
+				<div class="line"><span>It</span> <span>wasn't</span> <span>love</span> <span>...</span></div>
+				<div class="songtitle"></div>
+			</div>
+			<!--
+			<div class="verse" id="verse2">			
+				<div class="line"><span>And</span> <span>when</span> <span>I</span> <span>can't</span> <span>decide</span></div>
+				<div class="line"><span>I</span> <span>let</span> <span>you</span> <span>make</span> <span>up</span> <span>my</span> <span>mind</span></div>
+				<div class="line"><span>But</span> <span>our</span> <span>dictionary</span> <span>characters</span> <span>don't</span> <span>symbolise</span> <span>real</span> <span>life</span></div>
+				<div class="line"><span>And</span> <span>although</span> <span>I</span> <span>re-embraced</span></div>
+				<div class="line"><span>We</span> <span>represent</span> <span>the</span> <span>human</span> <span>race</span></div>
+				<div class="line"><span>It's</span> <span>a</span> <span>different</span> <span>relationship</span> <span>girl</span></div>
+				<div class="line"><span>Now</span> <span>you're</span> <span>out</span> <span>of</span> <span>place</span></div>
+				<div class="line"><span>And</span> <span>it</span> <span>hurts</span> <span>to</span> <span>let</span> <span>you</span> <span>go</span></div>
+				<div class="line"><span>but</span> <span>Honey</span> <span>now</span> <span>I</span> <span>realised</span></div>
+				<div class="line"><span>It</span> <span>wasn't</span> <span>love...</span></div>
+			</div>
+			<div class="verse" id="verse3">		
+				<div class="line"><span>To</span> <span>honour</span> <span>my</span> <span>mistake</span></div>
+				<div class="line"><span>Or</span> <span>perhaps</span> <span>for</span> <span>old</span> <span>times</span> <span>sake</span></div>
+				<div class="line"><span>I'll</span> <span>raise</span> <span>a glass,</span> <span>propose</span> <span>a</span> <span>toast</span></div>
+				<div class="line"><span>And</span> <span>down</span> <span>a</span> <span>few</span> <span>in</span> <span>your</span> <span>name</span></div>
+				<div class="line"><span>Then</span> <span>for</span> <span>one</span> <span>final</span> <span>time</span></div>
+				<div class="line"><span>I'll</span> <span>say</span> <span>I</span> <span>wish</span> <span>that</span> <span>you</span> <span>were</span> <span>mine</span></div>
+				<div class="line"><span>It</span> <span>wasn't</span> <span>love...</span></div>
+				<div class="line"><span>It</span> <span>wasn't</span> <span>love...</span></div>
+				<div class="line"><span>It</span> <span>wasn't</span> <span>love...</span></div>
+			</div>
+			-->
+			<div id="vignette"></div>
+		</div>
+		<audio id="song" autobuffer>
+			<source src="audio/loveisfortheliving.ogg" type="audio/ogg">
+			<source src="audio/loveisfortheliving.mp3" type="audio/mpeg" />
+		</audio>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+		<script src="js/blp.js"></script>
+	</body>
+</html>

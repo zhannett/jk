@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://m.janetkulyk.com/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://m.janetkulyk.com/index.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://m.janetkulyk.com/contact.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://m.janetkulyk.com/json-parsing.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://m.janetkulyk.com/window-screen.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://m.janetkulyk.com/ajax-support.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://m.janetkulyk.com/geolocation.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://m.janetkulyk.com/google-maps.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://m.janetkulyk.com/marquee.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://m.janetkulyk.com/border-images.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://m.janetkulyk.com/stroke-fill.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://m.janetkulyk.com/gradients.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://m.janetkulyk.com/reflections-masked.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://m.janetkulyk.com/animation.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+</urlset>

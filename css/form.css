@@ -1,0 +1,32 @@
+form {font-family: Arial; font-size: 14px; width: 300px}	
+fieldset {border: 1px solid #CCC; margin-bottom: 10px}	
+fieldset.login input {width: 125px}	
+legend {font-weight: bold; font-size: 1.1em}	
+label {display: block; width: 60px; text-align: right; float: left; padding-right: 10px; margin: 5px 0}	
+input {margin: 5px 0}	
+input.text {padding: 0 0 0 3px; width: 172px}	
+input.submit {margin: 15px 0 0 70px}
+
+ul.errors {list-style:none; background:#FFCECE; padding:3px; margin: 3px 0 3px 70px; font-size:0.9em; width:165px}
+
+div.hover-wrap {position:relative; display:inline}
+div.hover-wrap input.invalid {border: 2px solid red}
+div.hover-wrap ul.errors {display:none}
+div.hover-wrap label.hover {position:absolute; top:-0.4em; left:5px; color:#999}
+
+label span.required {color:#F00}
+
+
+form {}
+legend {}
+fieldset {border: 1px solid #CCC; padding:20px; margin:20px 0; background-color:#E3E3E3}
+fieldset .textinput {width:60%; height:1.5em}
+fieldset p {clear:both}
+textarea {padding:10px}
+label {float:left; width:25%; text-align:right; padding-right:10px; font-size:110%}
+input {float:left; clear:right; margin:0 5px 10px 0}
+label.error {color:#F00; border:0}	
+#register fieldset, #login fieldset, #forgot_password fieldset, #change_password fieldset {width:92%}	
+#register form p, #login form p {margin-bottom:1.5em}
+.form_forum label {float:left; width:70px; text-align:left; padding-right:10px; font-size:120%}	
+#lang input {width:80%}

@@ -1,0 +1,22 @@
+[
+	{
+		"date" : "02/01 @ 2100BDX",
+		"title" : "Here is BENDIX News #1",
+		"url" : "http://www.yahoo.com"
+	},
+	{
+		"date" : "02/02 @ 2000BDX",
+		"title" : "Here is BENDIX News #2",
+		"url" : "http://www.cbc.ca"
+	},
+	{
+		"date" : "02/03 @ 1900BDX",
+		"title" : "Here is BENDIX News #3",
+		"url" : "http://www.foxnews.com"
+		},
+	{
+		"date" : "02/04 @ 1800BDX",
+		"title" : "Here is BENDIX News #4",
+		"url" : "http://www.sitepoint.com"
+	}
+]

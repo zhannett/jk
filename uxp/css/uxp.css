@@ -1,0 +1,595 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	color: #333;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end reset.css */
+
+
+html {
+	/*overflow: -moz-scrollbars-vertical;*/
+	overflow-y: scroll;
+}
+
+body {
+	text-align: center;	
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* links start */
+	a {
+		color: #fbb03b;
+		font-size: 0.9em;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	a:visited {}
+	a:active {}
+/* links end */
+
+
+/* layout start */
+	.page{
+		width: 1008px;
+		margin: 0 auto;
+		text-align: left;
+		vertical-align: top;
+	}
+	.colleft {
+		float:left;
+		width: 162px;
+		padding-left: 30px;
+	}
+	.colright {
+		float: right; 
+		width: 816px;
+		padding-bottom: 35px;
+	}
+	.colrightcontainer {
+		width: 716px;
+		padding-left: 32px;
+	}
+	.content {
+		margin: 10px 0;
+		clear: both;
+	}
+	p {
+		font-size: 0.8em;
+		line-height: 125%;
+		padding-bottom: 20px;
+	}
+	p.intro {
+		padding:0;
+		margin: 0;
+		color: #000;
+		font-weight: bold;	
+	}
+	p.first {
+		margin-top: 20px;	
+	}
+	p.right {
+		float: right;
+		clear: both;	
+	}
+	.photo {
+		float: left;
+		width: 125px;
+		clear: left;
+		padding-top: 10px;		
+	}
+	
+		/*  header start */
+		.header {
+			height: 130px;
+			margin: 0;
+			padding:0;
+			clear: both;
+		}
+		.logo_extended {
+			display: block;
+			float: left;
+			width: 197px;
+			height: 90px;
+			clear: left;
+			background: url(../img/logo_extended.png) no-repeat;
+			margin: 20px 0 5px 0;
+		}
+		.theheader {
+			float: left;
+			clear: right;
+			width: 810px;
+		}
+		.motto {
+			float: right;;
+			width: 450px;
+			color: #aa610a;
+			text-align: right;
+			padding: 20px 0 0 0;
+			font-family: Georgia, "Times New Roman", Times, serif;
+			font-size: 1.5em;
+			font-style: italic;
+		}
+		.bottomheader {
+			height: 60px; 
+			clear: both;	
+		}
+				/* top navigation start */
+				#topnav {
+					float: left;
+					height: 60px;
+					margin: 20px 0;
+				}
+				#topnav li {
+					height: 60px;
+					display: inline; /* just for horizontsl nsvigstion */
+					margin: 0;
+					padding: 0;
+					border: 0;
+					list-style-type: none;
+					background: url(../img/nav_normal.png) repeat-x;
+				}
+				#topnav a {
+					line-height: 60px;
+					color: #333;
+					padding: 0 27px;
+					background: transparent;
+					text-decoration: none;
+					display: inline-block;
+					background: url(../img/nav_normal.png) repeat-x;
+				}
+				#topnav a:hover {
+					background: url(../img/nav_hover.png) repeat-x;
+					color: #000;
+				}
+				body.home #topnav .home a,
+				body.solutions #topnav .solutions a,
+				body.news #topnav .news a,
+				body.careers #topnav .careers a,
+				body.contactus #topnav .contactus a
+				{
+					background: url(../img/nav_hover.png) repeat-x;
+					color: #000;
+				}
+			/* top navigation end  */
+		/*  header end */
+		
+		/* sidenav start  */
+			#sidenav {
+				list-style-image: url(../img/sidenav_li.png);
+			}
+			#sidenav li{
+				width: 135px;
+				font-size: 0.8em;
+				list-style-position: outside;
+				padding-bottom: 12px;
+				margin-left: 15px;
+				line-height: 125%;
+			}
+			#sidenav li a {
+				color: #666;
+			}
+			#sidenav li a:hover {
+				color: #fbb03b;
+			}
+		/*  sidenav end  */
+		
+		/*  social start */
+			#social {
+				float: right;
+				display: block;
+				width: 180px;
+				height: 20px;
+				padding: 5px 0;
+				clear: both;
+			}
+			#social_home {
+				float: right;
+				width: 300px;
+				height: 20px;
+				display: block;
+				padding: 5px 25px 0 0;
+				position: relative; 
+				text-align: right;
+				position: relative;
+				top: -50px;
+			}
+			#social .social_txt {
+				float: left;
+				width: 80px;
+				clear: left;
+				font-size: 0.75em;
+				color: #666;
+				position: relative; 
+				top: 5px;
+			}
+			#social_home .social_txt {
+				font-family: 'Arial Black', Arial, Helvetica, sans-serif;
+				font-size: 1.1em;
+				float: left;
+				text-align: left;
+				width: 150px;
+				clear: left;
+				color: #000;
+			}
+			#social ul {
+				display: inline;
+				margin: 6px auto;
+				width: 100px;
+				text-align: center;
+			}
+			#social_home ul {
+				display: inline;
+				margin: 6px auto;
+				width: 120px;
+				text-align: center;
+			}
+			#social ul li {
+				float: left;
+				padding: 0 2px;
+				display: inline;
+			}
+			#social_home ul li {
+				float: left;
+				padding: 0 10px;
+				display: inline;
+			}
+			.twitter {
+				display: block;
+				width: 25px;
+				height: 25px;
+				background:url(../img/twitter.png) no-repeat;	
+			}
+			.linkedin {
+				display: block;
+				width: 25px;
+				height: 25px;
+				background:url(../img/linkedin.png) no-repeat;	
+			}
+			.facebook {
+				display: block;
+				width: 32px;
+				height: 32px;
+				background:url(../img/facebook.png) no-repeat;	
+			}
+			.twitter_home {
+				display: block;
+				width: 32px;
+				height: 32px;
+				background:url(../img/twitter_home.png) no-repeat;	
+			}
+			.linkedin_home {
+				display: block;
+				width: 32px;
+				height: 32px;
+				background:url(../img/linkedin_home.png) no-repeat;	
+			}
+			.facebook_home {
+				display: block;
+				width: 25px;
+				height: 25px;
+				background:url(../img/facebook_home.png) no-repeat;	
+			}
+		/*  social end */
+	
+		/* footer start */
+			#footer {
+				height: 27px;
+				text-align: center;
+				margin: 10px 0 40px 0;
+				padding-top: 15px;
+				border-top: 1px solid #CCC;
+				clear: both;
+			}
+			#footer .legal {
+				font-size: 0.8em;
+				color: #666;
+			}
+			#footer ul {
+				margin: 0 auto;
+				width: 200px;
+			}
+			#footer ul li {
+				float: left;
+				padding: 5px 15px;
+			}
+			#bottomnav a {
+				color: #333;
+				text-decoration: none;
+			}
+			 #bottomnav a:hover {
+				text-decoration: underline;
+			}
+		/* footer end */
+/* layout end */
+
+/* generic classes start */
+	.strong {
+		height: 25px;
+		font-size: 0.9em;
+		font-weight: bold;	
+	}
+	.orange {
+		color: #f7941e;
+		font-weight: bold;
+	}
+	.error {
+		font-size: 0.8em;
+		color: #F7941E;
+		clear: both;
+	}
+	.success {
+		font-size: 0.9em;
+		font-weight: bold;
+		color: #f7941e;
+		clear: both;
+	}
+	.error span {
+		font-size: 0.8em;
+		color: #F7941E;
+		text-align: right;
+		clear: both;
+	}
+	.attention {
+		color: #aa610a;
+		font-weight: bold;
+	}
+	.system_message {
+		color: #aa610a;
+		font-weight: bold;
+		padding: 50px;
+		margin-left: 150px;
+	}
+/* generic classes end  *?
+
+/* fonts, colors start */
+	h1, h2, h3 {
+		font-family: 'Arial Black', Arial, Helvetica, sans-serif;
+		color: #FBB03B;
+		display: block
+	}
+	h1 {
+		font-size: 1.8em;
+		padding-left: 40px;
+	}
+	h1 span {
+		color: #000;
+	}
+	h2 {
+		font-size: 1.6em;
+		text-transform: uppercase;
+	}
+	h4 {
+		font-size: 0.8em;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+/* fonts, colors end */
+
+/* Home page start  */
+	#rotator {
+		width: 990px;
+		height: 385px;
+		background-color: #CCC;
+		text-align: center;
+		margin: 0 auto;
+	}
+	#newsboxes {
+		height: 150px;
+		clear: both;	
+	}
+	.exp, .newsbox, .hiring {
+		float: left;
+		width: 300px;
+		height: 105px;
+		padding: 15px;
+	}
+	.newsbox {
+		border-left: 1px solid #E2E2E2;	
+		border-right: 1px solid #E2E2E2;
+	}
+	.news {
+		margin: 0 10px;	
+	}
+	p.newsboxinfo {
+		width: 260px;
+		line-height: 120%;
+		font-size: 0.8em;
+		padding: 15px 0 10px 25px;
+	}
+	p.readmore {
+		padding-left: 25px;	
+	}
+/* Home page end  */
+
+
+/* Solutions page start  */
+	
+	.solutions h3 {
+		font-weight: bold;
+		font-size: 0.95em;
+		padding: 20px 0 0 0;	
+	}
+	.solutions .content ul {
+		list-style-image: url(../img/contentlist_li.png);
+		margin-left: 15px;
+	}
+	.solutionslist li {
+		list-style-image: url(../img/contentlist_li.png);
+		padding-top: 15px;
+		margin-left: 20px;	
+	}
+	.solutions .content ul li ul {
+		list-style: circle;
+	}
+	#platform ul {
+		list-style: disc;
+		margin-left: 15px;
+	}
+	#platform ul li {
+		padding: 10px 0 0 0;
+	}
+	#platform ul li ul {
+		padding: 5px 0;
+		list-style: circle;
+	}
+	#platform ul li ul li{
+		padding: 5px 0;
+		font-size: 0.9em;
+	}
+	#solutionslink, #discoverylink, #platformlink, #integrationlink, #identitylink, #cloudlink, #careerslink, #careerlink1, #careerlink2, #news1link, #news2link, #news3link, #missionlink, #exelink, #investorslink {
+		cursor: pointer;
+	}
+	#solutions, #discovery, #platform, #integration, #identity, #cloud, #careers, #career1, #career2, #news1, #news2, #news3, #mission, #exe, #investors {
+		display: none;
+	}
+/* Solutions page end  */
+
+/* Careers page start  */
+	#openings h3 {
+		font-size: 1.2em;
+		font-weight: bold;
+		padding: 10px 0;
+		clear: both;
+	}
+	#openings h4 {
+		font-weight: bold;
+		text-decoration: underline;
+		padding: 25px 0 10px 0;
+		clear: both;
+	}
+	#openings ul {
+		list-style: outside;
+		padding: 0 0 0 15px;
+	}
+	#openings li {
+		font-size: 0.9em;
+		line-height: 140%;
+		padding: 5px;
+	}
+	#openings p {
+		padding: 5px 0;
+	}
+	#openings ul.details {
+		clear: both;
+		list-style: none;
+		padding: 0;
+		margin:0;
+	}
+	#openings ul.details li {
+		float: left;
+		padding: 0 200px 0 0;
+		margin: 0 0 0 0;
+		list-style: none;
+		font-weight: bold;
+	}
+	#uploadresume label{
+		width: 150px;
+		text-align: right;
+		padding: 5px 10px 0 0;
+	}
+	
+	#userfile {
+		border: 1px solid #CCC;	
+	}
+	#btn_upload {
+		margin: 35px 0 0 160px;	
+	}
+/* Careers page end  */
+
+
+/* Forms start */
+	form {
+		margin: 30px 0;
+	}
+	fieldset {
+		border: 1px solid #CCC;
+		padding: 25px;
+		-moz-border-radius: 10px;
+	   -webkit-border-radius: 10px;
+	   border-radius: 10px;
+	}
+	label {
+		float: left;
+		width: 150px;
+		padding-left: 50px;
+		font-size: 0.9em;	
+	}
+	form li {
+		padding: 10px;
+	}
+	#fullname, #email {
+		width: 215px;	
+	}
+	#com
+	#download_form fieldset {
+		width: 550px;
+	}
+	#download_form p {
+		padding-left: 130px;	
+	}
+	.mand {
+		font-size: 0.8em;
+	}
+/* Forms end */
+
+.title_solutions {
+	width: 420px;
+	height: 22px;
+	margin-left: 30px;
+	background:url(../img/title_solutions.png) no-repeat;
+	display: block;	
+}
+.title_bar {
+	width: 100%;
+	height: 5px;
+	background:url(../img/title_bar.png) repeat-x;
+	margin: 10px 0 40px 0;	
+}
+
+.underheader {
+	width: 100%; 
+	height: 5px;
+	position: relative; 
+	top: 105px; 
+	background:url(../img/end.png) 0 0 repeat-x;
+	z-index: -1;
+}

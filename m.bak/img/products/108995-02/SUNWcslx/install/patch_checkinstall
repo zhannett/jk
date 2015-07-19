@@ -1,0 +1,68 @@
+# checkinstall script to validate backing out a patch.
+# directory format option.
+#
+#       @(#)patch_checkinstall 1.3 01/01/11 SMI
+#
+# Copyright (c) 1995 by Sun Microsystems, Inc.
+# All rights reserved
+#
+
+PATH=/usr/sadm/bin:$PATH
+
+LATER_MSG="PaTcH_MsG 6 ERROR: A later version of this patch is applied."
+NOPATCH_MSG="PaTcH_MsG 2 ERROR: Patch number $ACTIVE_PATCH is not installed"
+NEW_LIST=""
+
+# Get OLDLIST
+. $1
+
+#
+# Confirm that the patch that got us here is the latest one installed on
+# the system and remove it from PATCHLIST.
+#
+Is_Inst=0
+Skip=0
+active_base=`echo $ACTIVE_PATCH | nawk '
+	{ print substr($0, 1, match($0, "-")-1) } '`
+active_inst=`echo $ACTIVE_PATCH | nawk '
+	{ print substr($0, match($0, "-")+1) } '`
+for patchappl in ${OLDLIST}; do
+	appl_base=`echo $patchappl | nawk '
+		{ print substr($0, 1, match($0, "-")-1) } '`
+	if [ $appl_base = $active_base ]; then
+		appl_inst=`echo $patchappl | nawk '
+			{ print substr($0, match($0, "-")+1) } '`
+		result=`expr $appl_inst \> $active_inst`
+		if [ $result -eq 1 ]; then
+			puttext "$LATER_MSG"
+			exit 3
+		elif [ $appl_inst = $active_inst ]; then
+			Is_Inst=1
+			Skip=1
+		fi
+	fi
+	if [ $Skip = 1 ]; then
+		Skip=0
+	else
+		NEW_LIST="${NEW_LIST} $patchappl"
+	fi
+done
+
+if [ $Is_Inst = 0 ]; then
+	puttext "$NOPATCH_MSG"
+	exit 3
+fi
+
+#
+# OK, all's well. Now condition the key variables.
+#
+echo "PATCHLIST=${NEW_LIST}" >> $1
+echo "SUNW_PATCHID=" >> $1
+echo "PATCH_INFO_$ACTIVE_PATCH=backed out" >> $1
+
+# remove the used parameters
+echo "ACTIVE_OBSOLETES=" >> $1
+echo "SUNW_OBSOLETES=" >> $1
+
+exit 0
+

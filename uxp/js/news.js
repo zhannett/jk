@@ -1,0 +1,18 @@
+﻿$('#news2').css('display','none');
+$('#news3').css('display','none');
+$('#news1').css('display','block');
+$('#news1link').click(function(){
+	$('#news2').css('display','none');
+	$('#news3').css('display','none');
+	$('#news1').css('display','block');
+});
+$('#news2link').click(function(){
+	$('#news1').css('display','none');
+	$('#news3').css('display','none');
+	$('#news2').css('display','block');
+});
+$('#news3link').click(function(){
+	$('#news1').css('display','none');
+	$('#news2').css('display','none');
+	$('#news3').css('display','block');
+});

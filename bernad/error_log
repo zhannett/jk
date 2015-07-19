@@ -1,0 +1,16 @@
+[09-Jul-2011 17:57:50] PHP Warning:  Division by zero in /home/janetkul/public_html/bernad/personality.php on line 15
+[09-Jul-2011 17:57:50] PHP Warning:  include(incphp) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/janetkul/public_html/bernad/personality.php on line 15
+[09-Jul-2011 17:57:50] PHP Warning:  include(incphp) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/janetkul/public_html/bernad/personality.php on line 15
+[09-Jul-2011 17:57:50] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'incphp' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/janetkul/public_html/bernad/personality.php on line 15
+[09-Jul-2011 17:58:05] PHP Warning:  Division by zero in /home/janetkul/public_html/bernad/personality.php on line 15
+[09-Jul-2011 17:58:06] PHP Warning:  include(incphp) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/janetkul/public_html/bernad/personality.php on line 15
+[09-Jul-2011 17:58:06] PHP Warning:  include(incphp) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/janetkul/public_html/bernad/personality.php on line 15
+[09-Jul-2011 17:58:06] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'incphp' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/janetkul/public_html/bernad/personality.php on line 15
+[09-Jul-2011 17:58:08] PHP Warning:  Division by zero in /home/janetkul/public_html/bernad/personality.php on line 15
+[09-Jul-2011 17:58:08] PHP Warning:  include(incphp) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/janetkul/public_html/bernad/personality.php on line 15
+[09-Jul-2011 17:58:08] PHP Warning:  include(incphp) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/janetkul/public_html/bernad/personality.php on line 15
+[09-Jul-2011 17:58:08] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'incphp' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/janetkul/public_html/bernad/personality.php on line 15
+[09-Jul-2011 17:58:10] PHP Warning:  Division by zero in /home/janetkul/public_html/bernad/personality.php on line 15
+[09-Jul-2011 17:58:10] PHP Warning:  include(incphp) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/janetkul/public_html/bernad/personality.php on line 15
+[09-Jul-2011 17:58:10] PHP Warning:  include(incphp) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/janetkul/public_html/bernad/personality.php on line 15
+[09-Jul-2011 17:58:10] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'incphp' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/janetkul/public_html/bernad/personality.php on line 15

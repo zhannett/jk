@@ -1,0 +1,26 @@
+@charset "UTF-8";
+h1 {
+	border-top: 1px solid #cf4f15;
+	border-bottom: 1px solid #cf4f15;
+}
+h2 {
+	margin: 0 auto;
+	padding-top: 0;
+	color: #cf4f15;
+}
+p {
+	margin: 2px;
+	line-height: 1.2em;
+}
+li {
+	margin: 2px 0 2px 15px;
+}
+#map_canvas {
+	width: 100px;
+	height: 100px;
+	margin: 5px auto;
+}
+ol, ul {
+	margin: 5px 0 0 5px;
+	padding: 0 0 0 10px;
+}

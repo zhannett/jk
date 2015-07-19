@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    	<title>Untitled Document</title>
+        <style type="text/css">
+			ul {
+				margin: 20px;
+			}
+			#nav li {
+				display: inline; /* just for horizontsl nsvigstion */
+				margin: 0;
+				list-style-type: none;
+			}
+			#nav a {
+				color: #333;
+				padding: 5px 10px 4px;
+				background: #eee;
+				text-decoration: none;
+				display: inline-block;
+			}
+			#nav a:hover {
+				background: #aaa;
+				color: #fff;
+			}
+			body.home #nav .home a,
+			body.about #nav .about a,
+			body.blog #nav .blog a,
+			body.contact #nav .contact a
+			{
+				background: #f00;
+				color: #fff;
+			}
+		</style>
+    </head>
+    
+    <body class="about">
+    	<ul id="nav">
+        	<li class="home"><a href="/home">Home</a></li>
+            <li class="about"><a href="/about">About</a></li>
+            <li class="blog"><a href="/blog">Blog</a></li>
+            <li class="contact"><a href="/contact">Contact</a></li>
+        </ul>
+    </body>
+</html>

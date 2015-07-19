@@ -1,0 +1,75 @@
+/* CSS Mobile Reset */
+html, body, p, ul, ol, li , div {
+	margin: 0;
+	padding: 0; 
+	border: 0;
+	color: #000;
+	background: #fff;
+	word-wrap: break-word;
+}
+body {
+	font-size: 100%;
+	line-height: 150%;
+}
+img { 
+	border: 0; 
+	max-width: 100%; 
+}
+table { 
+	width:auto;
+	border-collapse: collapse;
+	border-spacing: 0; 
+}	
+/* end reset */
+
+h1, h2 {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+h1 {
+	padding: 8px 20px;
+	background-color: #C00;
+	color: #FFF;
+	border-top: 6px solid #500;
+	border-bottom: 6px solid #500;
+}
+h2 {
+	text-align: center;
+	color: #C00;
+	margin: 15px auto;
+}
+p {
+	text-align: left;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	word-wrap: break-word;
+	padding: 5px;
+}
+.par {
+	padding: 5px;
+}
+ol, ul {
+	margin: 0 0 0 5px;
+	padding: 0 0 0 20px;
+}
+a {
+	text-decoration: underline;
+	cursor: pointer;
+}
+a:link {
+   color: black;	
+}
+a:visited {
+   color: green;	
+}
+a:focus {
+   color: yellow;	
+}
+a:active {
+   color: blue;	
+}
+a:hover {
+   color: red;	
+}

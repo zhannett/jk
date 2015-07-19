@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>JavaScript: an interactive pie chart | .net Magazine, issue 204, august 2010</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css"></link>
+    </head>
+    <body>
+        <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js' : 'js');</script>
+        <h1><span>JavaScript</span> an interactive pie chart</h1>
+        <div id="pie"></div>
+        <table>
+            <caption>Browser usage statistics on thecssdiv.co.uk</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Browser</th>
+                    <th scope="col">Users</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total</th>
+                    <td>10150</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr class="cat1">
+                    <th scope="row"><span>Internet Explorer 6</span></th>
+                    <td>2500</td>
+                </tr>
+                <tr class="cat2 alt">
+                    <th scope="row"><span>Firefox</span></th>
+                    <td>2400</td>
+                </tr>
+                <tr class="cat3">
+                    <th scope="row"><span>Safari</span></th>
+                    <td>2100</td>
+                </tr>
+                <tr class="cat4 alt">
+                    <th scope="row"><span>Internet Explorer 7</span></th>
+                    <td>1200</td>
+                </tr>
+                <tr class="cat5">
+                    <th scope="row"><span>Internet Explorer 8</span></th>
+                    <td>1100</td>
+                </tr>
+                <tr class="cat6 alt">
+                    <th scope="row"><span>Crawler/Search engine</span></th>
+                    <td>400</td>
+                </tr>
+                <tr class="cat7">
+                    <th scope="row"><span>Mozilla</span></th>
+                    <td>200</td>
+                </tr>
+                <tr class="cat8 alt">
+                    <th scope="row"><span>Opera</span></th>
+                    <td>200</td>
+                </tr>
+                <tr class="cat9">
+                    <th scope="row"><span>Other</span></th>
+                    <td>50</td>
+                </tr>
+            </tbody>
+        </table>
+        <p id="no_js"><strong>You are viewing this page with JavaScript disabled.</strong> While you can see that the content still makes perfect sense if you do turn it on you'll be able to experience the full functionality that this example was created to demonstrate.</p>
+        <div id="aside">
+            <h2 class="first">What's all this then?</h2>
+            <div>
+                <p>This is the code sample for the article on creating an interactive pie chart with Raphaël written for issue 204 of .net Magazine (August 2010).</p>
+                <p>Raphaël is a lightweight JavaScript library used to create <abbr title="Scalable Vector Graphics">SVG</abbr> (or <abbr title="Vector Markup Language">VML</abbr> for <abbr title="Internet Explorer">IE</abbr> users) which can be used to produce interactivity previously only created via Flash or Flex applications and therefore opening the doors to a whole new realm of cross-platform solutions.</p>
+                <p>This code is fully commented and can be used alongside the article for a step-by-step guide on how this has been created.</p>
+                <h2>Useful links</h2>
+                <p>The article contains reference to a number of useful links, please find them below</p>
+                <ul>
+                    <li><a href="http://raphaeljs.com/">Raphaël website</a> - download the library, view the demos and read the documentation.</li>
+                    <li><a href="http://raphaeljs.com/reference.html">The full Raphaël documentation</a> - a direct link.</li>
+                    <li><a href="http://twitter.com/RaphaelJS/">Raphaël on Twitter</a> - follow for updates on new releases and features.</li>
+                    <li><a href="http://github.com/DmitryBaranovskiy/raphael/">Raphaël on Github</a> - view the upcoming changes and even contribute to the project.</li>
+                    <li><a href="http://groups.google.com/group/raphaeljs">Raphaël Google Group</a> - a good place to go for support and to hear what other people are doing with the library.</li>
+                    <li><a href="http://g.raphaeljs.com/">gRaphaël</a> - an existing Raphaël charting plugin</li>
+                    <li><a href="http://www.w3.org/TR/SVG/paths.html#PathData">W3C SVG Path documentation</a> - you'll need to know this rather well to be able to get the best out of Raphaël</li>
+                </ul>
+                <h2>About the author</h2>
+                <p class="vcard"><strong><a href="http://www.thecssdiv.co.uk" class="url fn">Ross Bruniges</a></strong> is a client-side engineer currently working at LBi, a large creative agency on Brick Lane in London. A long serving <a href="http://www.pubstandards.co.uk">Pub Standards</a> regular, Ross likes beer, fine dining, <a href="http://www.flickr.com/photos/thecssdiv/">taking pictures of fine dining</a>, <a href="http://www.youtube.com/user/theCSSdiv">making videos</a>, rap music and <a href="http://www.twitter.com/rossbruniges/">twittering</a> about all the above.<img class="photo" src="assets/img/avatar.jpg" width="100" height="100" alt="Ross and the pimp cup of win" /></p>
+            </div>
+        </div>
+        <script src="assets/js/libs/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/js/extra.js" type="text/javascript"></script>
+        <script src="assets/js/libs/raphael.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            /*
+            Raphaël plug-in to create a pie chart
+                cx - x position to place the chart
+                cy - y position to place the chart
+                r - radius for the chart
+                values - an array containing values for each section of the chart
+                total - the grand total for the chart - used to create percentages for each section of the chart
+            */
+            Raphael.fn.renderPie = function(cx,cy,r,values,total) {
+                                
+                /*
+                Variables for constant use inside of the plug-in
+                    canvas - a reference to the Raphaël object we're drawing the chart in
+                    radian - value used to calculate angles for each section of the chart
+                    chart - a Raphaël set in which we'll be storing a reference to the full chart
+                */               
+                var canvas = this, 
+                    radian = Math.PI / 180,
+                    chart = this.set();
+                    
+                /*
+                Function used to produce each node
+                    cx - center x coordinate
+                    cy - center y coordinate
+                    r - radius
+                    startAngle
+                    endAngle
+                    params - an object literal used for styling
+                */    
+                function createSlice(cx, cy, r, startAngle, endAngle, params) {
+                    var x1 = cx + r * Math.cos(-startAngle * radian),
+                        x2 = cx + r * Math.cos(-endAngle * radian),
+                        y1 = cy + r * Math.sin(-startAngle * radian),
+                        y2 = cy + r * Math.sin(-endAngle * radian);
+                    
+                    // returns a reference to the node that has just been created                            
+                    return canvas.path(["M", cx, cy, "L", x1, y1, "A", r, r, 0, +(endAngle - startAngle > 180), 0, x2, y2, "z"]).attr(params);
+                }
+                
+                /*
+                Few extra variables used to create each sections
+                    angle - the starting value for calculations of pie rotations
+                    process - a method that is used with each iteration of our data array to create sections and attach events
+                */
+                var angle = 90,
+                    process = function (j) {
+                        /*
+                        Variables to be used in each function call
+                            value - the numeric value held in each table row 
+                            angleplus - the percentage value of each section
+                            p - a reference to the node created for the section
+                        */
+                        var value = parseInt(values[j].spend, 10),
+                            angleplus = 360 * value / total,
+                            p = createSlice(cx, cy, r, angle - angleplus, angle, {fill: values[j].pieColour, stroke: "#FFF", "stroke-width": 2});
+                        
+                        // stashing a reference to the node in the global data array    
+                        values[j].slice = p;    
+
+                        // styling the node to highlight that it's interactive    
+                        p.attr("cursor", "pointer");
+                        // attaching the mouseover event to the node by triggering a mouseover on it's associated link in the data table
+                        p.mouseover(function() {
+                            values[j].anchor.trigger('mouseover');
+                        });
+                        
+                        // preparing the start angle for the next iteration            
+                        angle -= angleplus;
+                        // pushing reference to the node we've just created in the full Raphaël set
+                        chart.push(p);          
+                    };
+
+                // creating outer glow
+                canvas.circle(cx, cy, 135).attr({fill:"r#fff-#fff:96-#CCC", "stroke-width": 0});
+                
+                // creating each pie slice
+                for (var i = 0, ii = values.length; i < ii; i++) {
+                    process(i);
+                }
+
+                // inner glow (I admit this is a bit of a hack but it keeps it simple)
+                canvas.circle(cx, cy, 55).attr({fill:"r#fff-#fff:85-#CCC", "stroke-width": 2, "stroke": "#FFF"});
+                
+                // returning the whole set of nodes for interactions later
+                return chart;
+
+            };
+            
+            // creating a namespace for this code so that anything we create won't effect other JavaScript on the page
+            var dotNet = window.dotNet || {};
+            
+            /*
+            a function that parses the data contained in the data table, creates the Raphaël object we're drawing too and calls our Raphaël plug-in
+                $source - reference to the data source (an HTML table in this example)
+                $container - reference to the HTML element we're creating the chart inside
+            */    
+            dotNet.makePie = function($source, $container) {    
+
+                /*
+                few constannt variables for this function
+                    pieData - an empty array that will hold an object for each section
+                    totalSpend - the grand total of all the rows (calculated via code for greater accuracy)
+                */
+                var pieData = [],
+                    totalSpend = 0;
+                
+                // simple function to hightlight the active table row    
+                function actionRow(elm) {
+                    $source.find('tr.active').removeClass('active');
+                    elm.parents('tr').addClass('active');
+                }
+                
+                /* 
+                function to parse each table row, create HTML and attach events
+                    i - index of the iteraction
+                */
+                function prepare(i) {
+                    
+                    /*
+                    variables used for each call
+                        row - jQuery object of the current table row
+                        values - an empty object that will be filled with data and references associated with each row
+                        head - jQuery object used to reference the th of the current row
+                    */
+                    var row = $(this),
+                        values = {},
+                        head = row.find('th');
+
+                    // grabbing the numeric total for the row and assigning to values
+                    values.spend = row.find('td').text();
+                    // each pie slice will now be styled in a CSS file -keeping style where it should be other than in JavaScript
+                    values.pieColour = row.find('th span').css('borderLeftColor');
+
+                    // wrap span in an anchor for keyboard accessibility, assign to a var and push into the objects
+                    head.find('span').wrap("<a href='#'></a>");
+                    var trigger = head.find('a');
+                    // pushing a reference to the current anchor (used for triggering events against in our plug-in)
+                    values.anchor = trigger;          
+                    
+                    // attaching mouse and keyboard events to the anchor we've created    
+                    trigger.bind('mouseover focus', function() {
+                        // highlight the current row
+                        actionRow($(this));
+                        // reset all nodes to their original state
+                        pie.animate({'scale':[1, 1, 135, 140]});
+                        // fade out all nodes for extra emphasis on the current one
+                        pie.attr('opacity',0.5);
+                        // animate the seleceted node out a fratcion
+                        values.slice.animate({'scale': [1.1, 1.1, 135, 140]},500,'elastic');
+                        // set the opacity to 100%
+                        values.slice.attr('opacity', 1);
+                    });
+                    
+                    // we're not attaching anything here but just cancelling the event opposed to returning to the same page
+                    trigger.click(function() {
+                        return false;
+                    });
+                    
+                    // increase total value
+                    totalSpend += parseInt(values.spend, 10);
+
+                    // push values into the array for access later
+                    pieData.push(values);
+
+                }
+                
+                // iterate through each table row (only in the body)    
+                $source.find('tbody tr').each(prepare);
+                
+                // call the plugin to create the chart    
+                var pie = Raphael($container[0], 300, 300).renderPie(150, 150, 130, pieData, totalSpend);
+                
+                // attaching an event to the Raphaël set that fades all the slice back to full opacity
+                pie.mouseout(function() {
+                    pie.attr('opacity', 1);
+                });
+
+            };
+            // calling our makePie function on DOM ready
+            $(function() {
+                dotNet.makePie($('table'),$('#pie'));
+            });
+        </script>
+    </body>
+</html>

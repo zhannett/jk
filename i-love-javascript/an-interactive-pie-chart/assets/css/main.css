@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    color: #4C4C4C;
+}
+a {
+    text-decoration: none;
+}
+abbr {
+    cursor: help;
+}
+h1 {
+    background: #EFEFEF;
+    color: #7F7F7F;
+    padding: 0.5em 0;
+    margin: 0 0 0.5em 0;
+    border-bottom: 1px solid #D8D7D7;
+}
+h1 span {
+    color: #ED1C24;
+}
+h1 span:before,
+h1 span:after {
+    content: '/';
+}
+h1, 
+h2, 
+p, 
+#pie {
+    padding-left: 20px;
+}
+.js #aside {
+    clear: both;
+}
+#pie {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+}
+#no_js strong {
+    display: block;
+}
+table {
+    width: 300px;
+    text-align: left;
+    border-collapse: collapse;
+    border: 1px solid #7F7F7F;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    margin-left: 20px;
+}
+th,
+td {
+    padding: 0.4em;
+    vertical-align: top;
+}
+tbody th,
+tbody td,
+tfoot th,
+tfoot td {
+    border-top: 1px solid #7F7F7F;
+}
+thead th,
+tfoot th,
+tfoot td,
+tbody .alt th,
+tbody .alt td {
+    background: #EFEFEF;
+}
+tfoot th,
+tfoot td {
+    font-weight: bold;
+}
+table caption {
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 0.5em;
+}
+table span {
+    border-left: 5px solid #ebebeb;
+    padding-left: 10px;
+}
+table tr.cat1 span {
+    border-left-color: #5F2771;
+}
+table tr.cat2 span {
+    border-left-color: #AA1F5D;
+}
+table tr.cat3 span {
+    border-left-color: #961B1E;
+}
+table tr.cat4 span {
+    border-left-color: #EC2227;
+}
+table tr.cat5 span {
+    border-left-color: #CB5727;
+}
+table tr.cat6 span {
+    border-left-color: #F6861F;
+}
+table tr.cat7 span {
+    border-left-color: #FECE0A;
+}
+table tr.cat8 span {
+    border-left-color: #B6B033;
+}
+table tr.cat9 span {
+    border-left-color: #00AC41;
+}
+tbody .active th,
+tbody .active td {
+    background: #7F7F7F;
+    color: #FFF;
+}
+tbody .active a {
+    color:  #FFF;
+}
+#aside {
+    overflow: hidden;
+    width: 640px;
+}
+.js #aside div {
+    position: absolute;
+    left: -9999em;
+}
+#aside div.read {
+    position: static;
+    left: 0;
+}
+#aside p {
+    clear: right;
+}
+.js h2.first {
+    float: right;
+}
+.vcard {
+    padding-left: 140px;
+    position: relative;
+    min-height: 120px;
+    _height: 120px;
+    zoom: 1;
+}
+.vcard img {
+    position: absolute;
+    left: 20px;
+    top: 0;
+}

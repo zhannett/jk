@@ -1,0 +1,26 @@
+[
+	{
+			"order"				: "#ST001002003-BT0001",
+			"date"				: "01/01/2012",
+			"action"			: "BUY",
+			"currency1"			: "USD",
+			"currency2"			: "GBP",
+			"amount1"			: 18500000
+	},
+	{
+			"order"				: "#ST001002003-BT0002",
+			"date"				: "02/02/2012",
+			"action"			: "SELL",
+			"currency1"			: "EUR",
+			"currency2"			: "CAD",
+			"amount1"			: 500000
+	},
+	{
+			"order"				: "#ST001002003-BT0003",
+			"date"				: "03/03/2012",
+			"action"			: "BUY",
+			"currency1"			: "USD",
+			"currency2"			: "EUR",
+			"amount1"			: 10000000
+	}
+]

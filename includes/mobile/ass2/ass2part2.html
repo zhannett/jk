@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" 
+"http://www.wapforum.org/DTD/xhtml-mobile10.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Conditional Media Queries</title>
+		<link type="text/css" rel="stylesheet" media="screen" href="css/basic.css" />
+		<!--[if !IE]>-->
+			<link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 128px)" href="css/lowend.css" />
+			<link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 176px)" href="css/midend1.css" />
+			<link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 240px)" href="css/midend2.css" />
+			<link type="text/css" rel="stylesheet" media="only screen and (min-device-width: 240px) and (min-device-height: 480px)" href="css/highend.css" />
+			<link type="text/css" rel="stylesheet" media="only screen and (min-device-width: 640px)" href="css/desktop.css" />
+		<!--<![endif]-->
+		<!--[if lt IE 9]>-->
+			<link type="text/css" rel="stylesheet" media="screen" href="css/desktop.css" />
+		<!--<![endif]-->
+	</head> 
+	<body> 
+		<div id="header">
+			<h1>YOUR DREAM VACATIONS!</h1>
+		</div>
+		<div id="content">
+			<p class="offer">
+				Try our vacations planning tool!<br/>
+				Now you can plan your vacations using our speially designed vacations planning tool. You can book air tickets, hotels, different tours, book show tickets, diving course, etc.
+			</p>
+			<p>What to do next:</p>
+			<ol id="nav">
+				<li><a href="mainmenu.html" accesskey="1">Main menu</a></li>
+				<li><a href="setup.html" accesskey="2">Set up</a></li>
+				<li><a href="help.html" accesskey="3">Help</a></li>
+			</ol>
+		</div>
+		<div id="footer">
+		</div>
+	</body>
+</html> 

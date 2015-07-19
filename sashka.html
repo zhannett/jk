@@ -1,0 +1,623 @@
+<html>
+<head>
+	<style>
+		#mainContainer {font-family:Verdana; font-size:10pt}
+		h1 {color:blue;text-align:center }
+		li { font-weight:bold; }
+		table {font-weight:bold}
+		.li_title {color:#0000FF; font-size:13pt; padding-bottom:25px}
+		.center {text-align:center}
+		.shiftleft {position:relative; left:100px}
+		.input {float:left; width:200px; padding:10px 0px;}
+		.output {float:left; width:200px; padding:10px 0px;}
+		.clear {clear:both}
+		.label_date {float:left; width:120px}
+		.label_datetime_input {float:left; width:50px}
+		.datetime_input{float:left; width:150px}
+		.datetime_format{float:left; width:250px}
+		.calc {position:relative; left:170px;}
+	</style>
+
+
+<script type="text/javascript">
+<!-- Original:  Ronnie T. Moore -->
+<!-- Web Site:  The JavaScript Source -->
+function isValidDate(dateStr) {
+	// Date validation function courtesty of Sandeep V. Tamhankar (stamhankar@hotmail.com) -->
+	// Checks for the following valid date formats: MM/DD/YY   MM/DD/YYYY   MM-DD-YY   MM-DD-YYYY
+
+	var datePat = /^(\d{1,2})(\/|-)(\d{1,2})\2(\d{4})$/; // requires 4 digit year
+	var matchArray = dateStr.match(datePat); // is the format ok?
+	if (matchArray == null) {
+		alert(dateStr + " Date is not in a valid format.")
+		return false;
+	}
+	month = matchArray[1]; // parse date into variables
+	day = matchArray[3];
+	year = matchArray[4];
+	if (month < 1 || month > 12) { // check month range
+		alert("Month must be between 1 and 12.");
+		return false;
+	}
+	if (day < 1 || day > 31) {
+		alert("Day must be between 1 and 31.");
+		return false;
+	}
+	if ((month==4 || month==6 || month==9 || month==11) && day==31) {
+		alert("Month "+month+" doesn't have 31 days!")
+		return false;
+	}
+	if (month == 2) { // check for february 29th
+		var isleap = (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
+		if (day>29 || (day==29 && !isleap)) {
+			alert("February " + year + " doesn't have " + day + " days!");
+			return false;
+   		}
+	}
+	return true;
+}
+
+function isValidTime(timeStr) {
+	// Time validation function courtesty of Sandeep V. Tamhankar (stamhankar@hotmail.com)
+	// Checks if time is in HH:MM:SS AM/PM format. The seconds and AM/PM are optional.
+	var timePat = /^(\d{1,2}):(\d{2})(:(\d{2}))?(\s?(AM|am|PM|pm))?$/;
+	var matchArray = timeStr.match(timePat);
+	if (matchArray == null) {
+		alert("Time is not in a valid format.");
+		return false;
+	}
+	hour = matchArray[1];
+	minute = matchArray[2];
+	second = matchArray[4];
+	ampm = matchArray[6];
+	if (second=="") { second = null; }
+	if (ampm=="") { ampm = null }
+	if (hour < 0  || hour > 23) {
+		alert("Hour must be between 1 and 12. (or 0 and 23 for military time)");
+		return false;
+	}
+	if (hour <= 12 && ampm == null) {
+		if (confirm("Please indicate which time format you are using.  OK = Standard Time, CANCEL = Military Time")) {
+		alert("You must specify AM or PM.");
+		return false;
+    }
+	if  (hour > 12 && ampm != null) {
+		alert("You can't specify AM or PM for military time.");
+		return false;
+	}
+	if (minute < 0 || minute > 59) {
+		alert ("Minute must be between 0 and 59.");
+		return false;
+	}
+	if (second != null && (second < 0 || second > 59)) {
+		alert ("Second must be between 0 and 59.");
+		return false;
+	}
+	return true;
+}
+
+function dateDiff(dateform) {
+	date1 = new Date();
+	date2 = new Date();
+	diff  = new Date();
+
+	if (isValidDate(dateform.firstdate.value) && isValidTime(dateform.firsttime.value)) { // Validates first date
+		date1temp = new Date(dateform.firstdate.value + " " + dateform.firsttime.value);
+		date1.setTime(date1temp.getTime());
+	} else
+		return false; // otherwise exits
+	if (isValidDate(dateform.seconddate.value) && isValidTime(dateform.secondtime.value)) { // Validates second date
+		date2temp = new Date(dateform.seconddate.value + " " + dateform.secondtime.value);
+		date2.setTime(date2temp.getTime());
+	} else
+		return false; // otherwise exits
+	// sets difference date to difference of first date and second date
+	diff.setTime(Math.abs(date1.getTime() - date2.getTime()));
+	timediff = diff.getTime();
+	weeks = Math.floor(timediff / (1000 * 60 * 60 * 24 * 7));
+	timediff -= weeks * (1000 * 60 * 60 * 24 * 7);
+	days = Math.floor(timediff / (1000 * 60 * 60 * 24));
+	timediff -= days * (1000 * 60 * 60 * 24);
+	hours = Math.floor(timediff / (1000 * 60 * 60));
+	timediff -= hours * (1000 * 60 * 60);
+	mins = Math.floor(timediff / (1000 * 60));
+	timediff -= mins * (1000 * 60);
+	secs = Math.floor(timediff / 1000);
+	timediff -= secs * 1000;
+	dateform.difference.value = weeks + " weeks, " + days + " days, " + hours + " hours, " + mins + " minutes, and " + secs + " seconds";
+	return false; // form should never submit, returns false
+}
+
+</script>
+
+
+<script>
+
+function timestamp_class(this_current_time, this_start_time, this_end_time, this_time_difference) {
+	this.this_current_time = this_current_time;
+	this.this_start_time = this_start_time;
+	this.this_end_time = this_end_time;
+	this.this_time_difference = this_time_difference;
+	this.GetCurrentTime = GetCurrentTime;
+	this.StartTiming = StartTiming;
+	this.EndTiming = EndTiming;
+}
+
+	//Get current time from date timestamp
+	function GetCurrentTime() {
+	var my_current_timestamp;
+		my_current_timestamp = new Date();		//stamp current date & time
+		return my_current_timestamp.getTime();
+		}
+
+	//Stamp current time as start time and reset display textbox
+	function StartTiming() {
+		this.this_start_time = GetCurrentTime();	//stamp current time
+		document.TimeDisplayForm.TimeDisplayBox.value = 0;	//init textbox display to zero
+		}
+
+	//Stamp current time as stop time, compute elapsed time difference and display in textbox
+	function EndTiming() {
+		this.this_end_time = GetCurrentTime();		//stamp current time
+		this.this_time_difference = (this.this_end_time - this.this_start_time) / 1000;	//compute elapsed time
+		document.TimeDisplayForm.TimeDisplayBox.value = this.this_time_difference;	//set elapsed time in display box
+		}
+
+var time_object = new timestamp_class(0, 0, 0, 0);	//create new time object and initialize it
+
+//-->
+</script>
+
+</head>
+
+<body>
+
+
+      	<h1><em>Features</em></h1>
+
+		<ul>
+			<li>
+				<div class="li_title">Return ASCII code of particular character</div>
+				<div class="shiftleft">
+					<form name="characterCode">
+
+						Type A Single Character:
+						<input type="text" name="character" size="3">
+						<input type="button" value="Show ASCII Code" onClick="showKeyCode();">
+					</form>
+				</div>
+			</li>
+			<li>
+				<div class="li_title">Prime Number Calculator</div>
+				<div class="shiftleft">
+
+					<form name="primenumber">
+						Please enter a number:
+						<input type="text" name="number" size="7">
+						<input type="button" value="Calculate" onClick="calculate(this.form);"><br/>
+						<input type="text" name="result" size="45" value="">
+					</form>
+				</div>
+			</li>
+			<li>
+
+				<div class="li_title">Convert 2-base binary number into 10-base decimal number, and vice versa</div>
+				<div class="shiftleft">
+					<form name="binaryform">
+						<select name="select1">
+							<option value="b2d">Binary to Decimal
+							<option value="d2b">Decimal to Binary
+						</select>				<br/>
+						<div class="input">Input:<br/><input type="text" name="text1"></div>
+
+						<div class="output">Output:<br/><input type="text" name="text2"></div>
+						<div class="clear"></div>
+						<input type="button" name="butt1" value="Convert" onclick="convert()">
+					</form>
+				</div>
+			</li>
+			<li>
+				<div class="li_title">Calculator</div>
+
+				<div class="shiftleft">
+					<form name="Keypad" action="">
+
+					<!--  Original:  http://www.dummyproof.com/javascripts -->
+					<!-- This script and many more are available free online at -->
+					<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+						<table>
+							<table border="2" width="50" height="60" cellpadding="1" cellspacing="5">
+								<tr>
+
+									<td colspan="3" align="middle"><input name="ReadOut" type="Text" size="24" value="0" width="100%"></td>
+									<td></td>
+									<td><input name="btnClear" type="Button" value="  C  " onclick="Clear()"></td>
+									<td><input name="btnClearEntry" type="Button" value="  CE " onclick="ClearEntry()"></td>
+								</tr>
+								<tr>
+									<td><input name="btnSeven" type="Button" value="  7  " onclick="NumPressed(7)"></td>
+									<td><input name="btnEight" type="Button" value="  8  " onclick="NumPressed(8)"></td>
+									<td><input name="btnNine" type="Button" value="  9  " onclick="NumPressed(9)"></td>
+
+									<td></td>
+									<td><input name="btnNeg" type="Button" value=" +/- " onclick="Neg()"></td>
+									<td><input name="btnPercent" type="Button" value="  % " onclick="Percent()"></td>
+								</tr>
+								<tr>
+									<td><input name="btnFour" type="Button" value="  4  " onclick="NumPressed(4)"></td>
+									<td><input name="btnFive" type="Button" value="  5  " onclick="NumPressed(5)"></td>
+									<td><input name="btnSix" type="Button" value="  6  " onclick="NumPressed(6)"></td>
+									<td></td>
+
+									<td align=middle><input name="btnPlus" type="Button" value="  +  " onclick="Operation('+')"></td>
+									<td align=middle><input name="btnMinus" type="Button" value="   -   " onclick="Operation('-')"></td>
+								</tr>
+								<tr>
+									<td><input name="btnOne" type="Button" value="  1  " onclick="NumPressed(1)"></td>
+									<td><input name="btnTwo" type="Button" value="  2  " onclick="NumPressed(2)"></td>
+									<td><input name="btnThree" type="Button" value="  3  " onclick="NumPressed(3)"></td>
+									<td></td>
+									<td align=middle><input name="btnMultiply" type="Button" value="  *  " onclick="Operation('*')"></td>
+
+									<td align=middle><input name="btnDivide" type="Button" value="   /   " onclick="Operation('/')"></td>
+								</tr>
+								<tr>
+									<td><input name="btnZero" type="Button" value="  0  " onclick="NumPressed(0)"></td>
+									<td><input name="btnDecimal" type="Button" value="   .  " onclick="Decimal()"></td>
+									<td colspan="3"></td>
+									<td><input name="btnEquals" type="Button" value="  =  " onclick="Operation('=')"></td>
+								</tr>
+							</table>
+
+						</table>
+					</form>
+				</div>
+			</li>
+			<!--
+			<li>
+				<div class="li_title">Date Difference - the number of weeks, days, hours, minutes, and seconds (optional) between the two dates</div>
+				<div class="shiftleft">
+					<form onSubmit="return dateDiff(this);">
+
+						<div class="label_date">First Date:</div>
+						<div class="label_datetime_input">
+							Date:
+							Time:
+						</div>
+						<div class="datetime_input">
+							<input type="text" name="firstdate" value="" size="10" maxlength="10">
+							<input type="text" name="firsttime" value="" size="10" maxlength="10">
+						</div>
+						<div class="datetime_format">
+
+							(MM/DD/YYYY format)
+							(HH:MM:SS format)
+						</div>
+						<div class="clear">&nbsp;</div>
+						<div class="label_date">Second Date:</div>
+						<div class="label_datetime_input">
+							Date:
+							Time:
+						</div>
+						<div class="datetime_input">
+							<input type="text" name="seconddate" value="" size="10" maxlength="10">
+
+							<input type="text" name="secondtime "value="" size="10" maxlength="10">
+						</div>
+						<div class="datetime_format">
+							(MM/DD/YYYY format)
+							(HH:MM:SS format)
+						</div>
+						<div class="clear">&nbsp;</div>
+						<div class="calc"><input type="submit" value="Calculate Difference!"></div>
+						<div>&nbsp;</div>
+						Date Difference:
+						<input type="text" name="difference" value="" size="60">
+					</form>
+				</div>
+			</li>
+			-->
+			<li>
+				<div class="li_title">Elasped Time Calculation</div>
+				<div class="shiftleft">
+					<form>
+						<input type="button" value="Start" onClick="time_object.StartTiming()"; name="StartButton">
+
+					</form>
+					<form>
+						<input type="button" value="Finish" onClick="time_object.EndTiming()"; name="EndButton">
+					</form>
+					<form name="TimeDisplayForm">
+						Elapsed time:
+						<input type="text" name="TimeDisplayBox" size="6"> seconds
+					</form>
+				</div>
+
+			</li>
+			<li>
+				<div class="li_title">Defining Day of the week and Past/Future</div>
+				<div class="shiftleft">
+					<form name="pastFuture">
+						<p>Day
+						<select name="day" size="1">
+							<option selected value="1">1</option>
+
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+
+						</select>
+						Month
+						<select name="month" size="1">
+							<option selected value="0">January</option>
+							<option value="1">February </option>
+							<option value="2">March </option>
+							<option value="3">April </option>
+
+							<option value="4">May </option>
+							<option value="5">June </option>
+							<option value="6">July </option>
+							<option value="7">August </option>
+							<option value="8">September </option>
+							<option value="9">October </option>
+
+							<option value="10">November </option>
+							<option value="11">December </option>
+						</select>
+						Year
+							<input type="text" name="year" size="4">
+							<input type="button" value="Get Date Info" name="gdi" onClick="getDateInfo()">
+						</p>
+						<p>Day of the week
+							<input type="text" name="dw" size="12">
+
+							Time
+							<input type="text" name="time" size="10">
+						</p>
+					</form>
+				</div>
+			</li>
+		</ul>
+
+
+
+
+
+		<script type="text/javascript">
+
+		        <!-- Begin
+		        var months = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+		        var days = new Array("Sunday","Monday","Tuesday","Wednsday","Thursday","Friday","Saturday");
+		        var mtend = new Array(31,28,31,30,31,30,31,31,30,31,30,31);
+		        var opt = new Array("Past","Future");
+		        function getDateInfo() {
+		        var y = document.form.year.value;
+		        var m = document.form.month.options[document.form.month.options.selectedIndex].value;
+		        var d = document.form.day.options[document.form.day.options.selectedIndex].value;
+		        var hlpr = mtend[m];
+		        if (d < mtend[m] + 1) {
+		        if (m == 1 && y % 4 == 0) { hlpr++; }
+		        var c = new Date(y,m,d);
+		        var dayOfWeek = c.getDay();
+		        document.form.dw.value = days[dayOfWeek];
+		        if(c.getTime() > new Date().getTime()) {
+		        document.form.time.value = opt[1];
+		        }
+		        else {
+		        document.form.time.value = opt[0];
+		           }
+		        }
+		        else {
+		        alert("The date "+months[m]+" "+d+", "+y+" is invalid.\nCheck it again.");
+		           }
+		        }
+		        function setY() {
+		        var y = new Date().getYear();
+		        if (y < 2000) y += 1900;
+		        document.form.year.value = y;
+		        }
+
+		        window.onload=setY;
+		        //  End -->
+        </script>
+
+
+
+<script type="text/javascript">
+
+	function showKeyCode() {
+		var character = document.characterCode.character.value.substring(0,1);
+		var code = document.characterCode.character.value.charCodeAt(0);
+		var msg = "The ASCII Decimal Key Code for the \""+character+"\" character is "+code+".";
+		alert(msg);
+	}
+
+
+	function calculate(form) {
+		var num=parseInt(form.number.value);
+		if (isNaN(num) || num < 0) {
+			form.result.value=(form.number.value + " is not a valid number!  Try again!");
+		}
+		if (num == 1 || num == 2) {
+			form.result.value=(num + " is prime!");
+		}
+		for (var i=2;i<num;i++) {
+			if (num % i == 0) {
+				var prime="yes";
+				form.result.value=(num + " is not prime.  It is divisible by " + i + ".");
+				break;
+			}
+			if (num % i != 0) var prime="no";
+		}
+		if (prime == "no") form.result.value=(num + " is prime!");
+	}
+
+
+	var num1;
+	var num2;
+	var currnum;
+	function convert() {
+		currnum = 128;
+		if(document.binaryform.select1.value == "b2d") {
+			num1 = document.binaryform.text1.value;
+			num2 = eval(num1.charAt(0)) * currnum;
+			for (i = 1; i <= 7; i++) {
+				currnum = currnum / 2;
+				num2 = num2 + (eval(num1.charAt(i)) * currnum);
+			}
+			document.binaryform.text2.value = num2;
+		} else if(document.binaryform.select1.value == "d2b") {
+			num1 = eval(document.binaryform.text1.value);
+			if(num1 >= currnum) {
+				num2 = "1";
+				num1 = num1 - currnum;
+				currnum = currnum / 2;
+			} else {
+				num2 = "0";
+				currnum = currnum / 2;
+			}
+			for (p = 1; p <= 7; p++) {
+				if(num1 >= currnum) {
+					num2 = num2 + "1";
+					num1 = num1 - currnum;
+					currnum = currnum / 2;
+				} else {
+					num2 = num2 + "0";
+					currnum = currnum / 2;
+				}
+			}
+			document.binaryform.text2.value = num2;
+		}
+	}
+
+
+	var FKeyPad = document.Keypad;
+	var Accum = 0;
+	var FlagNewNum = false;
+	var PendingOp = "";
+	function NumPressed (Num) {
+		if (FlagNewNum) {
+			FKeyPad.ReadOut.value  = Num;
+			FlagNewNum = false;
+	    } else {
+			if (FKeyPad.ReadOut.value == "0")
+				FKeyPad.ReadOut.value = Num;
+			else
+				FKeyPad.ReadOut.value += Num;
+	   }
+	}
+	function Operation (Op) {
+		var Readout = FKeyPad.ReadOut.value;
+		if (FlagNewNum && PendingOp != "=");
+		else {
+			FlagNewNum = true;
+			if ( '+' == PendingOp )
+				Accum += parseFloat(Readout);
+			else if ( '-' == PendingOp )
+				Accum -= parseFloat(Readout);
+			else if ( '/' == PendingOp )
+				Accum /= parseFloat(Readout);
+			else if ( '*' == PendingOp )
+				Accum *= parseFloat(Readout);
+			else
+				Accum = parseFloat(Readout);
+			FKeyPad.ReadOut.value = Accum;
+			PendingOp = Op;
+	    }
+	}
+	function Decimal () {
+		var curReadOut = FKeyPad.ReadOut.value;
+		if (FlagNewNum) {
+			curReadOut = "0.";
+			FlagNewNum = false;
+	    } else {
+			if (curReadOut.indexOf(".") == -1)
+				curReadOut += ".";
+	    }
+		FKeyPad.ReadOut.value = curReadOut;
+	}
+	function ClearEntry () {
+		FKeyPad.ReadOut.value = "0";
+		FlagNewNum = true;
+	}
+	function Clear () {
+		Accum = 0;
+		PendingOp = "";
+		ClearEntry();
+	}
+	function Neg () {
+		FKeyPad.ReadOut.value = parseFloat(FKeyPad.ReadOut.value) * -1;
+	}
+	function Percent () {
+		FKeyPad.ReadOut.value = (parseFloat(FKeyPad.ReadOut.value) / 100) * parseFloat(Accum);
+	}
+
+
+
+	var months = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+	var days = new Array("Sunday","Monday","Tuesday","Wednsday","Thursday","Friday","Saturday");
+	var mtend = new Array(31,28,31,30,31,30,31,31,30,31,30,31);
+	var opt = new Array("Past","Future");
+	function getDateInfo() {
+		var y = document.pastFuture.year.value;
+		var m = document.pastFuture.month.options[document.pastFuture.month.options.selectedIndex].value;
+		var d = document.pastFuture.day.options[document.pastFuture.day.options.selectedIndex].value;
+		var hlpr = mtend[m];
+		if (d < mtend[m] + 1) {
+			if (m == 1 && y % 4 == 0) { hlpr++; }
+			var c = new Date(y,m,d);
+			var dayOfWeek = c.getDay();
+			document.pastFuture.dw.value = days[dayOfWeek];
+			if(c.getTime() > new Date().getTime()) {
+				document.pastFuture.time.value = opt[1];
+			} else {
+				document.pastFuture.time.value = opt[0];
+			}
+		} else {
+			alert("The date "+months[m]+" "+d+", "+y+" is invalid.\nCheck it again.");
+		}
+	}
+	function setY() {
+		var y = new Date().getYear();
+		if (y < 2000) y += 1900;
+		document.pastFuture.year.value = y;
+	}
+	window.onload=setY;
+
+</script>
+
+
+</body>
+</html>

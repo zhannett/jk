@@ -1,0 +1,896 @@
+
+/* HTML Selectors  */
+
+	body {
+	    font-size: 100%;
+	    text-align:center;
+	    overflow:auto;
+	    background: url(http://janetkulyk.s3.amazonaws.com/img/bg_xmas.gif);
+	    color:#727272
+	 }	/* EosMosaic1b.gif */
+	 
+	 /* fonts */
+	 
+	 body,
+	 p,
+	 table,
+	 ol li,
+	 ul li {
+	    font-family: "Helvetica Neue", Helvetica, sans-serif;
+	    /*font-family:  Calibri,"Lucida Grande",Arial,Helvetica,sans-serif;*/
+	  }
+	  
+	  h1,
+	  h2,
+	  h3 {
+	    font-family: 'Annie Use Your Telescope', cursive;
+	  }
+	  
+	  blockquote ,
+	  h4,
+	  h5,
+	  h6,
+	  #date_time,
+	  .copyright,
+	  .fatfooter,
+	  .fatfooter2 {
+	    font-family: Georgia, "Times New Roman", Times, serif;
+	  }
+	  
+	  
+	 h1 {
+	    color: #E44D26;
+	    text-shadow: 0 0 1px #fff, 0 1px 1px #000;
+	    position: relative;
+	    width: 85%;
+	    padding: 0.125em 20px 0.35em 70px;
+	    margin: 0 10px 10px -70px;
+	    color: #ffe0ca;
+	    background-color: #e44d26;
+	    /*text-shadow: 0 1px 2px #bbb;*/
+	    -webkit-box-shadow: 0 2px 4px #888;
+	    -moz-box-shadow: 0 2px 4px #888;
+	    box-shadow: 0 2px 4px #888;
+	    font-size-adjust: 0.55;
+	 }
+	 h1:before,
+	 h1:after {
+		 content: '';
+		 position: absolute;
+		 width: 0;
+		 height: 0;
+	 }
+	 h1:before {
+		 right: -2px;
+		 top: 0;
+		 border-width: 30px 20px;
+		 border-style: solid;
+		 border-color: transparent #f8f8f8 transparent transparent;
+	 }
+	 h1:after {
+		 left: 0;
+		 top: 100%;
+		 border-width: 5px 10px;
+		 border-style: solid;
+		 border-color: #666 #666 transparent transparent;
+	 }
+	 h2 {
+	     color: #E44D26;
+	     text-shadow: 0 0 1px #fff, 0 1px 1px #000;
+	 }
+	 h2.inline {
+	    display: inline-block;
+	    vertical-align: top;
+	 }
+	h3,
+	h4,
+	h5,
+	h6 {
+	    font-style: italic;
+	    font-weight: normal;
+	    color:#725050;
+	 }
+      h3 {
+	     color:#E44D26;
+	     text-align:center;
+	 }
+	 h4 {
+	    color: #E44D26;
+	 }
+	p {
+	    /*font-size: 0.8125em;*/
+	    font-size: medium;
+	    line-height: 1.4;
+	    color:#727272;
+	    text-align:justify;
+	    padding: 5px 0 5px 3px;
+	 }	
+	ol {list-style-type: upper-alpha; padding-left:45px}
+	ol li {font-size:95%; line-height:1.6; color:#727272; padding: 3px 0px}
+	ul {text-align:left; padding-left:17px}
+	ul.list {text-align:left; list-style-image:url(../img/arrow_off.gif); padding-left:17px}
+	ul .noindent {padding-left:0}
+	.img_list li {padding: 15px 0}
+	ul li {
+	    line-height: 1.6;
+	    margin-bottom: 5px;
+	    font-size: inherit;
+	 }
+	dl {
+	    width: 100%;
+	    padding: 5px;
+	 }
+	dt {
+	    display: inline-block;
+	    width: 20%;
+	    padding: 2px 0;
+	    font-weight: bold;
+	    font-size: medium;
+	    vertical-align: top;
+	 }
+	dd {
+	    display: inline-block;
+	    width: 70%;
+	    padding: 2px 0;
+	    font-size: medium;
+	    vertical-align: top;
+	 }
+	blockquote {
+	    font-style: italic;
+	    font-size: medium;
+	    color: #626262;
+	    width: calc(80%-(60px));
+	    margin: 0.5em 0;
+	    padding: 0.5em 15px 0.25em 45px;
+	    line-height: 1.6;
+	    position: relative;
+	    color: #383838;
+	 }
+	 blockquote:before {
+	    display: block;
+	    content: "\201C";
+	    /*content: "\275D";*/
+	    font-size: 5em;
+	    position: absolute;
+	    left: 5px;
+	    top: -25px;
+	    color: #e2e2e2;
+	 }
+/*
+	 blockquote:after {
+	    /*content: "\275E";*/
+	    /*display: block;
+	    content: "\201D";
+	    font-size: 3em;
+	    position: absolute;
+	    right: 5px;
+	    bottom: 0;
+	    color: #7a7a7a;
+	   
+	 }*/
+	 blockquote cite {
+	    color: #999;
+	    font-size: 0.9em;
+	    display: block;
+	    margin: 15px 0 0 0;
+	 }
+	 blockquote cite:before {
+	    content: "\2014 \2009";
+	 }
+	 q {quotes: 'Ò' 'Ó' 'Ô' 'Õ';} /* opening followed by closing quote pairs */
+	 /* The equivalent using Unicode escapes: q {quotes: '\201C' '\201D' '\2018' '\2019';} */
+	 q:before {content: open-quote;}
+	 q:after {content: close-quote;}
+	 
+	 .document,
+	 .header,
+	 .fatfooter,
+	 .fatfooter2,
+	 .topnav,
+	 .stay_connected {
+	    width: 1140px;
+	    margin: 0 auto;
+	 }
+	 .document,
+	 .fatfooter,
+	 .fatfooter2 {
+	    margin: 0 auto;
+	 }
+	 .fatfooter_wrapper,
+	 .fatfooter2_wrapper {
+	    width: 100%;
+	    text-align: center;
+	 }
+	 .fatfooter {
+	     text-align: center;
+	 }
+	 .fatfooter2 {
+	     text-align: center;
+	 }
+	 #mainContent {
+	    background-color: #f2f2f2;
+	    background: rgba(242,242,242,1);
+	    padding: 25px 15px 15px 15px;
+	    border-left: 1px solid #ccc;
+	    border-right: 1px solid #ccc;
+	    text-align: left;
+	    /*
+	    -webkit-box-shadow: 5px 5px 7px #999;
+	    -moz-box-shadow: 5px 5px 7px #999;
+	    -o-box-shadow: 5px 5px 7px #999;
+	    -ms-box-shadow: 5px 5px 7px #999;
+	    box-shadow: 5px 5px 7px #999;
+	    */
+	 }
+	 .payattention {
+	    color: #E44D26;
+	 }
+	 .aside_left,
+	 .aside_right,
+	 .main_section {
+	    float: left;
+	 }
+	 .aside_left {
+	    width: 7%;
+	 }
+	 .aside_right {
+	    width: 18%;
+	 }
+	 .main_section {
+	    width: 74%;
+	    text-align: left;
+	 }
+	 .header_wrap {
+	    display: block;
+	    background-color:#e8e8e8;
+	    border-left: 1px solid #ccc;
+	    border-right: 1px solid #ccc;
+	    z-index: 10;
+	    margin: 0;
+	    padding: 0;
+	    height: 5em;
+	 }
+	 .header {
+	    background-color:#e8e8e8;
+	    line-height: 5em;
+	 }
+	 
+	/*
+	a[href^="mailto:"]:before { content: "\2709"; }
+	a[href^="mailto:"]:before { content: "\2709"; }
+	 .phone:before             { content: "\2706"; }
+	 .important:before         { content: "\27BD"; }
+       .alert:before             { content: "\26A0"; }
+      */
+
+	table {font-size:100%; color:#727272; padding:5px; border: 1px solid #CCC}
+	th {font-weight:bold; text-align:center; border: 1px solid #CCC; padding:3px}
+	td {text-align:center; border: 1px solid #CCC; padding:2px}			
+	acronym {border-bottom: 1px dotted #727272}
+	caption {margin:20px 0; font: bold italic 1.4em Georgia, "Times New Roman", Times, serif; color:#725050}
+	
+	
+	/* Generic Page Components */
+	.logo {
+	    font-family: "Arial Black", Arial, sans-serif;
+	    font-size: 3em;
+	    background-color: #e2e2e2;
+	    color: #000;
+	    width: 5em;
+	    display: inline-block;
+	    text-align: left;
+	    vertical-align: top;
+	}
+	#date_time {
+	    text-align: right;
+	    background-color:#E8E8E8;
+	    padding: 0 10px 5px 0;
+	    color: #666;
+	 }
+	#clock {
+	    display: inline-block;
+	    width: 60px;
+	    text-align: left;
+	 }	
+	/*
+	#switcher {float:right; width:350px; padding-bottom:5px; clear:right; padding-right:2px}
+	#switcher .button {float:right; width:15px; padding:3px; margin: .5em .5em 0em 0em; position: relative; display:inline; background-color:#B2CDE0; font-size:0.75em; cursor: pointer; color:#727272; text-align:center}
+	#switcher div.label {float:right; width:125px; margin-right:5px; cursor: pointer; position: relative; top:5px}
+	#switcher div.label span.txt {font:0.7em Calibri,"Lucida Grande",Arial,Helvetica,sans-serif; color:#999; border-bottom: 1px solid #CCC}
+	*/
+	#w3c {
+	    width: 64px;
+	    height: 200px;
+	    clear: both;
+	}
+	.html5 {
+	    width: 70px;
+	    height: 80px;
+	    clear: both;
+	    -webkit-box-shadow: 5px 5px 7px #999;
+	    background: url(http://janetkulyk.s3.amazonaws.com/img/HTML5_Logo_64.png) 0 4px no-repeat;
+	}
+	.css3 {
+	    width: 70px;
+	    height: 80px;
+	    clear: both;
+	    -webkit-box-shadow: 5px 5px 7px #999;
+	    background: url(http://janetkulyk.s3.amazonaws.com/img/logo_css3.png) 0 4px no-repeat;
+	    margin-top: 25px;
+	}
+	.copyright {
+	    height: 2.4em;
+	    line-height: 2.4em;
+	    background-color: #333;
+	    font-size: small;
+	    text-align: center;
+	    color: #fff;
+	 }
+	 .fatfooter_wrapper,
+	 .fatfooter {
+	    background: #666;
+	    background: rgba(102,102,102,0.5);
+	 }
+	 .fatfooter2_wrapper,
+	 .fatfooter2 {
+	    background: #333;
+	    background: rgba(51,51,51,0.5);
+	 }
+	 .fatfooter,
+	 .fatfooter2 {
+	    color: #fff;
+	    font-size: 1em;
+	    margin: auto;
+	    text-align: left;
+	    line-height: 1.4em;
+	    overflow: hidden;
+	 }
+	 .fatfooter .cols h2 {
+	    color: #666;
+	    margin-top: 10px;
+	 }
+	 .fatfooter .cols {
+	    width: 90%;
+	    margin: 15px auto;
+	    padding: 0;
+	 }
+	 .fatfooter .col {
+	    box-model: border-box;
+	    display: inline-block;
+	    vertical-align: top;
+	    margin: 3%;
+	    box-model: border-box;
+	    overflow: hidden;
+	    width: 19%;
+	    background-color: #fff;
+	    border: 1px solid #ccc;
+	    border-radius: 5px;
+	    padding: 5px 1%;
+	 }
+	.fatfooter .col p {
+	    width: inherit;
+	 }	 	
+	.fatfooter .col ul {
+	  margin-left: 0;
+	  padding-left: 0;
+	 }
+	 .fatfooter .col img {
+	    max-width: 100%;
+	    margin: 0 auto;
+	 }
+	 .stay_connected_wrapper {
+	    background: #999;
+	    background: rgba(153,153,153,0.5);
+	    width: 100%;
+	    text-align: center;
+	 }
+	 .stay_connected {
+	    background: #999;
+	    background: rgba(153,153,153,0.3);
+	    color: #fff;
+	    font-size: 1em;
+	    margin: auto;
+	    text-align: left;
+	    line-height: 1.4em;
+	    height: 4em;
+	    overflow: hidden;
+	 }
+	 .stay_connected h2,
+	 .fatfooter2 h2 {
+	    text-align: left;
+	    padding: 0 0 0 20px;
+	 }
+	 .fatfooter h2 {
+	    color: #fff;
+	    text-align: left;
+	 }
+	 .fatfooter2 h2 {
+	    color: #fff;
+	    display: block;
+	 }
+	 .stay_connected h2 {
+	    color: #333;
+	    display: inline-block;
+	    vertical-align: top;
+	 }
+	 .list_social {
+	    display: inline-block;
+	    vertical-align: top;
+	 }
+	 .list_social li {
+	    display: inline;
+	    margin: 0 8px;
+	 }
+	 #tweets {
+	    padding: 0 0 0 40px;
+	 }
+	 #tweets li {
+	    list-style-image: url(http://janetkulyk.s3.amazonaws.com/img/icons/icon_twitter_16x16.png);
+	 }
+	#newwindowlinks fieldset {
+	    width: 45%;
+	    padding: 5px;
+	    margin: 20px 0 0 0;
+	 }	
+	#newwindowlinks label {
+	    width: 80%;
+	    text-align: left;
+	    font-weight: smaller;
+	    color: #626262;
+	    font-style: italic;
+	 }
+	 #newwindowlinks input {
+	    margin: 3px 10px 0 0;
+	 }
+			
+	/* Navigation */
+	#stickyNavigation {
+	 z-index: 100;
+	}
+	
+	/* Hypertext Links */
+	
+	 a {
+	    text-decoration:none;
+	 }
+	 a:link {
+	    color: rgba(0, 90, 156, 1);
+	    text-decoration: none;
+	    background: rgba(0, 0, 255, 0.05);
+	    border: rgba(255,0,0,0.5);
+	 } /*#659BC2 #005A9C*/
+	/*a:link		{color:#005A9C; text-decoration:none} /* #659BC2 */
+	 a:visited {
+	    color: #0298e3;
+	    text-decoration: none;
+	 }
+	 a:hover {
+	    color: #e44d26;
+	    text-decoration: underline;
+	 } 
+	 a:active {
+	    color: #e44d26;
+	    background-color: #B2CDE0;
+	    border-bottom: 1px solid #005A9C;
+	 }
+	
+	 a.external {
+	    padding-left: 15px;
+	    background: url(http://janetkulyk.s3.amazonaws.com/img/remote.gif) center left no-repeat;
+	 }
+	 a.external:hover {
+	    background: #e2e2e2 url(http://janetkulyk.s3.amazonaws.com/img/remote_a.gif) center left no-repeat;
+	 }
+	 a.mysite {
+	    background:none;
+	 }	
+
+	 .mailto a:link {
+	    color: #FE7A69;
+	    font-size: 0.85em;
+	    line-height: 1.6em;
+	 }
+	 .mailto a:hover {
+	    color:#FE7A69;
+	    text-decoration: none;
+	    background-color: #E2E2E2;
+	 }
+	
+	 a.pdflink {
+	    color: #090;
+	    background: url(../img/pdf.png) no-repeat 0 0;
+	 }	
+	 span a.pdflink {
+	    padding-left: 25px;
+	    font-weight: normal;
+	    display: block;
+	    height: 16px;
+	    color: #090;
+	 }
+	
+	 a img {text-decoration:none}
+	
+
+/* Classes - global */
+	.bg_top {
+            height: 16px;
+            background-image: -moz-linear-gradient(50% 10%, #fff, #e8e8e8);
+            background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, from (#fff), to (#e8e8e8));
+        }/*
+	.comm {color:#999}
+	.error {line-height:40px; background: #FFF4F2 url(../img/icon_error_inline.png) no-repeat scroll 5px 12px;}	
+	.error p {line-height:1.5em; padding: 10px 10px 10px 30px}
+	span.error {color:#F00 ; margin-left:10px; background-image:none; border:0; padding:0; line-height:1.0em}
+	.attention {line-height:40px; background: #F9FCAB url(../img/icon.png) no-repeat scroll 5px 5px; border: 1px solid #F9D879; margin: 10px 0}
+	.attention p {padding: 10px 10px 10px 40px; font-weight:bold}	
+	.feedback_yes {line-height:40px; background: #E6F8DE url(../img/icon_yes.png) no-repeat scroll 5px 5px; border: 1px solid #93AB88}	
+	.feedback_yes p {line-height:1.6em; padding: 10px 20px 10px 40px}
+	.note {font: 0.85em/1.0 Calibri,"Lucida Grande",Arial,Helvetica,sans-serif; color:#727272; letter-spacing:0; text-align:left}
+	.left {text-align: left}
+	.center {text-align:center}
+	.pointer {cursor:pointer; color:#005A9C}
+	.hello {float:right; width:150px; text-align:right; font-size: 0.8em; color:#727272; padding-top:5px; font-style:italic}
+	.shift {padding-left:1.0em}
+	.doubleshift {padding-left:2.0em}
+	.tripleshift {padding-left:3.0em}
+	.quadshift {padding-left:4.0em}
+	*/
+	.inline_linkedin {
+	    display:inline-block;
+	    padding: 0 0 0 20px;
+	    background: url(http://janetkulyk.s3.amazonaws.com/img/icons/icon_linkedin.png) 0 5px no-repeat;
+	 }
+	 .orange {
+	    color: #e44d26;
+	 }
+	 .bold {
+	    font-weight: bold;
+	 }
+	
+	.quot {  
+	   border: 1px solid #ccc;
+	   border-radius: 5px;
+	   background-color:#FEFEE1;
+	   margin: 0 10px 20px 0;
+	   /*
+	   -webkit-box-shadow: 5px 5px 7px #999;
+	   -moz-box-shadow: 5px 5px 7px #999;
+	   -o-box-shadow: 5px 5px 7px #999;
+	   -ms-box-shadow: 5px 5px 7px #999;
+	   box-shadow: 5px 5px 7px #999;
+	   */
+	    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	    -o-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	    -ms-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);  
+	    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	}
+	
+/* Page Components */
+
+	/* galleries */
+	.galleries {
+	    padding: 0;
+	}
+	.galleries li {
+	  float: left;
+	  display: inline;
+	  margin: 10px 2px;
+	}
+	.galleries article {
+	    width: 100px;
+	    height: 160px;
+	    border: 1px solid #ccc;
+	    background-color: #eef0ca;
+	    text-align: center;
+	}
+	.galleries article h5 {
+	    height: 40px;
+	    margin: 10px 0;
+	    overflow: hidden;
+	}
+	.galleries article img {
+	    vertical-align: bottom;
+	    1px; border: 1px solid #ccc;
+	    background-color:#fff;
+	    margin:0.4em;
+	    border: 1px solid #ccc;
+	    padding: 1px;
+	}
+	.gallery {
+	    overflow:hidden;
+	 }
+	ul.gallery li {
+	    float: left;
+	    display: inline;
+	 } 
+	.gallery img {
+	    border: 1px solid #ccc;
+	    background-color:#fff;
+	    margin:0.4em;
+	    padding: 1px;
+	 }
+	 .thegallery {
+	    display: none;
+	    width: 100%;
+	    margin: 20px 0;
+	}
+	.thegallery li {
+	    float: left;
+	    display: inline;
+	}
+	.certimg {
+	    float: left;
+	    padding: 3px;
+	    border: 1px solid #ccc;
+	    margin: 1em;
+	 }
+	
+	/* built-in lists */
+	#list, #list tr, #list td {width:100%; border:0; text-align:left}	
+	
+	/*#formcontactme,*/
+	.main_content {
+	   width: 80%;
+	   border: 1px solid #ccc;
+	   border-radius: 5px;
+	   background-color: #f8f8f8; 
+	   padding: 15px 20px 15px 50px;
+	   margin: 0 auto 20px auto;
+	   -moz-box-shadow: 5px 5px 7px #999; 
+	   -webkit-box-shadow: 5px 5px 7px #999;
+	   -o-box-shadow: 5px 5px 7px #999;
+	   -ms-box-shadow: 5px 5px 7px #999;
+	   box-shadow: 5px 5px 7px #999;
+	}
+	
+	/* home */
+	.welcome {
+	    background-color: #f8f8f8f8;
+	    color: #666;
+	    background-color: #fff;  
+	    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);  
+	    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	    -o-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	    -ms-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);  
+	    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	}
+	.welcome img {
+	 float: left;
+	    padding: 2%;
+	    border: 1px solid #ccc;
+	    background-color: #fff;
+	    margin: 0 20px 10px 0;
+	    max-width: 40%;
+	 }
+	.promo {
+	    margin: 30px 10px 0 0;
+	}
+	.promo p {
+	    line-height: 1.5;
+	 }
+	 .pres {
+	    text-align: left;
+	    font-size: 2em;
+	    font-weight: bold;
+	    line-height: 1.2em;
+	    margin: 0;
+	    padding: 0;
+	 }
+	 .black {
+	    color: rgba(0,0,0,1);
+	 }
+	 .grey1 {
+	    color: rgba(0,0,0,0.8);
+	 }
+	 .grey2 {
+	    color: rgba(0,0,0,0.6);
+	 }
+	 .grey3 {
+	    color: rgba(0,0,0,0.4);
+	 }
+	 .services li {
+	    
+	    
+	 }
+	 .services li {
+	     list-style-type:none;
+	    background: 
+	       url(data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7)
+	       no-repeat
+	       left top;
+	       padding: 0 0 5px 25px;
+	 }
+	 .latest_projects {
+	    width: 93%;
+	    margin: 15px 0 0 50px;
+	    padding: 0;
+	 }
+	 .latest_projects article {
+	    display: inline-block;
+	    box-model: border-box;
+	    border: 1px solid #ccc;
+	    padding: 10px 10px 10px 0;
+	    border-radius: 5px;
+	    vertical-align: top;
+	    background-color: #fff;
+	    width: 44%;
+	    box-model: border-box;
+	    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	    -o-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	    -ms-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);  
+	    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	 }
+	 .title_jwplayer,
+	 .title_my_mobile {
+	    margin: 0 0 35px 0;
+	}
+	.title_jwplayer {
+	    margin-right: 10px;
+	}
+	.latest_projects article {
+	    box-model: border-box;
+	    padding: 2%;
+	}
+	.latest_projects article img {
+	    float: left;
+	    border: 1px solid #ccc;
+	    max-width: 35%;
+	    margin: 0 5% 0 0;
+	}
+	.title_jwplayer a ,
+	.title_my_mobile a {
+	    color: #666;
+	    font-size: 1em;
+	}
+	.title_jwplayer a:hover,
+	.title_my_mobile a:hover {
+	    text-decoration: none;
+	}
+	.title_jwplayer a.link:hover ,
+	.title_my_mobile a.link:hover {
+	    text-decoration: underline;
+	}
+	.title_jwplayer a.link ,
+	.title_my_mobile a.link {
+	    color: #005a9c;
+	}
+	.title_css3_demo {
+	    width: 150px;
+	    display: inline-block;
+	    vertical-align: top;
+	    margin: 10px 0 0 10px;
+	}
+	
+	/*
+	#news-feed{position:relative; height:250px; width:180px; overflow:hidden; left:15px}
+	.headline{position:absolute; height:250px; top:260px; overflow:hidden}
+	*/
+	/* education */
+	.logo_edu {
+	    display: inline-block;
+	    width: 24%;
+	    vertical-align: top;
+	}
+	.name_edu {
+	    display: inline-block;
+	    width: 75%;
+	    vertical-align: top;
+	}
+	
+	/*  portfolio */
+	.portfolio {
+	  width: 95%;
+	  padding: 0;
+	  margin: 0;
+	}
+	#portfolio p {
+	    width: 90%;
+	}
+	
+	/* contact  */
+      
+	.vcard {
+	    float: left;
+	    margin: 0 0 20px 0;
+	    padding: 5px 0;
+	    width: 50%;
+	}
+	.vcard ul {
+	    margin: 0;
+	    padding: 0;
+	}
+	.vcard li {
+	    line-height: 32px;
+	    margin: 0 0 10px 0;
+	 }
+	.vcard span {
+	    display: inline-block;
+	    margin: 0 0 0 10px;
+	    font-size: medium;
+	    vertical-align: top;
+	 }
+	 .contact_home,
+	 .contact_email,
+	 .contact_phone,
+	 .contact_skype,
+	 .contact_www {
+	    display: inline-block;
+	    width: 32px;
+	    height: 32px;
+	    background: url(http://janetkulyk.s3.amazonaws.com/img/sprite-icons.png) no-repeat;
+	    vertical-align: top;
+	 }
+	 .contact_www {
+	    background-position: -378px 0;
+	 }
+	 .contact_home {
+	    background-position: -336px 0;
+	 }
+	 .contact_email {
+	    background-position: -252px 0;
+	 }
+	 .contact_phone {
+	    background-position: -210px 0;
+	 }
+	 .contact_skype {
+	    background-position: -294px 0;
+	 }
+	.map {
+	    float: right;
+	    width: 44%;
+	    height: 255px;
+	    border: 2px solid #999;
+	    border-radius: 5px;
+	    vertical-align: top;
+	    margin: 25px 0;
+	 }
+	 /*
+	#formcontactme li {
+	    clear: both;
+	}
+	#formcontactme textarea {
+	    display: inline-block;
+	}
+	#formcontactme label {
+	    width: 150px;
+	    float: none;
+	    clear: left;
+	    display: inline-block;
+	    vertical-align: top;
+	    text-align:right; padding-right:10px; font-size:110%
+	}
+	#formcontactme input {
+	    width: 125px;
+	    float: none;
+	    display: inline-block;
+	    vertical-align: top;
+	    margin:0 5px 10px 0;
+	}
+	*/
+	 
+	 /*  social  */
+	  .social {
+	    display: inline-block;
+	    width: 32px;
+	    height: 32px;
+	    background: url(http://janetkulyk.s3.amazonaws.com/img/sprite-icons.png) no-repeat;
+	    vertical-align: top;
+	 }
+	 .linkedin {
+	    background-position: 0 0;
+	 }
+	 .yahoo {
+	    background-position: -168px 0;
+	 }
+	 .facebook {
+	    background-position: -42px 0;
+	 }
+	 .twitter {
+	    background-position: -84px 0;
+	 }
+	 .googleplus {
+	    background-position: -126px 0;
+	 }
+	 

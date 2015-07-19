@@ -1,0 +1,42 @@
+[
+	{
+		"date" : "02/01 @ 2100BDX",
+		"title" : "Here is FX Market News #1",
+		"url" : "http://www.google.com"
+	},
+	{
+		"date" : "02/02 @ 2100BDX",
+		"title" : "Here is FX Market News #2",
+		"url" : "http://www.yahoo.com"
+	},
+	{
+		"date" : "02/03 @ 2100BDX",
+		"title" : "Here is FX Market News #3",
+		"url" : "http://www.cbc.ca"
+		},
+	{
+		"date" : "02/04 @ 2100BDX",
+		"title" : "Here is FX Market News #4",
+		"url" : "http://www.weather.com"
+	},
+	{
+		"date" : "02/01 @ 2100BDX",
+		"title" : "Here is FX Market News #5",
+		"url" : "http://www.google.com"
+	},
+	{
+		"date" : "02/02 @ 2100BDX",
+		"title" : "Here is FX Market News #6",
+		"url" : "http://www.yahoo.com"
+	},
+	{
+		"date" : "02/03 @ 2100BDX",
+		"title" : "Here is FX Market News #7",
+		"url" : "http://www.cbc.ca"
+		},
+	{
+		"date" : "02/04 @ 2100BDX",
+		"title" : "Here is FX Market News #8",
+		"url" : "http://www.weather.com"
+	}
+]

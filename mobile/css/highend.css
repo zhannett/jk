@@ -1,0 +1,25 @@
+@charset "UTF-8";
+h1{
+	padding: 0.5em 0.35em;
+	background-color: #005A9C;
+	color: #FFF;
+	border-top: 0.25em solid #cf4f15;
+	border-bottom: 0.25em solid #cf4f15;
+	margin: 0 auto;
+	letter-spacing: 0.03em;
+}
+h2 {
+	color: #fff;
+	background-color: #f34200;
+	margin: 0 auto;
+	padding: 0.2em 0;
+}
+li {
+	padding: 0.65em 0;
+}
+#nav li,
+#footer li {
+	display: inline;
+	float: left;
+	width: 33.333%;
+}

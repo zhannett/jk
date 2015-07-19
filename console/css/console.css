@@ -1,0 +1,355 @@
+﻿@charset "utf-8";
+/* CSS Document */
+	html {
+		
+	}
+	
+	body {
+		font-size: 100%;
+	}
+	button {
+		cursor: pointer;
+	}
+	
+	h2 {
+		font-size: 0.85em;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-weight: normal;
+	}
+	#console {
+		clear: both;
+	}
+	#header {
+		display: block;
+	}
+	#header img {
+		border: 1px solid #333;	
+	}
+	#header p {
+		
+	}
+	.header_col1 {
+		float: left;
+		width: 100px;
+		margin-bottom: 10px;
+	}
+	.header_col2b {
+		float: left;
+		width: 745px;;
+		text-align: center;
+	}
+	.header_col3 {
+		float: left;
+		width: 95px;
+		font-size: 0.8em;
+	}
+	.signout {
+		display: block;
+		margin-top: 7px;
+	}
+	.header_col4 {
+		float: right;
+		width: 75px;
+		clear: right;
+		text-align: right;
+	}
+	
+	#nav {
+		clear: both;
+		background: #99F;
+		margin: 25px 0;
+	}
+	
+	#nav li {
+		display: inline; /* just for horizontsl nsvigstion */
+		margin: 0;
+		list-style-type: none;
+	}
+	#nav a {
+		color: #333;
+		padding: 5px 10px 4px;
+		background: #eee;
+		text-decoration: none;
+		display: inline-block;
+	}
+	#nav a:hover {
+		background: #aaa;
+		color: #fff;
+	}
+	body.dashboard #nav .dashboard a,
+	body.preferences #nav .preferences a,
+	body.security #nav .security a,
+	body.support #nav .support a
+	{
+		background: #f00;
+		color: #fff;
+	}
+	
+	
+	td {
+				width:15%;
+				height: 40px;
+				background: #0F6;
+			}
+	/* first column start  */
+	
+	
+	
+	.last_calls {
+		width: 100%;
+		
+	}
+	
+	#last_calls td {
+		height: 12px;
+		background: #0F6;
+		border: 0;
+		font-size: 0.85em;	
+		margin: 0;
+		padding: 1px 3px;
+	}
+	
+	.checkbox {
+		width: 2%;
+	}
+	.date {
+		width: 4%;	
+		text-align: center;
+	}
+	.time {
+		width: 4%;
+		text-align: center;
+	}
+	
+	
+	.mynumbers {
+		height: 25px;
+		line-height: 25px;
+		margin: 35px 0;
+		border: 1px solid #333;	
+		font-size: 0.85em;
+	}
+	.mynumbers .num1 {
+		float: left;
+		width: 50%;
+		text-align: center;
+		background-color: #66F;
+		border-right: 1px solid #333;
+	}
+	.mynumbers .num2 {
+		float: right;
+		width: 49%;
+		text-align: center;
+		bckground-color: #660;
+	}
+	.send_sms {
+		margin: 10px 0;
+	}
+	.audio {
+		text-align: center;
+		margin: 25px 0;	
+	}
+	/* first column end  */		
+	
+	/* second column start  */
+	
+	.col_tabs {
+		float: left;
+		width: 32px;
+		clear: left;
+	}
+	.col2_container {
+		float: left;
+		width: 300px;
+		height: 330px;
+		clear: right;
+		text-align: center;	
+		background: #9CF;
+		border: 1px solid #333;
+	}
+	
+			.call {
+				width: 80%;
+				height: 130px;
+				margin: 30px auto;	
+				border: 1px solid #000;
+				background: #99C;
+			}
+			.incoming_call {
+				border: 1px solid #333;
+				width: 80%;
+				margin: 20px auto;
+				text-align: center;
+				padding-bottom: 10px;
+				background: #0F0;
+				position: relative;
+				top: -35px;
+				
+				-moz-border-radius: 10px;
+	   			-webkit-border-radius: 10px;
+	   			border-radius: 10px;
+			}
+			
+	
+		.dial {
+			width: 90%;
+			margin: 0 auto;
+		}
+		.dial_row {
+			width: 246px;
+			height: 32px;
+			margin: 10px auto;
+			text-align: center;	
+		}
+		.dial button {
+			float: left;
+			width: 60px;
+			height: 33px;
+		}
+		.dial_btn {
+			float: left;
+			width: 32px;
+			height: 32px;
+			cursor: pointer;
+			padding: 0 5px;
+			background: url(../img/circle.png) no-repeat 5px 0;
+		}
+		.dial_btn span {
+			position: relative;
+			top: 7px;
+			
+		}
+	
+	/* second column end  */
+	
+	/* third column start  */
+		
+		.collage {
+			height: 330px;
+			border: 1px solid #000;
+			padding: 0 20px;
+			margin: 0 auto 40px auto;
+			background: #6F9;
+		}
+		.collage_row {
+			height: 45px;
+			text-align: center;
+			margin: 20px auto;
+			clear: both;	
+		}
+		.collage_controls {
+			height: 25px;
+			text-align: center;
+			margin: 40px auto 10px auto;
+			clear: both;	
+		}
+		.collage_cell {
+			float: left;
+			width: 45px;
+			height: 45px;
+			cursor: pointer;
+			background: #C30;
+			margin: 5px;
+		}
+		
+		.social {
+				width: 658px;
+				margin-left: 32px;
+				border: 1px solid #CCC;
+				height: 170px;
+				clear: both;
+			}
+			.social h2 {
+				margin-left: 32px;	
+			}
+			#social_table {
+				float: right;
+				width: 658px;
+				border: 1px solid #333;
+				margin: 0 0 0 32px;	
+				clear: both;
+			}
+			
+			#social_table tr {
+			}
+			#social_table th {
+				background-color: #69c;
+				font-size: 0.9em;
+				font-weight: normal;
+				border-bottom: 1px solid #333;
+			}
+			#social_table td {
+				height: 20px;
+				font-size: 0.85em;
+				overflow: hidden;
+			}
+			.name {
+				width: 25%;
+			}
+			.email {
+				width: 35%;
+			}
+			#import button {
+				margin: 15px 0;	
+			}
+			
+			
+	
+	/* third column end  */
+			.col1 {
+				float: left;
+				width: 300px;
+				background: #F9F;
+				height: 525px;
+				clear: left;
+				margin-right: 25px;
+			}
+			
+			.col2 {
+				float: right;
+				width: 690px;
+				background: #E2E2e2;
+				height: 525px;
+				clear: right;
+			}
+			
+			
+			.tab_phone {
+				width: 32px;
+				height: 32px;
+				margin: 0 0 5px 0;
+				background: #6FC url(../img/icon_phone.png) no-repeat 0 0;
+				padding: 0 0 0 0;
+				border: 1px solid #000;
+			}
+			.tab_tv {
+				float: left;
+				width: 32px;
+				clear: left;
+				height: 36px;
+				margin: 10px 0;
+				background: #6FC url(../img/icon_tv.png) no-repeat 0 0;
+				padding: 0 0 0 0;
+				border: 1px solid #000;
+			}
+			.col2a {
+				float: left;
+				width: 335px;
+				height: 350px;
+			}
+			.col2b {
+				float: right;
+				width: 320px;
+				height: 350px;
+				margin-left: 25px;
+			}
+			
+			dt {
+				height: 25px;
+			}
+			
+			.accordion dd {
+				display: none;
+			}
+			
+			

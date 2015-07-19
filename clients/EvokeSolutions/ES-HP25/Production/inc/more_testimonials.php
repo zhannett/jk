@@ -1,0 +1,1 @@
+<div class="more_testimonials"><a href="about_testimonials.php">VIEW MORE TESTIMONIALS &gt;</a></div>

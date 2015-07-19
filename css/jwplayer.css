@@ -1,0 +1,113 @@
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+/* ===== Primary Styles ========================================================
+   Author:
+   ========================================================================== */
+
+/* Element: 1 Rotating Banner w/ JWPlayer 1.3 */
+  .slider{
+    width: 470px;
+    height: 322px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 18px;
+    margin-top: -27px;
+  } 
+  .slider > .slidercontrols{
+    z-index: 3;
+    height: 27px;
+    width: 100%;
+    background-color: #047b90; 
+    position: relative;
+    bottom: -290px;
+  }
+  #video {
+    width: 470px; 
+    height: 264px;
+  }
+  .slider > .slidercontrols > .controls_abs{
+    position: absolute;
+    height: 27px; 
+    z-index: 5;
+    width: 100%;
+    top: 0px; 
+  }
+
+  .controls_abs_inner{
+    margin-left: auto;
+    margin-right: auto;
+    width: 0px;
+    cursor: pointer;
+  }
+
+  .abs_element_active{
+    background-image: url('http://janetkulyk.s3.amazonaws.com/img/jwplayer/main_slider_selected.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20px;
+    height: 24px;
+    float: left;
+  }
+
+  .abs_element_inactive{
+    background-image: url('http://janetkulyk.s3.amazonaws.com/img/jwplayer/main_slider_unselected.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20px;
+    height: 24px;
+    float: left;
+  }
+
+  .controls_l, .controls_r {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    z-index: 3;
+    cursor: pointer;
+  }
+  .controls_l{
+    left: 0px;
+    background-image: url('http://janetkulyk.s3.amazonaws.com/img/jwplayer/slider_arrow_left.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .controls_r{
+    right: 0px;
+    background-image: url('http://janetkulyk.s3.amazonaws.com/img/jwplayer/slider_arrow_right.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .slider > .slidercontent{
+    width: 10000px;
+    height: 264px; 
+    position: relative;
+  }
+  .slider > .slidercontent > .sliderelement{
+    /*width: 304px; */
+    width: 470px;
+    height: 264px; 
+    overflow: hidden;
+    float: left; 
+  }
+
+
+/* testimonials page, video */
+#videocontainer1,
+#videocontainer2,
+#videocontainer3 {
+  width: 470px;
+  height: 264px;
+}
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+#ContentHeaderForHomePageTitle{
+ font-size:1em;
+} 

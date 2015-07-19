@@ -1,0 +1,226 @@
+[
+	{
+		"action"		: "BUY",
+		"currency1"		: "USD",
+		"currency2"		: "CAD",
+		"currencies"	: "USD/CAD",
+		"rate"			: 0.992304545
+	},
+	{
+		"action"		: "SELL",
+		"currency1"		: "USD",
+		"currency2"		: "CAD",
+		"currencies"	: "USD/CAD",
+		"rate"			: 0.991004545
+	},
+	{
+		"action"		: "BUY",
+		"currency1"		: "CAD",
+		"currency2"		: "USD",
+		"currencies"	: "CAD/USD",
+		"rate"			: 1.012304545
+	},
+	{
+		"action"		: "SELL",
+		"currency1"		: "CAD",
+		"currency2"		: "USD",
+		"currencies"	: "CAD/USD",
+		"rate"			: 1.011004545
+	},
+	{
+		"action"		: "BUY",
+		"currency1"		: "EUR",
+		"currency2"		: "USD",
+		"currencies"	: "EUR/USD",
+		"rate"			: 1.31834545
+	},
+	{
+		"action"		: "SELL",
+		"currency1"		: "EUR",
+		"currency2"		: "USD",
+		"currencies"	: "EUR/USD",
+		"rate"			: 1.304834545
+	},
+	{
+		"action"		: "BUY",
+		"currency1"		: "USD",
+		"currency2"		: "EUR",
+		"currencies"	: "USD/EUR",
+		"rate"			: 0.7578123
+	},
+	{
+		"action"		: "SELL",
+		"currency1"		: "USD",
+		"currency2"		: "EUR",
+		"currencies"	: "USD/EUR",
+		"rate"			: 0.7668123
+	},
+	{
+		"action"		: "BUY",
+		"currency1"		: "EUR",
+		"currency2"		: "CAD",
+		"currencies"	: "EUR/CAD",
+		"rate"			: 1.297334545
+	},
+	{
+		"action"		: "SELL",
+		"currency1"		: "EUR",
+		"currency2"		: "CAD",
+		"currencies"	: "EUR/CAD",
+		"rate"			: 1.285004545
+	},
+	{
+		"action"		: "BUY",
+		"currency1"		: "CAD",
+		"currency2"		: "EUR",
+		"currencies"	: "CAD/EUR",
+		"rate"			: 0.787334545
+	},
+	{
+		"action"		: "SELL",
+		"currency1"		: "CAD",
+		"currency2"		: "EUR",
+		"currencies"	: "CAD/EUR",
+		"rate"			: 0.795004545
+	},
+	{
+		"action"		: "BUY",
+		"currency1"		: "GBP",
+		"currency2"		: "USD",
+		"currencies"	: "GBP/USD",
+		"rate"			: 1.586264545
+	},
+	{
+		"action"		: "SELL",
+		"currency1"		: "GBP",
+		"currency2"		: "USD",
+		"currencies"	: "GBP/USD",
+		"rate"			: 1.550004545
+	},
+	{
+		"action"		: "SELL",
+		"currency1"		: "USD",
+		"currency2"		: "GBP",
+		"currencies"	: "USD/GBP",
+		"rate"			: 0.645454545
+	},
+	{
+		"action"		: "BUY",
+		"currency1"		: "USD",
+		"currency2"		: "GBP",
+		"currencies"	: "USD/GBP",
+		"rate"			: 0.617093494
+	},
+	{
+		"action"		: "BUY",
+		"currency1"		: "GBP",
+		"currency2"		: "CAD",
+		"currencies"	: "GBP/CAD",
+		"rate"			: 1.603975365
+	},
+	{
+		"action"		: "SELL",
+		"currency1"		: "GBP",
+		"currency2"		: "CAD",
+		"currencies"	: "GBP/CAD",
+		"rate"			: 1.602456723
+	},
+	{
+		"action"		: "BUY",
+		"currency1"		: "CAD",
+		"currency2"		: "GBP",
+		"currencies"	: "CAD/GBP",
+		"rate"			: 0.623893862
+	},
+	{
+		"action"		: "SELL",
+		"currency1"		: "CAD",
+		"currency2"		: "GBP",
+		"currencies"	: "CAD/GBP",
+		"rate"			: 0.633756863
+	},
+	{
+		"action"		: "BUY",
+		"currency1"		: "GBP",
+		"currency2"		: "EUR",
+		"currencies"	: "GBP/EUR",
+		"rate"			: 1.561384545
+	},
+	{
+		"action"		: "SELL",
+		"currency1"		: "GBP",
+		"currency2"		: "EUR",
+		"currencies"	: "GBP/EUR",
+		"rate"			: 1.560004545
+	},
+	{
+		"action"		: "BUY",
+		"currency1"		: "EUR",
+		"currency2"		: "GBP",
+		"currencies"	: "EUR/GBP",
+		"rate"			: 0.811601358
+	},
+	{
+		"action"		: "SELL",
+		"currency1"		: "EUR",
+		"currency2"		: "GBP",
+		"currencies"	: "EUR/GBP",
+		"rate"			: 0.814998973
+	},
+	{
+		"action"		: "BUY",
+		"currency1"		: "USD",
+		"currency2"		: "USD",
+		"currencies"	: "USD/USD",
+		"rate"			: 1.000000000
+	},
+	{
+		"action"		: "SELL",
+		"currency1"		: "USD",
+		"currency2"		: "USD",
+		"currencies"	: "USD/USD",
+		"rate"			: 1.000000000
+	},
+	{
+		"action"		: "BUY",
+		"currency1"		: "CAD",
+		"currency2"		: "CAD",
+		"currencies"	: "CAD/CAD",
+		"rate"			: 1.000000000
+	},
+	{
+		"action"		: "SELL",
+		"currency1"		: "CAD",
+		"currency2"		: "CAD",
+		"currencies"	: "CAD/CAD",
+		"rate"			: 1.000000000
+	},
+	{
+		"action"		: "BUY",
+		"currency1"		: "EUR",
+		"currency2"		: "EUR",
+		"currencies"	: "EUR/EUR",
+		"rate"			: 1.000000000
+	},
+	{
+		"action"		: "SELL",
+		"currency1"		: "EUR",
+		"currency2"		: "EUR",
+		"currencies"	: "EUR/EUR",
+		"rate"			: 1.000000000
+	},
+	{
+		"action"		: "BUY",
+		"currency1"		: "GBP",
+		"currency2"		: "GBP",
+		"currencies"	: "GBPR/GBP",
+		"rate"			: 1.000000000
+	},
+	{
+		"action"		: "SELL",
+		"currency1"		: "GBP",
+		"currency2"		: "GBP",
+		"currencies"	: "GBPR/GBP",
+		"rate"			: 1.000000000
+	}
+]

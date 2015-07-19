@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+		<title>DOM Test</title>
+
+		<script type="text/javascript">
+
+			/* Recursively transverse the HTML DOM using the passed node as as a starting point */
+
+			function transverse(obj) {
+
+				var strNode = ancestor(obj) + obj.nodeName.toString() + '\n';
+
+				for(var i=0;i<obj.childNodes.length;i++)
+
+					strNode += transverse(obj.childNodes.item(i));
+
+				return(strNode);			
+
+			
+
+				function ancestor(obj) {
+
+					if(obj.parentNode != null)
+
+						return ('>' + ancestor(obj.parentNode));
+
+					else
+
+						return('');
+
+				}
+
+			}
+
+		</script>
+
+	</head>
+
+	
+
+	<body onload="document.getElementById('textarea1').value = transverse(document)">
+
+		<table width="300" border="1" cellspacong="1" cellpadding="1">
+
+			<tr><td><input type="text" id="input1" name="input1" /></td></tr>
+
+			<tr><td><textarea id="textarea1" name="textarea1" cols="80" rows="20" /></td></tr>
+
+		</table>
+
+	</body>
+
+</html>

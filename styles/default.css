@@ -1,0 +1,407 @@
+body {
+	background-color:	#184939; 
+	padding:			0px;
+	margin:				0px;
+	margin-top:			10px;
+	font-family:		arial, verdana, sans, sans-serif;
+}
+
+#pageContainerDiv {
+	width:				98%;
+	padding:			0px;
+	background-color:	white;
+	border:				1px solid black;
+}
+
+#headerContainer {
+	background-color:   #5a8e5a;
+	width:				100%;
+	padding:			0px;
+	margin:				0px;
+	height:				170px;
+}
+
+#topBarBackgroundDiv  {
+	width:				100%;
+	background-color:   #5a8e5a;
+	margin:				0px;
+	padding:			0px;
+	height:				170px;
+}
+
+
+.scaledImg {
+	width:				100%;
+	height:				170px;	
+}
+
+#dmkLogo {
+	float:				left;
+	position:			absolute;
+	top:				0px;
+	left:				0px;
+	padding-top:		50px;
+	padding-left:		50px;
+	margin:				0px;
+}
+
+#anigif1Div {
+	width:				98%;
+	text-align:			right;
+	position:			absolute;
+	left:				0px;
+	top:				20px; 
+}
+
+#aniGif1 {
+	width:				28%
+	position:			absolute;
+	margin-right:		10px;
+	z-index:			100;
+}
+
+#aniGif2Div {
+    width:              98%;
+    text-align:         right;
+    position:           absolute;
+    left:               0px;
+	margin-top:			-150px;
+}
+
+#aniGif2 {
+    width:              28%
+    position:           absolute;
+    margin-right:       40px;
+    z-index:            101;
+
+}
+
+
+#contentWrapper {
+	background-color:	white;
+}
+
+#topNav {
+	float:				left;
+	text-align:			right;
+	width:				20%;
+	background-color:	white;
+}	
+
+.topNavItem {
+/*	float:				left; */
+	padding:			4px;
+	padding-right:		40px;
+	border-right:		1px solid #184939;
+	font-weight:		normal;
+	color:				#184939;
+}
+
+.topNavItem:hover {
+	font-weight:		bold;
+}
+
+.topNavLastItem {
+/*	float:              left; */
+    padding:            4px;
+	color:				#184939;
+}
+
+
+#contentArea {
+	float:				left;
+	padding:			4px;
+	background-color:	white;
+	margin:				0px;
+	width:				75%;
+	overflow:			visible;
+}	
+
+#footerDiv {
+	width:              100%;
+	background-color:   #5a8e5a;
+	text-align:			right;
+	clear:				left;
+}
+#footerText {
+	font-family:		arial, sans, sans-serif;
+	font-size:			16px;
+	color:				white;
+	padding:			4px;	
+}
+
+#bottomBarBackgroundDiv {
+	background-color:   #5a8e5a;
+	width:				100%;
+}
+
+
+#pageTitle {
+	width:				65%;
+	margin-left:	40px;	
+	margin-top:			-25px;
+	margin-right:		80px;
+	padding-left:		0px;
+	padding-bottom:		10px;
+	position:			absolute;
+	font-size:			20px;
+	font-weight:		bold;
+	z-index:			200;
+	border-bottom:		1px solid #184939;
+	color:				#184939;
+}
+
+#pageSubTitle {
+	padding-left:       50px;
+	color:              #184939;
+	size:				16px;
+}
+
+
+.contentTable {
+	margin:				0px;
+	/*margin-left:		40px; */
+	/*margin-top:			30px;*/
+	margin-right:		80px;
+	padding-top:		30px;
+	padding-left:		40px;
+    overflow:           visible;
+
+}
+.leftSidePageNav {
+	width:				150px;
+	border:             1px solid #184939;
+    background-color:   #b6dbb6;
+	color:				#184939;
+}
+
+.leftSidePageNav, .rightSidePageText {
+	padding:			20px;
+}	
+
+.leftSidePageNav > ul {
+	margin:				10px;
+	padding:			0px;
+}
+td {
+	vertical-align:		top;
+	color:				#184939;
+}
+
+td.middleAligned {
+	vertical-align:		middle;
+}
+
+div.descriptiveHeader {
+	padding-top:		20px;
+	width:				100%;
+	color:				#184939;
+	text-align:			center;
+	font-weight:		bold;
+	font-size:			20px;
+}
+
+div.descriptiveSubHeader {
+    width:              100%;
+    color:              #184939;
+    text-align:         center;
+    font-weight:        bold;
+	padding-bottom:		20px;
+}
+
+p {
+	text-align:			left;
+}
+p.quote {
+	font-weight:		bold;
+	font-style:			italic;
+}
+
+p.strong {
+	font-weight:		bolder;
+	font-style:			normal;
+	text-align:			left;
+}
+
+div.small {
+	font-size:			10px;
+
+}
+a {
+	color:				#184939;
+	font-weight:		bold;
+	text-decoration:	none;
+
+}	
+
+a:hover {
+	color:				#5a8e5a;	
+	font-weight:		bold;
+}
+
+td > img {
+	border:				1px solid black;
+	margin:				40px;
+}
+
+img.header {
+	margin:				0px;
+	border:				none;	
+	text-align:			right;
+}
+
+a.tellMore {
+	text-decoration:	none;
+	color:				#5a8e5a;
+	font-weight:		bold;
+	padding-left:		20px
+}
+
+a.tellMoreHide {
+	text-decoration:    none;
+    color:              #5a8e5a;
+    font-weight:        bold;
+    margin-top:         20px;
+    padding-left:       20px;
+	display:			none;
+}
+
+.paginationContainerTop  {
+	padding:			10px;
+	border:				1px solid #184939;
+	background-color:	#b6dbb6;
+	float:				right;
+}
+
+.paginationContainerBottom {
+	padding:            10px;
+    border:             1px solid #184939;
+    background-color:   #b6dbb6;
+    float:              right;
+	margin-top:			20px;
+}
+
+.paginationLink {
+	text-align:			right;
+	float:				left;
+	padding-left:		4px;
+}
+.paginationLink > a {
+	text-decoration:    none;
+    color:              #5a8e5a;
+	font-weight:		bold;
+
+}
+
+div.toggledText {
+	display:			none;
+}
+
+.productContainer, .resultContainer {
+	margin:				10px;
+	float:				left;
+	width:				152px;
+}
+
+.resultContainer {
+	margin:             10px;
+    float:              left;
+    width:              172px;
+}
+
+.productImage  {
+	margin:				0px;
+	width:				150px;
+	height:				150px;
+	border:				1px solid black;
+	cursor:             hand;
+    cursor:             pointer;
+
+}
+
+.resultImage {
+	margin:             0px;
+    width:              170px;
+    height:             170px;
+    border:             1px solid black;
+	cursor:				hand;
+	cursor:				pointer;
+}
+
+.productTextContainer {
+	padding-top:		10px;
+}
+
+.productName, .resultName {
+	font-size:			12px;
+	font-weight:		bold;
+	text-align:			left;
+	margin:				0px;
+	height:				23px;
+	padding-left:		4px;
+	padding-top:		0px;	
+	padding-bottom:		0px;
+	border:             1px solid #184939;
+	border-bottom:		none;
+    background-color:   #b6dbb6;
+	vertical-align:		middle;
+}
+
+.treatmentName {
+	font-size:			20px;
+	font-weight:		bold;
+}
+
+.productDescription {
+	
+}
+ 
+.contentBottomBorder {
+	padding-top:		20px;
+	float:				right;
+	width:				70%;
+	border:				none;
+	border-bottom:		1px solid #184939;
+	margin-right:		60px;
+}
+
+.clinicsTable {
+    width:              90%;
+}
+
+.clinicState {
+    border:             1px solid black;
+    padding:            4px;
+    font-family:        arial, sans;
+    font-weight:        bold;
+    font-size:          20px;
+    background-color:   #184939;
+    color:              white;
+}
+
+.clinicAddress {
+    padding:            4px;
+    padding-bottom:     20px;
+    font-family:        arial, sans;
+    font-weight:        normal;
+    font-size:          12px;
+    
+}
+
+.comingEventHeadline {
+	padding:            4px;
+    border:             1px solid #184939;
+    background-color:   #b6dbb6;
+    font-weight:		bold; 
+    margin-bottom:         20px;
+	width:				400px;
+}
+
+.comingEventBody {
+	margin-bottom:         20px;
+}
+
+.eduLinkContainer {
+	margin-top:			20px;
+	margin-right:		20px;
+}

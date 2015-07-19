@@ -1,0 +1,1 @@
+<div class="copyright">&copy;Copyright 2002-2006. All Rights Reserved</div>

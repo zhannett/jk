@@ -1,0 +1,2 @@
+[09-Jun-2010 08:21:30] PHP Notice:  Could not connect to MySQL: Access denied for user 'janetkul'@'localhost' (using password: YES) in /home/janetkul/public_html/code/reg_connect.php on line 22
+[09-Jun-2010 08:21:30] PHP Notice:  Could not connect to MySQL: Access denied for user 'janetkul'@'localhost' (using password: YES) in /home/janetkul/public_html/code/reg_connect.php on line 22

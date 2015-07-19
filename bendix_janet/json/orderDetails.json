@@ -1,0 +1,38 @@
+[
+	{
+		"id"			: "SPOT-TRADE-T0000001",
+		"date"			: "03/20/2012",
+		"action"		: "BUY",
+		"currency1"		: "GBP",
+		"currency2"		: "USD",
+		"amount1"		: 10000000,
+		"product"		: "WIRE",
+		"amount2"		: 18500000,
+		"rate"			: 0.7536,
+		"setMethod"		: "PAD CBG-825"
+	},
+	{
+		"id"			: "SPOT-TRADE-T0000002",
+		"date"			: "03/20/2012",
+		"action"		: "SELL",
+		"currency1"		: "USD",
+		"currency2"		: "CAD",
+		"amount1"		: 10000,
+		"product"		: "WIRE",
+		"amount2"		: 18500000,
+		"rate"			: 1.0000,
+		"setMethod"		: "PAD CBG-825"
+	},
+	{
+		"id"			: "SPOT-TRADE-T0000003",
+		"date"			: "03/20/2012",
+		"action"		: "BUY",
+		"currency1"		: "EUR",
+		"currency2"		: "USD",
+		"amount1"		: 500000,
+		"product"		: "WIRE",
+		"amount2"		: 18500000,
+		"rate"			: 1.2500,
+		"setMethod"		: "PAD CBG-825"
+	}
+]

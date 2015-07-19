@@ -1,0 +1,331 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent}
+body {line-height: 1}
+ol, ul {list-style: none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none}
+:focus {outline: 0}
+ins {text-decoration: none}
+del {text-decoration: line-through}
+table {border-collapse: collapse; border-spacing: 0}
+
+
+
+body {text-align:center}
+blockquote {width:103px; font: italic 0.75em/1.4 Arial, Helvetica, sans-serif; color:#333; padding-top:5px}
+
+sup {font: 0.5em Arial, Helvetica, sans-serif; position:relative; top:-5px}
+.more_info {height:30px; background:url(../img/more_info.gif) no-repeat}
+p.downloads {height:25px; background:url(../img/icon_pdf.gif) no-repeat}
+p.downloads span {font: bold 0.85em Arial, Helvetica, sans-serif; color:#333; position:relative; left:35px}
+
+#page {width:960px; margin:0px auto; height:400px}
+#pageWrapper {padding: 10px 45px 20px 22px}
+
+a:link {font: 0.65em Arial, Helvetica, sans-serif; color:#0A9DDC; letter-spacing: 1px; text-decoration:none}
+a:visited {text-decoration:none}
+a:hover {text-decoration:underline; color:#0A9DDC}
+a:active {text-decoration:underline; color:#0A9DDC}
+
+
+#header {clear:both; text-align:left}
+#header #logo {float:left; clear:left; width:658px}
+#header #slogan {float:left; clear:right; width:200px; height:64px}
+
+#div_nav {float:left; clear:left; width:790px; height:36px; text-align:left; margin-bottom:45px; background: url(../img/bg_nav1.gif) no-repeat}
+#mainNav {text-align:left}
+#mainNav li {display:inline; text-align:left; float:left; height:36px; padding:0px 15px; margin:0px}
+#mainNav li#first {padding:0px 15px 0px 0px}
+#mainNav li a {text-decoration:none}
+#mainNav li a .nav1 {font: 0.65em Arial, Helvetica, sans-serif; color:#333; letter-spacing: 1px; text-decoration:none; position:relative; top:-5px}
+#mainNav li a .nav2 {font: 1.1em Arial, Helvetica, sans-serif; color:#0A9DDC; text-decoration:none}
+.border_left {border-left:1px solid #CCC}
+.blink {border-bottom:3px solid #547190}
+.tour {border-bottom:3px solid #A7CC74}
+.benefits {border-bottom:3px solid #5A4A42}
+.solved {border-bottom:3px solid #00A69C}
+.geeks {border-bottom:3px solid #88C5CB}
+.services {border-bottom:3px solid #009345}
+.partners {border-bottom:3px solid #E3CC11}
+
+#rightNav {float:right; clear:right; width:100px; text-align:right; position:relative; top:-5px}
+#rightNav li{}
+#rightNav li a {font: 0.7em Arial, Helvetica, sans-serif; color:#808080; text-decoration:none}
+#rightNav li a:visited {text-decoration:none; color:#808080}
+#rightNav li a:hover {text-decoration:underline; color:#0A9DDC}
+#rightNav li a:active {text-decoration:underline; color:#0A9DDC}
+
+#content {text-align:left; clear:both}
+
+#content #col_left {float:left; width:280px; clear:left}
+#content #col_left a{font: 0.65em Arial, Helvetica, sans-serif; letter-spacing: 1px; color:#0A9DDC}
+#content #col_left a:visited{}
+#content #col_left a:hover{text-decoration:underline; color:#0A9DDC}
+#content #col_left a:active{text-decoration:underline; color:#0A9DDC}
+#content #col_left p {width:215px; font: 0.75em/1.4 Arial, Helvetica, sans-serif; color:#333}
+#content #col_left ul {}
+#content #col_left ul li {padding:3px 0px}
+#content #col_left ul li a{font: 0.65em Arial, Helvetica, sans-serif; color:#333; letter-spacing: 1px; text-decoration:none}
+#content #col_left ul li a:visited{text-decoration:none; color:#333}
+#content #col_left ul li a:hover{text-decoration:underline; color:#0A9DDC}
+#content #col_left ul li a:active{text-decoration:underline; color:#0A9DDC}
+#content #col_left ul li a.cur {text-decoration:underline; color:#0A9DDC}
+.submenu {padding-left:15px}
+#content #col_left #more_info {height:30px; background:url(../img/more_info.gif) no-repeat}
+#content #col_left #bg_bl_img_left {width:207px; height:213px; background:url(../img/bg_bl_img_left.gif) no-repeat; margin: 100px 0px 25px 0px}
+#content #col_left h1.orange {width:215px; font: 1.3em Georgia, "Times New Roman", Times, serif; color:#F89C26}
+#content #col_left #img_thevision {width:237px; height:212px; background:url(../img/img_thevision.gif) no-repeat; clear:both; margin:50px 0px 20px 0px; position:relative; left:-22px}
+#content #col_left #img_thevision span {position:relative; top:170px; left:27px; font: bold 1.1em Arial, Helvetica, sans-serif; color:#FFF}
+#content #col_left #bg_signup {width:238px; height:103px; background:url(../img/bg_signup.gif) no-repeat}
+#content #col_left #bg_signup span {position:relative; top:30px; left:160px; font: bold 1.1em Arial, Helvetica, sans-serif; color:#000}
+#content #col_left #bg_left_investor {width:238px; height:214px; background:url(../img/bg_left_investor.gif) no-repeat}
+#content #col_left #bg_left_investor span {position:relative; top:170px; left:30px; font: bold 1.1em Arial, Helvetica, sans-serif; color:#FFF}
+
+
+#content #col_right {float:left; width:555px; clear:right}
+#content #col_right h1 {width:555px; font: bold 1.1em Arial, Helvetica, sans-serif; color:#1A1A1A; padding-bottom:10px}
+#content #col_right p {width:555px; font: 0.85em/1.4 Arial, Helvetica, sans-serif; color:#333; padding:5px 0px}
+#content #col_right img {padding:20px 0px}
+#content #col_right #bg_bl {width:685px; height:237px; background:url(../img/bg_bl.gif) no-repeat; clear:both; position:relative; left:-30px}
+#content #col_right #bg_bl span {font: 2.2em Georgia, "Times New Roman", Times, serif; color:#333; position:relative; top:110px; left:30px}
+#content #col_right #bg_about {width:643px; height:233px; background:url(../img/bg_about.gif) no-repeat; clear:both; position:relative; left:-15px}
+#content #col_right #bg_about span {font: 2.2em Georgia, "Times New Roman", Times, serif; color:#333; position:relative; top:25px; left:15px}
+#content #col_right #bg_about #joinus {position:relative; left:565px; top:45px; font: bold 1.1em Arial, Helvetica, sans-serif; color:#FFF}
+#content #col_right #bg_about_company_bg {width:661px; height:278px; background:url(../img/bg_about_company_bg.gif) no-repeat; clear:both; position:relative; left:-30px}
+#content #col_right #bg_about_company_bg span {font: 2.2em Georgia, "Times New Roman", Times, serif; color:#333; position:relative; top:25px; left:30px}
+#content #col_right #bg_thevision {width:700px; height:73px; background:url(../img/bg_h1_73.gif) repeat-x; position:relative; left:-30px}
+#content #col_right #bg_thevision span {font: 2.2em Georgia, "Times New Roman", Times, serif; color:#333; position:relative; top:15px; left:30px}
+#content #col_right #bg_about_company_bg #thevision {position:relative; left:575px; top:125px; font: bold 1.1em Arial, Helvetica, sans-serif; color:#FFF}
+#content #col_right #bg_investor {width:647px; height:234px; background:url(../img/bg_investor.gif) repeat-x; position:relative; left:-30px}
+#content #col_right #bg_investor span {font: 2.2em Georgia, "Times New Roman", Times, serif; color:#333; position:relative; top:140px; left:30px}
+#content #col_right #bg_investor div#ir_contact {position:relative; left:555px; top:120px; font: bold 1.1em Arial, Helvetica, sans-serif; color:#FFF}
+
+
+
+#content #col_right #cloud #title_cloud {width:700px; height:89px; background:url(../img/bg_h1_89.gif); position:relative; left:-30px; margin-bottom:25px}
+#content #col_right #cloud #title_cloud h1 {width:500px; font: 2.2em Georgia, "Times New Roman", Times, serif; color:#333; position:relative; left:378px; top:20px}
+#content #col_right #cloud span {position:relative; left:310px; top:15px; font: bold 1.1em Arial, Helvetica, sans-serif; color:#FFF}
+#content #col_right #security {width:686px; height:221px; background:url(../img/bg_security.gif); position:relative; left:-30px; margin-bottom:25px}
+#content #col_right #security h1 {width:555px; font: 2.2em Georgia, "Times New Roman", Times, serif; color:#333; position:relative; left:30px; top:20px}
+#content #col_right #security p {width:450px; font: 0.85em/1.4 Arial, Helvetica, sans-serif; color:#333; padding:5px 0px; position:relative; left:30px}
+#content #col_right #security span {position:relative; left:570px; top:-15px; font: bold 1.1em Arial, Helvetica, sans-serif; color:#FFF}
+#content #col_right #security span#download {position:relative; left:565px; top:-65px}
+#content #col_right #security span#download a {font: 0.65em Arial, Helvetica, sans-serif; color:#0A9DDC; letter-spacing: 1px; text-decoration:none}
+#content #col_right #security span#download a:visited {}
+#content #col_right #security span#download a:hover {text-decoration:underline}
+#content #col_right #security span#download a:active {text-decoration:underline}
+
+#content #home #col_left {float:left; clear:left; width:115px}
+#content #home #col_left #demo {width:95px; height:65px; background:url(../img/bg_orange.gif) no-repeat; padding-bottom:15px; margin-top:292px}
+#content #home #col_left #demo span {position:relative; left:20px; top:23px; font: bold 1.1em Arial, Helvetica, sans-serif; color:#FFF}
+#content #home #col_left p {width:90px; position:relative; left:20px}
+#content #home #col_left p a {font: 0.65em Arial, Helvetica, sans-serif; color:#0A9DDC; letter-spacing: 1px; text-decoration:none}
+#content #home #col_left p a:visited {}
+#content #home #col_left p a:hover {text-decoration:underline}
+#content #home #col_left p a:active {text-decoration:underline}
+
+
+#content #home #col_right {float:left; clear:right; width:778px}
+#content #home #col_right #main {width:851px; height:316px; clear:both; background:url(../img/bg_home.gif) no-repeat; position:relative; left:-20px}
+#content #home #col_right #main span {width:500px; position:relative; top:60px; left:20px; font: 2.2em Georgia, "Times New Roman", Times, serif; color:#333}
+#content #home #col_right #main h1 {width:500px; font: 2.1em Georgia, "Times New Roman", Times, serif; color:#333; position:relative; top:120px; left:20px; padding-bottom:15px}
+#content #home #col_right #main p {font: 0.85em/1.4 Arial, Helvetica, sans-serif; color:#333; width:360px; position:relative; top:120px; left:20px; padding-bottom:15px}
+#content #home #col_right #columns {clear:both; position:relative; top:120px; padding-bottom:120px}
+#content #home #col_right #columns .title {height:33px; padding:0px 15px; margin-bottom:10px; background:url(../img/bg_title.gif); position:relative; left:-15px}
+#content #home #col_right #columns .title span {font: 1.3em Georgia, "Times New Roman", Times, serif; color:#333; position:relative; top:3px}
+#content #home #col_right #columns #col1 .title {width:165px}
+#content #home #col_right #columns #col2 .title {width:90px}
+#content #home #col_right #columns #col3 .title {width:190px}
+#content #home #col_right #columns #col1 {float:left; clear:left; width:260px}
+#content #home #col_right #columns #col1 p, #content #home #col_right #columns #col2 p, #content #home #col_right #columns #col3 p {width:215px; font: 0.8em/1.4 Arial, Helvetica, sans-serif; color:#333; padding:5px 0px}
+#content #home #col_right #columns #col1 a, #content #home #col_right #columns #col2 a, #content #home #col_right #columns #col3 a {font: 0.65em Arial, Helvetica, sans-serif; letter-spacing: 1px; color:#0A9DDC}
+#content #home #col_right #columns #col1 a:visited, #content #home #col_right #columns #col2 a:visited, #content #home #col_right #columns #col3 a:visited {}
+#content #home #col_right #columns #col1 a:hover, #content #home #col_right #columns #col2 a:hover, #content #home #col_right #columns #col3 a:hover {text-decoration:underline}
+#content #home #col_right #columns #col1 a:active, #content #home #col_right #columns #col2 a:active, #content #home #col_right #columns #col3 a:active {text-decoration:underline}
+#content #home #col_right #columns #col2 {float:left; width:260px}
+#content #home #col_right #columns #col3 {float:left; clear:right; width:215px}
+
+#content #content_top {clear:both}
+#content #content_top #col_left {float:left; width:280px; clear:left}
+#content #content_top #col_left a{font: 0.65em Arial, Helvetica, sans-serif; color:#333; letter-spacing: 1px; text-decoration:none}
+#content #content_top #col_left a:visited{}
+#content #content_top #col_left a:hover{text-decoration:underline; color:#0A9DDC}
+#content #content_top #col_left a:active{text-decoration:underline; color:#0A9DDC}
+#content #content_top #bg_geek {position:relative; left:-22px; width:960px; height:375px; background:url(../img/bg_geeks.gif) no-repeat}
+#content #content_top #bg_geek span {position:relative; left:127px; top:140px; font: bold 1.1em Arial, Helvetica, sans-serif; color:#FFF}
+
+#content #content_top #bg_geek #col_left {float:left; width:280px; clear:left; position:relative; left:22px}
+#content #content_top #bg_geek #col_left ul {}
+#content #content_top #bg_geek #col_left ul li {padding:3px 0px}
+#content #content_top #bg_geek #col_left ul li.active {font: 0.65em Arial, Helvetica, sans-serif; color:#0A9DDC; text-decoration:underline}
+#content #content_top #bg_geek #col_left ul li a{font: 0.65em Arial, Helvetica, sans-serif; color:#333; letter-spacing: 1px; text-decoration:none}
+#content #content_top #bg_geek #col_left ul li a:visited{text-decoration:none; color:#333}
+#content #content_top #bg_geek #col_left ul li a:hover{text-decoration:underline; color:#0A9DDC}
+#content #content_top #bg_geek #col_left ul li a:active{text-decoration:underline; color:#0A9DDC}
+#content #content_top #bg_geek #col_left ul li a.cur {text-decoration:underline; color:#0A9DDC}
+#content #content_top #bg_geek #col_left ul li .submenu {padding-left:15px}
+#content #content_top #bg_geek #col_left ul li ul li {}
+#content #content_top #bg_geek #col_right {float:left; clear:right; width:613px; height:200px}
+#content #content_top #col_right #title_geeks {width:600px; position:relative; left:90px}
+#content #content_top #bg_geek #col_right #txt_main {width:500px; position:relative; top:-140px; left:372px; font: 2.1em Georgia, "Times New Roman", Times, serif; color:#333}
+#content #content_top #col_right {}
+#content #content_top .whysaas {height:150px}
+#content #content_top .datadelivery {height:250px}
+#content #content_top .movingdata {height:150px}
+#content #content_top .nointegration {height:200px}
+#content #content_top #col_right #title {width:500px; height:125px; background:url(../img/bg_h1.gif); position:relative; left:-30px}
+#content #content_top #col_right h1 {width:500px; font: 2.2em Georgia, "Times New Roman", Times, serif; color:#333; position:relative; left:30px; top:20px}
+#content #content_top #col_right #datadelivery {width:618px; height:234px; background:url(../img/bg_datadelivery.gif) no-repeat}
+#content #content_top #col_right #datadelivery #title_datadelivery {width:300px; height:99px; background:url(../img/bg_h1_99.gif); position:relative; left:-30px; top:20px}
+#content #content_top #col_right #datadelivery #title_datadelivery h1 {width:500px; font: 2.2em Georgia, "Times New Roman", Times, serif; color:#333; position:relative; left:30px; top:5px}
+#content #content_top #col_right #datadelivery span {position:relative; top:70px; left:530px; font: bold 1.1em Arial, Helvetica, sans-serif; color:#FFF}
+#content #content_top #col_right #movingdata {width:484px; height:143px; background:url(../img/bg_movingdata.gif) no-repeat right; position:relative; left:218px}
+#content #content_top #col_right #movingdata #title_movingdata {width:300px; height:99px; background:url(../img/bg_h1_99.gif); position:relative; left:-30px; top:20px}
+#content #content_top #col_right #movingdata #title_movingdata h1 {width:500px; font: 2.2em Georgia, "Times New Roman", Times, serif; color:#333; position:relative; left:30px; top:5px}
+#content #content_top #col_right #movingdata span {position:relative; left:310px; font: bold 1.1em Arial, Helvetica, sans-serif; color:#FFF}
+#content #content_top #col_right #nointegration {width:724px; height:225px; background:url(../img/bg_nointegration.gif) no-repeat}
+#content #content_top #col_right #nointegration #title_nointegration {width:300px; height:99px; background:url(../img/bg_h1_99.gif); position:relative; left:-30px; top:20px}
+#content #content_top #col_right #nointegration #title_nointegration h1 {width:500px; font: 2.2em Georgia, "Times New Roman", Times, serif; color:#333; position:relative; left:30px; top:5px}
+#content #content_top #col_right #nointegration span {position:relative; left:310px; font: bold 1.1em Arial, Helvetica, sans-serif; color:#FFF}
+
+
+
+
+
+#content #content_bottom {clear:both}
+#content .datadelivery {height:320px}
+#content #content_bottom p {padding:5px 0px}
+#content #content_bottom #col_left {float:left; width:280px; clear:left; padding-bottom:25px}
+#content #content_bottom #col_left #img_saas {width:237px; height:212px; background:url(../img/geek_saas.jpg) no-repeat; clear:both; margin:50px 0px 20px 0px; position:relative; left:-22px}
+#content #content_bottom #col_left #img_saas span {position:relative; top:170px; left:27px; font: bold 1.1em Arial, Helvetica, sans-serif; color:#FFF}
+#content #content_bottom #col_left #demo {}#content #content_bottom #col_left p {width:215px; font: 0.75em/1.4 Arial, Helvetica, sans-serif; color:#333}
+
+#content #content_bottom #col_left #more_info {height:30px; background:url(../img/more_info.gif) no-repeat}
+
+#content #content_bottom #col_left a{font: 0.65em Arial, Helvetica, sans-serif; letter-spacing: 1px; color:#0A9DDC}
+#content #content_bottom #col_left a:visited{}
+#content #content_bottom #col_left a:hover{text-decoration:underline; color:#0A9DDC}
+#content #content_bottom #col_left a:active{text-decoration:underline; color:#0A9DDC}
+
+#content #content_bottom #col_middle {float:left; width:510px; padding-bottom:25px}
+#content #content_bottom #col_middle h1 {width:455px; font: bold 1.1em Arial, Helvetica, sans-serif; color:#0A9DDC; color:#1A1A1A; padding-bottom:10px}
+#content #content_bottom #col_middle p {width:455px; font: 0.85em/1.4 Arial, Helvetica, sans-serif; color:#333}
+#content #content_bottom #col_middle img {padding:20px 0px}
+#content #content_bottom #col_left a{font: 0.65em Arial, Helvetica, sans-serif; letter-spacing: 1px; color:#0A9DDC}
+
+#content #content_bottom #col_right {float:left; width:103px; clear:right; padding-bottom:25px}
+#content #content_bottom #col_right #more_info {height:30px; background:url(../img/more_info.gif) no-repeat}
+#content #content_bottom #col_right p {width:103px; font: 0.75em Arial, Helvetica, sans-serif; color:#333}
+#content #content_bottom #col_right a{font: 0.65em Arial, Helvetica, sans-serif; letter-spacing: 1px; color:#0A9DDC}
+#content #content_bottom #col_right a:visited{}
+#content #content_bottom #col_right a:hover{text-decoration:underline; color:#0A9DDC}
+#content #content_bottom #col_right a:active{text-decoration:underline; color:#0A9DDC}
+#content #content_bottom #col_right blockquote {width:103px; font: 0.65em/1.4 Arial, Helvetica, sans-serif; color:#333; padding-top:5px}
+#content #content_bottom #col_right span {font: 0.8em/1.4 Arial, Helvetica, sans-serif; color:#F89C26; padding-top:5px}
+
+/* Template 1A  */
+#content #col_right.a1 {float:left; clear:right; width:613px}
+#content #col_right #columns {clear:both}
+#content #col_right #columns #col1 {float:left; clear:left; width:510px}
+#content #col_right #columns #col1 h1 {width:455px; font: bold 1.1em Arial, Helvetica, sans-serif; color:#333; padding:20px 0px}
+#content #col_right #columns #col1 h2 {width:455px; font: bold 1.1em Arial, Helvetica, sans-serif; color:#333}
+#content #col_right #columns #col1 p {width:455px}
+#content #col_right #columns #col1 p a {font: 1.0em Arial, Helvetica, sans-serif}
+#content #col_right #columns #col1 ul { list-style-image: url(../img/list_orange.gif)}
+#content #col_right #columns #col1 ul li {width:425px; font: 0.85em Arial, Helvetica, sans-serif; color:#333; padding:3px 0px}
+#content #col_right #columns #col1 ol {list-style-type:decimal; padding-bottom:25px}
+#content #col_right #columns #col1 ol li {width:425px; font: 1.2em Georgia, "Times New Roman", Times, serif; color:#1A1A1A; padding:7px 0px}
+
+#content #col_right #columns #col2 {float:left; clear:right; width:103px}
+#content #col_right #columns #col2 p {width:103px; font: 0.65em/1.5 Arial, Helvetica, sans-serif; letter-spacing:1px}
+#content #col_right #columns #col2 p {width:103px; font: 0.65em/1.5 Arial, Helvetica, sans-serif; letter-spacing:1px}
+#content #col_right #columns #col2 span.author {width:103px; font: 0.7em/1.5 Arial, Helvetica, sans-serif; color:#F89C26}
+#content #col_right #columns #col2 a {font: 0.65em Arial, Helvetica, sans-serif; letter-spacing: 1px; color:#0A9DDC}
+#content #col_right #columns #col2 a:visited {}
+#content #col_right #columns #col2 a:hover {text-decoration:underline; color:#0A9DDC}
+#content #col_right #columns #col2 a:active {text-decoration:underline; color:#0A9DDC}
+#content #col_right #columns #col2 #bg_orange {width:113px; height:101px; clear:both; background:url(../img/bg_orange_right.gif) no-repeat; position:relative; top:-30px}
+#content #col_right #columns #col2 #bg_orange span {position:relative; top:50px; left:30px; font: bold 1.1em Arial, Helvetica, sans-serif; color:#FFF}
+#content #col_right #columns #col2 #bg_orange span#span_contact {position:relative; top:35px; left:30px; font: bold 1.1em Arial, Helvetica, sans-serif; color:#FFF}
+#content #col_right #columns #col2 .contact_info {padding:10px 0px}
+#content #col_right #columns #col2 .contact_info p {width:103px; font: 0.6em/1.5 Arial, Helvetica, sans-serif; padding:10px 0px}
+#content #col_right #columns #col2 .contact_info p a {font-size:1.0em}
+#content #col_right #columns #col2 .contact_info #stock_link {font-size:0.9em}
+
+
+#content .content_bottom_2col {clear:both}
+#content .content_bottom_2col .features {padding:20px 0px}
+#content .content_bottom_2col .col1 {float:left; clear:left; width:405px; padding-left:115px}
+#content .content_bottom_2col .col1 #ssl128 {width:125px; background:url(../img/bg_h1_32.gif) repeat-x; position:relative; left:-10px}
+#content .content_bottom_2col .col1 #sso {width:250px; background:url(../img/bg_h1_32.gif) repeat-x; position:relative; left:-10px}
+#content .content_bottom_2col .col1 #highperf {width:368px; background:url(../img/bg_h1_32.gif) repeat-x; position:relative; left:-10px}
+#content .content_bottom_2col .col1 #vpn {width:245px; background:url(../img/bg_h1_32.gif) repeat-x; position:relative; left:-10px}
+#content .content_bottom_2col .col2 #sas70 {width:405px; background:url(../img/bg_h1_32.gif) repeat-x; position:relative; left:-10px}
+#content .content_bottom_2col .col2 #facility {width:312px; background:url(../img/bg_h1_32.gif) repeat-x; position:relative; left:-10px}
+#content .content_bottom_2col .col2 #cloudcomp {width:203px; background:url(../img/bg_h1_32.gif) repeat-x; position:relative; left:-10px}
+
+#content .content_bottom_2col .col1 h2 {height:33px; font:1.3em Georgia, "Times New Roman", Times, serif; color:#333; position:relative; top:2px; left:10px}
+#content .content_bottom_2col .col1 p {width:365px; font: 0.75em Arial, Helvetica, sans-serif; color:#333; padding:10px 0px 20px 0px}
+#content .content_bottom_2col .col2 {float:left; clear:right; width:370px}
+#content .content_bottom_2col .col2 h2 {height:33px; font:1.3em Georgia, "Times New Roman", Times, serif; color:#333; position:relative; top:2px; left:10px}
+#content .content_bottom_2col .col2 p {width:365px; font: 0.75em Arial, Helvetica, sans-serif; color:#333; padding:10px 0px 20px 0px}
+
+#info {clear:both}
+#content .content_bottom_2col .col2 #more_info {height:30px; background:url(../img/more_info.gif) no-repeat}
+#content .content_bottom_2col .col2 p.info {padding: 5px 0px}
+#content .content_bottom_2col .col2  a {font: 0.65em Arial, Helvetica, sans-serif; letter-spacing: 1px; color:#0A9DDC}
+#content .content_bottom_2col .col2 a:visited {}
+#content .content_bottom_2col .col2 a:hover {text-decoration:underline; color:#0A9DDC}
+#content .content_bottom_2col .col2 a:active {text-decoration:underline; color:#0A9DDC}
+
+#footer {padding-left:110px; text-align:left; clear:both; border-top: 1px solid #E6E6E6; padding-top:10px; padding-bottom:20px}
+#footer ul {}
+#footer ul li {display:inline; padding:4px}
+#footer ul li a {font: 0.7em Arial, Helvetica, sans-serif; color:#808080; text-decoration:none; letter-spacing:1px}
+#footer ul li a:visited {text-decoration:none}
+#footer ul li a:hover {text-decoration:underline; color:#0A9DDC}
+#footer ul li a:active {text-decoration:underline; color:#0A9DDC}
+.f180 {position:relative; top:180px}
+.h20 {height:20px; clear:both}
+.h50 {height:50px; clear:both}
+.h90 {height:90px; clear:both}
+.h100 {height:100px; clear:both}
+
+
+/* Tables  */
+
+table {border:0px; padding:2px; margin:20px 0px}
+table tr {}
+table thead {}
+table thead th {width:100px; font: bold 1.1em Arial, Helvetica, sans-serif; padding:3px}
+table tbody td {width:100px; font: 0.8em Verdana, Arial, Helvetica, sans-serif; padding:3px}
+table tbody td a {font: 0.8em Arial, Helvetica, sans-serif !important}
+
+table#events {}
+table#events td {padding:4px; font: 0.7em Arial, Helvetica, sans-serif; color:#333}
+table#events td a {font: 0.75em Arial, Helvetica, sans-serif}
+
+table#table_stock {border:1px solid #CCC; padding:2px; margin:20px 0px}
+table#table_stock tr {}
+table#table_stock thead {}
+table#table_stock thead th {background-color:#75A2CC; font: bold 0.6em Verdana, Arial, Helvetica, sans-serif; padding:8px; color:#FFF;; border:1px solid #333}
+table#table_stock tbody td {font: bold 0.6em Verdana, Arial, Helvetica, sans-serif; padding:8px; border:1px solid #333}
+
+/* Forms  */
+form {font-family: Arial; font-size: 14px; width: 215px}	
+fieldset {margin:20px 0px}	
+fieldset.subscribe input {width: 125px}	
+legend {font-weight: bold; font-size: 1.1em}	
+label {display: block; text-align: left; margin: 5px 0; clear:both}	
+fieldset.subscribe input.email {width:215px; margin: 5px 0; clear:both}	
+fieldset.subscribe input#emailemail {width:103px; margin: 5px 0; clear:both}	
+input.submit {display: block; clear:both}
+
+	dl.table-display {width:880px; margin:20px 0px}
+	.table-display dt {float:left; width:280px; padding:10px 0px; font: bold 1.1em Verdana, Arial, Helvetica, sans-serif; padding-right:15px}
+	/* commented backslash hack for mac-ie5 \*/ #skills #skillset dt {clear: both} /* end hack */
+	.table-display dd {float:left; width:500px; padding:10px 0px; font: 0.85em Verdana, Arial, Helvetica, sans-serif}	

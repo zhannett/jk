@@ -1,0 +1,31 @@
+/*
+	File: cssLoader.css
+	Created: 04/12/07
+	Created by: Mike '1312' Byrne
+	Version: 1.00
+	
+	This loads in the other CSS documents required for the site. The order of some of these *IS* important.
+	
+	2/32
+*/
+/* core */
+@import url("css/common.css");
+@import url("css/application.css");
+
+/* site wide */
+@import url("css/modules/lists.css");
+@import url("css/modules/forms.css");
+@import url("css/modules/touts.css");
+@import url("css/modules/listing.css");
+@import url("css/modules/detail.css");
+@import url("css/modules/comments.css");
+@import url("css/modules/media.css");
+@import url("css/modules/paginator.css");
+@import url("css/modules/lightboxes.css");
+
+/* pages */
+@import url("css/pages/home.css");
+@import url("css/pages/about.css");
+@import url("css/pages/privacy.css");
+@import url("css/pages/blog.css");
+@import url("css/pages/contact.css");

@@ -1,0 +1,27 @@
+{
+	success: true,
+	
+	rows: [
+			{
+				1,
+				true,
+				'New York, NY',
+				true
+			},{
+				2,
+				false,
+				'San Francisco, CA',
+				true
+			},{
+				3,
+				true,
+				'Chicago, IL',
+				true
+			},{
+				4,
+				false,
+				'Toronto, ON',
+				true
+			}
+	]
+}

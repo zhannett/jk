@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+        <title>Bendixfx-Main</title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="css/spottrade.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <style type="text/css">
+			#tradedata2 li {
+				margin: 5px 0;
+				padding: 0 2px;	
+			}
+		</style>
+    </head>
+
+    <body>
+        
+      <div class="page">
+          <div id="header" style="background: url(img/main_header.png) no-repeat; width: 986px; height: 95px; border: 7px solid #8c2727">
+         		<div id="user">JMS Corp ::: J M SMITH</div>
+                <button id="btnLogout">LOGOUT &gt;</button>
+       	  		<div id="currentTime"></div>
+          </div>
+          <div id="content">
+            <div class="columns" style="clear: both">
+                <div class="col_left">
+                    <h2>CLIENT OPERATIONS:</h2>
+                    <ul id="leftnav">
+                        <li><button id="trade_spot_orders" class="btn_home">NEW SPOT ORDERS</button><div class="count"><span>0</span></div></li>
+                        <li><button id="trade_forward_orders" class="btn_home">NEW FORWARD ORDERS</button><div class="count"><span>0</span></div></li>
+                        <li><button id="orders_for_approval" class="btn_home"><a href="saved-order.html">SAVED SPOT ORDERS</a></button><div class="count"><span>5</span></div></li>
+                        <li><button id="saved_orders" class="btn_home">SAVED FORWARD ORDERS</button><div class="count"><span>2</span></div></li>
+                        <li><button id="saved_orders" class="btn_home">ORDERS FOR APPROVAL</button><div class="count"><span>2</span></div></li>
+                        <li><button id="beneficiary_management" class="btn_home">BENEFICIARY MANAGEMENT</button></li>
+                        <li><button id="disbursements" class="btn_home">DISBURSEMENTS</button></li>
+                        <li><button id="client_reports" class="btn_home">CLIENT REPORTS</button></li>
+                    </ul>
+                </div>
+                
+                <div class="col_right">
+                    <h2>FX MARKET NEWS:</h2>
+                    <div id="news1_container"></div>
+                    <h2>BENDIX NEWS:</h2>
+                    <div id="news2_container"></div>
+                </div>
+            </div>
+            <div id="rates">
+                <form id="selects" action="" method="">
+                    <fieldset style="margin: 0 auto">
+                         <h3>QUICK QUOTE</h3>
+                           <ul id="tradedata2">
+                                <li>
+                                    <!--<label for="selectAction">Order</label><br/>-->
+                                    <select id="selectAction">
+                                        <option>BUY</option>
+                                        <option>SELL</option>
+                                    </select>
+                                </li>
+                                <li>
+                                   <!-- <label for="amount2">Amount</label><br/>-->
+                                    <input type="text" id="amount2" value="" /></li>
+                                </li>
+                                <li>
+                                    <!--<label for="selectCurrency2">Currency</label><br/>-->
+                                    <select id="selectCurrency2" class="currency2">
+                                        <option>USD</option>
+                                        <option>CAD</option>
+                                        <option>EUR</option>
+                                        <option>GBP</option>
+                                        <option>JPY</option>
+                                        <option>AUD</option>
+                                        <option>NZD</option>
+                                        <option>CHF</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <span class="red">Rate: </span>
+                                </li>
+                                <li>
+                                    <span id="rate"></span>
+                                </li>
+                                <li>
+                                    <!--<label for="amount1">Pay Amount</label><br/>-->
+                                    <input type="text" id="amount1" value="" />
+                                </li>
+                                <li>
+                                    <!--<label for="selectCurrency1">Pay By</label><br/>-->
+                                    <select id="selectCurrency1" class="currency1">
+                                        <option>USD</option>
+                                        <option>CAD</option>
+                                        <option>EUR</option>
+                                        <option>GBP</option>
+                                        <option>JPY</option>
+                                        <option>AUD</option>
+                                        <option>NZD</option>
+                                        <option>CHF</option>
+                                    </select>
+                                </li>
+                                <li>
+                                     <span id="fee"></span>
+                                </li>
+                                <li>
+                                    <button id="btn_quote">QUOTE</button>
+                                    <button id="btn_lockin">LOCK IN</button>
+                                    <span id="progressbar"></span>
+                                </li>
+                            </ul>
+                        </fieldset>
+                  </form>
+             </div>
+        </div>
+ 		<div id="footer">
+            <ul class="bottomnav">
+                <li><a href="#corporateWebsite" class="login_a">Corporate&nbsp;Website</a></li>
+                <li class="sep">:::</li>
+                <li><a href="#tips" class="login_a">FAQ</a></li>
+                <li class="sep">:::</li>
+                <li><a href="#tips" class="login_a">Terms of Use</a></li>
+                <li class="sep">:::</li>
+                <li><a href="#tips" class="login_a">Privacy</a></li>
+                <li class="sep">:::</li>
+                <li><a  href="#contact" class="login_a">Contact Us</a></li>
+            </ul>
+        </div>
+          </div>
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.core.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.progressbar.js"></script>
+        <script type="text/javascript" src="js/_common.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+		<!-- <script type="text/javascript" src="js/home.js"></script>-->
+    </body>
+</html>

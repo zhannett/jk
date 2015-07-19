@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Raphaël - Animation</title>
+        <link rel="stylesheet" href="demo.css" type="text/css" media="screen">
+        <style type="text/css" media="screen">
+            #holder {
+                height: 419px;
+                margin: -205px 0 0 -305px;
+                width: 619px;
+            }
+        </style>
+        <script src="../raphael-min.js" type="text/javascript" charset="utf-8"></script>
+
+        <script type="text/javascript" charset="utf-8">
+		
+            Raphael.fn.arrow = function (x, y) {
+                return this.path(["M", x, y] + "m-10-10l20,0 0-6 10,16 -10,16 0-6 -20,0 0,6 -10-16 10-16z").attr({fill: "#fff", stroke: "none", "stroke-dasharray": "-", "fill-opacity": 0.2});
+            };
+            window.onload = function () {                
+                var r      = Raphael("holder", 619, 419), //Raphael(0, 0, "100%", "100%"),
+                    dashed = {fill: "none", stroke: "#666", "stroke-dasharray": "- "};                
+                // Rect
+                (function () {
+                    r.rect(19.5, 119.5, 40, 40).attr(dashed);
+                    r.rect(120, 130, 30, 20).attr({fill: "none", stroke: "#666", "stroke-dasharray": "- ", rotation: 120});
+                    var el = r.rect(20, 120, 39, 39).attr({fill: "none", stroke: "#fff", "stroke-width": 2}),
+                        elattrs = [{x: 120, y: 130, rotation: 120, width: 30, height: 20, stroke: "#f00", opacity: .3, "stroke-width": 10}, {x: 20, y: 120, rotation: 0, width: 39, height: 39, stroke: "#fff", opacity: 1, "stroke-width": 2}],
+                        now = 0;
+                    r.arrow(90, 140).node.onclick = function () {
+                        el.animate(elattrs[now++], 1000);
+                        if (now == 2) {
+                            now = 0;
+                        }
+                    };
+                })();
+            };
+        </script>
+    </head>
+    <body>
+        <div id="holder"></div>
+        <p id="copy">Demo of <a href="http://raphaeljs.com/">Raphaël</a>—JavaScript Vector Library</p>
+    </body>
+</html>

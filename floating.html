@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+	<title>Floating Objects</title>		
+	<link rel="stylesheet" type="text/css" href="styles/base.css" />	
+    <script type="text/javascript">
+		<!--
+		  function MM_preloadImages() { 
+  			var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    		var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    		if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+		  }
+		//-->
+    </script>
+		
+		<script language="javascript" type="text/javascript">
+			var tall = 200;
+			var wide = 200;
+			var step = .25;
+			var delay = 50;
+			var nextStep = 0;
+			var numObjects = 6;
+			var Xpos = 200;
+			var Ypos = 200;
+			
+			function objectsFloat() {
+				for (var xx=1; xx<(numObjects + 1);xx++) {
+					var objectID = 'letters' + xx;
+					var object = document.getElementById(objectID);				
+					object.style.top = Ypos + Math.cos((20*Math.sin(nextStep/(30+xx)))+xx*70)*tall*(Math.sin(10+nextStep/10)+0.2)*Math.cos((nextStep+xx*55)/10);
+					object.style.left = Xpos + Math.sin((20*Math.sin(nextStep/30))+xx*70)*wide*(Math.sin(10+nextStep/(10+xx))+0.2)*Math.cos((nextStep+xx*55)/10);
+				}
+				nextStep += step;
+				setTimeout('objectsFloat()',delay);
+			}
+		</script>
+  </head>
+  
+  <body onload="objectsFloat()">      
+	  <div id="page">			
+			<div>&nbsp;</div>
+			<div id="menuBar">
+				<ul>
+					<li class="current"><a href="index.php">Home</a></li>
+					<li><a href="skills.php">Computer Skills</a></li>
+					<li><a href="portfolio.php">Portfolio</a></li>
+					<li><a href="education.php">Education</a></li>
+					<li><a href="contact.php">Contact Information</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+				
+			<div class="content"> 
+								
+				<div id="letters1" style="position:absolute; left:300; top:140; visibility:visible; font:136px times; color:#000000;"	>J</div>
+				<div id="letters2" style="position:absolute; left:690; top:240; visibility:visible; font:136px times; color:#333333;"	>a</div>
+				<div id="letters3" style="position:absolute; left:400; top:340; visibility:visible; font:136px times; color:#666666;"	>n</div>
+				<div id="letters4" style="position:absolute; left:400; top:340; visibility:visible; font:136px times; color:#999999;"	>e</div>
+				<div id="letters5" style="position:absolute; left:400; top:340; visibility:visible; font:136px times; color:#CCCCCC;"	>t</div>
+				<div id="letters6" style="position:absolute; left:400; top:340; visibility:visible; font:136px times; color:#FFFFFF;"	>!</div>			
+				
+			</div> 	  
+		</div>   
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<maintemplate template="../Templates/maintemplate.dwt" codeOutsideHTMLIsLocked="false">
+   <head></head>
+   <content><![CDATA[
+				<tr>
+         	<td>
+						<table	width="600" border="0" bgcolor="white" cellpadding="5" cellspacing="5" align="right">
+							<tr>
+								<td><img src="design/education.gif" alt="Education" width="142" height="43"></td>
+							</tr>
+							<tr>
+								<td>
+									<table	width="600" border="0" bgcolor="white" cellpadding="15" cellspacing="5" align="right">
+										<tr>
+											<td><img src="design/iaod.gif" alt="International Academy of Design and Technology" width="411" height="73"></td>
+										</tr>
+										<tr>
+											<td><span class="header">Diploma in E-Commerce</span></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table	width="600" border="0" bgcolor="white" cellpadding="15" cellspacing="5" align="right">
+										<tr>
+											<td><img src="design/KGU.jpg" alt="National Taras Shevchenko University of Kyiv" width="104" height="120"><img src="design/kgu1.gif" width="350" height="37"></td>
+										</tr>
+										<tr>
+										  <td><span class="header">Diploma in Fiber Optic Communication Systems</span></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table	width="600" border="0" bgcolor="white" cellpadding="15" cellspacing="5" align="right">
+										<tr>
+											<td><img src="design/kpi1.gif" alt="National Technical University of Ukraine &quot;KPI&quot;" width="360" height=80></td
+										>
+										</tr>
+										<tr>
+											<td><span class="header">Degree in Electrical Engineering</span></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				]]></content>
+   <doctitle><![CDATA[
+		<title>Education</title>
+		]]></doctitle>
+</maintemplate>

@@ -1,0 +1,39 @@
+body {
+	font-family: Arial, Georgia;
+	font-size: 12px;
+}
+
+form fieldset {
+	border: 1px solid #000;
+	width: 405px;
+}
+
+form fieldset div {
+	margin-bottom: 10px;
+}
+
+label {
+	display: block;
+	float: left;
+	width: 100px;
+}
+
+div textarea {
+	height: 120px;
+	width: 295px;
+}
+
+input#submit {
+	margin-left: 100px;
+}
+
+span.error {
+	color: red;
+	display: block;
+	padding: 5px 0 0 100px;
+}
+
+p.mand {
+	font-size: 10px;
+	margin-left: 100px;
+}

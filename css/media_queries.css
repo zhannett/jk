@@ -1,0 +1,38 @@
+/* iPad2 */
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+  .topnav {
+	    width: 100%;
+	 }
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+  .topnav {
+	    width: 100%;
+	 }
+}
+
+
+/* iPad3 */
+
+@media all and (device-width: 1536px) and (device-height: 2048px) and (orientation:portrait) {
+  .topnav {
+	    width: 100%;
+	 }
+}
+@media all and (device-width: 1536px) and (device-height: 2048px) and (orientation:landscape) {
+  .topnav {
+	    width: 100%;
+	 }
+}
+
+/* Samsung Galaxy tablet */
+@media all and (device-width: 800px) and (device-height: 1280px) and (orientation:portrait) {
+  .topnav {
+	    width: 100%;
+	 }
+}
+@media all and (device-width: 800px) and (device-height: 1280px) and (orientation:landscape) {
+  .topnav {
+	    width: 100%;
+	 }
+}

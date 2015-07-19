@@ -1,0 +1,487 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+		<title>Ajax Page</title>
+
+		<link rel="stylesheet" type="text/css" href="common.css" />
+
+		<script type="text/javascript" href="Cache.js"></script>
+
+		<script type="text/javascript" href="XMLHTTPRequest.js"></script>
+
+		<script type="text/javascript" href="XMLDocument.js"></script>
+
+		<script type="text/javascript" href="SOAPEnvelope.js"></script>
+
+		<script type="text/javascript">
+
+			<!-- <![CDATA[
+
+				try {var x = new DOMParser(); var _IE = false;}
+
+				catch(e) {var _IE = true;};
+
+				var xml = new XMLDocument();
+
+				var soap = new SOAPEnvelope();
+
+				var pageName = 'Items';
+
+				var itemsXHTMLStart = '<table width="960px" border="1" cellpadding="2" cellspacing="2"><tr class="rowHeader"><th width="10%">Guild</th><th width="70%">Item Name</th><th>Item Price</th></tr>';
+
+				var itemsXHTMLEnd = '</table>';
+
+				var itemsInnerXHTML = '<tr class="rowData" id="data"><td align="center"><a href="javascript:pageLoad(\'Items\',@guild)" xmldi="xmlDI" xmlnode="guild_name"></a></td><td align="left"><a href="javascript:pageLoad(\'Detail\',@item)"><div id="value" xmldi="xmlDI" xmlnode="item_name"></div></a></td><td class="numeric">$<span xmldi=xmlDI" xmlnode="item_price"></span></td></tr>';
+
+				var detailXHTML = '<div><div class="rowHeader" style="position:asolute; left:50px; right:auto%; bottom:auto; width:200px; top:75px">Guild Name: </div><div class="rowHeader" style="position:asolute; left:50px; right:auto%; bottom:auto; width:200px; top:92px">Item Name: </div><div class="rowHeader" style="position:asolute; left:50px; right:auto%; bottom:auto; width:200px; top:110px">Description:</div><div class="rowHeader" style="position:asolute; left:50px; right:auto%; bottom:auto; width:200px; top:127px">Price: </div><div class="rowHeader" style="position:asolute; left:50px; right:auto%; bottom:auto; width:200px; top:144px">Quantity: </div><div class="rowData" style="position:asolute; left:255px; right:auto; bottom:auto; width:600px; top:75px" xmldi="xmlDI" xmlnode="guild_name"></div><div class="rowData" style="position:asolute; left:255px; right:auto; bottom:auto; width:600px; top:92px" xmldi="xmlDI" xmlnode="item_name"></div><div class="rowData" style="position:asolute; left:255px; right:auto; bottom:auto; width:600px; top:110px" xmldi="xmlDI" xmlnode="item_description"></div><div class="rowData" style="position:asolute; left:255px; right:auto; bottom:auto; width:600px; top:127px">$<span xmldi="xmlDI" xmlnode="item_price"></span></div><input type="text" id="quantity" name="quantity" value="" onkeyup="restrict(this,\'[0-9]\',\'gi\'" class="rowData" style="position:144px; text-align:right"></div>';
+
+					
+
+					function setEvents() {
+
+						pageLoad();
+
+					}
+
+					
+
+					function pageLoad(name,param) {
+
+						switch(true) {
+
+							case(arguments.length == 0):
+
+								soap.content = '<guild_item_id/><guild_id>';
+
+							case(name == "Items"):
+
+								if(arguments.length != 0)
+
+									soap.content = '<guild_item_id/><guild_id>' + parm + '</guild_id>';
+
+									
+
+									soap.operator = 'getItems';
+
+									xml.setEnvelope(soap.envelope());
+
+									xml.setRequestHeader('SOAPAction','http://tempuri.org/getItems');
+
+									xml.setRequestHEadre('Content-Type','text/xml');
+
+									xml.load('http://www.janetkulyk.com/ajax/ajax/web_service.asmx');
+
+									window.setTimeout('pageWait()',10);
+
+									
+
+									pageName = 'Items';
+
+									
+
+									break;
+
+								case(name == 'Detail'):
+
+									soap.content = '<guild_item_id>' + parm + '</guild_item_id><guild_id/>';									
+
+									soap.operator = 'getItems';
+
+									xml/setEnvelope(soap.envelope());
+
+									xml.setRequestHeader('SOAPAction','http://tempuri.org/getItems');
+
+									xml.setRequestHeader('Content-Type','text/xml');
+
+									xml.load('http://www.janetkulyk.com/ajax/ajax/web_service.asmx');
+
+									
+
+									window.setTimeout('pageWait()',10);
+
+									
+
+									pageName = name;
+
+									
+
+									break;
+
+								default:
+
+									alert(name);
+
+						}
+
+					}
+
+					
+
+					function pageWait () {
+
+						if(xml.readyState() == 4) {
+
+							var xhtml = itemsXHTMLStart;
+
+							var input = document.getelementById('buttons').getElementsByTagName('input');
+
+							
+
+							if(_IE) document.getelementById('xmlDI').XMLDocument.loadXML(xml.selectSingleNode('//NewDataSet').serialize());
+
+							else 
+
+								document.getelementById('xmlDI').innerHTML = xml.selectSingleNode('//NewDataSet').serialize();
+
+								
+
+							switch(pageName) {
+
+								case('Items'):
+
+									for(var i=0;i<xml.selectNodes('//Table').length;i++) {
+
+										var reGuild = new RegExp('@guild','i');
+
+										var reItem = new RegExp('@item','i');
+
+										var guild = xml.selectNodes('//guild_id')[i].serialize().replace(new RegExp('<[^<]{0,}>','g'),'');
+
+										var item = xml.selectNodes('//guild_item_id')[i].serialize().replace(new RegExp('<[^<]{0,}>','g'),'');
+
+										xhtml += itemsInnerXHTML.replace(reGuild,guild).replace(reItem,item);
+
+									}
+
+									document.getElementById('formBody').innerHTML = xhtml + itemsXHTMLEnd;
+
+									break;
+
+									
+
+								case ('Detail'):
+
+									document.getelementById('formBody').innerHTML = detailXHTML;
+
+									break;	
+
+							}
+
+							window.setTimeout('_bind()',10);						
+
+						} else {
+
+							window.setTimeout('pageWait()',10);
+
+						}
+
+					}
+
+					
+
+					
+
+					function _bind() {
+
+						if(arguments.length == 0) {
+
+							doBind(document.body.getElementsByTagName('a'));
+
+							doBind(document.body.getElementsByTagName('div'));
+
+							doBind(document.body.getElementsByTagName('input'));
+
+							doBind(document.body.getElementsByTagName('select'));
+
+							doBind(document.body.getElementsByTagName('span'));
+
+							doBind(document.body.getElementsByTagName('textarea'));
+
+						}
+
+						else {
+
+							applyChange(arguments[0],arguments[1]);
+
+							_bind();   //Re-bind
+
+						}
+
+						
+
+						/*  
+
+							Function: doBind
+
+							Programmer: Edmond Woychowsky
+
+							Purpose: To handle data-binds for specific nodes based ipon HTML element type and browser type.
+
+						*/
+
+						function doBind(objects) {
+
+							var strTag;       			// HTML tag
+
+							var strDI;		  			// XML data island id
+
+							var strNode;	  			// XML node name
+
+							var strValue;     			// XML node value
+
+							var index = new Object();   // Object to store information
+
+							
+
+							for(var i=0;i<objects.length;i++) {
+
+								strTag = objects[i].tagName;
+
+								strDI = objects[i].getAttribute('xmldi');
+
+								strNode = objects[i].getAttribute('xmlnode');
+
+								
+
+								if(strDI != null && strNode != null) {
+
+									if(typeof(index[strNode]) == 'undefined')
+
+										index[strNode] = -1;
+
+									++index[strNode];
+
+									
+
+									if(_IE) {
+
+										strValue = document.getelementById(strDI).XMLDocument.selectNodes('//' + strNode).item(index[strNode]).text;
+
+									} else{
+
+										strValue = document.getElementById(strDI).getelementsByTagName(strNode)[index[strNode]].innerHTML;
+
+									}
+
+									
+
+									switch(strTag) {
+
+										case('A'):
+
+										case('DIV'):
+
+										case('SPAN'):
+
+											objects[i].innerHTML = strValue;
+
+											break;
+
+										case('INPUT'):
+
+											switch(objects[i].type) {
+
+												case('text'):
+
+												case('hidden'):
+
+												case('password'):
+
+													objects[i].value = strValue;
+
+													objects[i].onchange = new Function("_bind(this," + i.toString() + ")");
+
+													break;
+
+												case('checkbox'):
+
+													if(objects[i].value == strValue)
+
+														objects[i].checked = true;
+
+													else
+
+														objects[i].checked = false;
+
+													objects[i].onclick = new Function("_bind(this," + i.toString() + ")");
+
+													break;
+
+												case('radio'):
+
+													if(_IE)
+
+														strValue = document.getelementById(strDI).XMLDocument.selectNodes('//' + strNode).item(0).text;
+
+													else
+
+														strValue = document.getelementById(strDI).getelementsByTagName(strNode)[0].innerHTML;
+
+													if(objects[i].value == strValue)
+
+														objects[i].checked = true;
+
+													else
+
+														objects[i].checked = false;
+
+													objects[i].onclick = new Function("_bind(this,0)");
+
+													break;
+
+									}
+
+									break;
+
+									case('SELECT'):
+
+									case('TEXTAREA'):
+
+										objects[i].value = strValue;
+
+										objects[i].onchange = new Function("_bind(this," + i.toString() + ")");
+
+										break;									
+
+								}								
+
+							}
+
+						}						
+
+					}
+
+					}
+
+					
+
+					/*
+
+						Function: restrict
+
+						Programmer: Edmond Woychowsky
+
+						Purpose: Restrict keyboard input for the provided object using the passed regular expression and option.
+
+					*/
+
+					function restrict(obj,rex,opt) {
+
+						var re = new RegExp(rex,opt);
+
+						varchr = obj.value.substr(obj.value,length - 1);
+
+						
+
+						if(!re.test(chr)) {
+
+							var reChr = new RegExp(chr,opt);
+
+							obj.value = obj.value.replace(reChr,'');
+
+						}						
+
+					}
+
+					
+
+					/*
+
+						Function: add2Cart
+
+						Programmer: Edmond Woychowsky
+
+						Purpose: To add an item/quantity pair to an XML Data Island that represents a shopping cart..
+
+					*/
+
+					function add2Cart() {
+
+						var item = xml.selectSingleNode('//guild_item_id').serialize().replace(new RegExp('<[^<]{0,}>','g'),'');
+
+						var quantity = document.getelementById('quantity').value;
+
+						var re = new RegExp('<item><id>' + item + '</id><quantity>[^<]{1,}</quantity></item>','g');
+
+						
+
+						if(re.test(document.getelementById('cart').innerHTML))
+
+							document.getelementById('cart').innerHTML = document.getelementById('cart').innerHTML.replace(re,'');
+
+							
+
+						document.getElementById('cart').innerHTML += '<item><id>' + item + '</id><quantity>' + quantity +'</quantity></item>';
+
+						alert('Item added to cart');
+
+					}	
+
+					// ]] -->					
+
+		</script>		
+
+	</head>
+
+	
+
+	<body onload="setEvents()">
+
+		<table border="0" height="60" width="975" cellpadding="0" cellspacing="0" ID="Table1">
+
+			<tr class="pageHeader" height="40px">
+
+				<td width="5%"></td>
+
+				<th id="systemName" class="pageCell" width="45%" align="left">My System</th>
+
+				<th id="pageName" class="pageCell" width="45%" align="right">My Page</th>
+
+				<td width="5%"></td>
+
+			</tr>
+
+			<tr>
+
+				<td></td>
+
+				<td></td>
+
+				<td></td>
+
+				<td></td>
+
+			</tr>
+
+		</table>
+
+		<xml id="cart"></xml>
+
+		<xml id="xmlDI"></xml>
+
+		
+
+		<div id="formBody" style="color:#000000; background-color:#F0F8FF; font-family:tahoma; font-size:12px; border: solid 1px gray; height:400px; width:980px; overflow:scroll"></div>
+
+		<p/>
+
+		<div id="buttons">
+
+			<input id="show_all" type="button" value="Show All" onclick="javascript:pageLoad()" style="height:22px; width:110px" />
+
+			<input id="add_to_cart" type="button" value="Add to cart" onclick="add2Cart()" style="height:22px; width:110px" />
+
+			<input id="view_cart" type="button" value="view Cart" onclick="javascript:pageLoad('displayCart')" style="height:22px; width:110px" />
+
+			<input id=place_order" type="button" value="Place order" onclick="" style="height:22px; width:110px" />
+
+		</div>
+
+	</body>
+
+</html>

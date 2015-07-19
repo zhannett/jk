@@ -1,0 +1,28 @@
+﻿$('#discovery').css('display','none');
+$('#integration').css('display','none');
+$('#identity').css('display','none');
+$('#platform').css('display','block');
+$('#platformlink').click(function(){
+	$('#discovery').css('display','none');
+	$('#integration').css('display','none');
+	$('#identity').css('display','none');
+	$('#platform').css('display','block');
+});
+$('#discoverylink').click(function(){
+	$('#platform').css('display','none');
+	$('#integration').css('display','none');
+	$('#identity').css('display','none');
+	$('#discovery').css('display','block');
+});
+$('#integrationlink').click(function(){
+	$('#discovery').css('display','none');
+	$('#platform').css('display','none');
+	$('#identity').css('display','none');
+	$('#integration').css('display','block');
+});
+$('#identitylink').click(function(){
+	$('#discovery').css('display','none');
+	$('#platform').css('display','none');
+	$('#integration').css('display','none');
+	$('#identity').css('display','block');
+});

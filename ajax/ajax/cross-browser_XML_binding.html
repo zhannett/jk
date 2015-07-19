@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>XML Data Island Test</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<style type="text/css">
+			xml {display:none; font-size:0px}
+		</style>
+		<script type="text/javascript">
+			try {
+				var x = new DOMParser();
+				var _IE = false;
+			}
+			catch(e) {var _IE = true;};
+		</script>	
+	</head>
+	
+	<body>
+		<script type="text/javascript">_bind()</script>
+		<xml id="xmlDI">
+				<a>
+						<b>
+							<c>one</c>
+						</b>
+						<b>
+							<c>two</c>
+						</b>
+						<b>
+							<c>three</c>
+						</b>
+				</a>
+		</xml>
+		<strong>XML Data Island Test</strong><br/>
+		<div xmldi="xmlDI" xmlnode="c"></div>
+		<div xmldi="xmlDI" xmlnode="c"></div>
+		<div xmldi="xmlDI" xmlnode="c"></div>
+		<input xmldi="xmlDI" xmlnode="c" value="" /><br/>
+		<input xmldi="xmlDI" xmlnode="c" value="" /><br/>
+		<input xmldi="xmlDI" xmlnode="c" value="" /><br/>
+		
+		<input type="text" name="test" datasrc="#xmlDI" datafld="c" value="" />	
+		<input type="text" name="test" datasrc="#xmlDI" datafld="c" value="" />	
+		<input type="text" name="test" datasrc="#xmlDI" datafld="c" value="" />	
+		
+		
+		<script type="text/javascript">
+		/*
+		Handle the logic necessary to bind HTML elements to XML nodes. 
+		Note that in some instances this binding is a two-way street. 
+		For example, if the value in a text box should change 
+		the corresponding value in the XML data island will also change. 
+		*/
+		function _bind() {
+				if(arguments.length == 0) {
+						doBind(document.body.getElementsByTagName('div'));
+						doBind(document.body.getElementsByTagName('input'));
+						doBind(document.body.getElementsByTagName('select'));
+						doBind(document.body.getElementsByTagName('span'));
+						doBind(document.body.getElementsByTagName('textarea'));			
+				} else {
+						applyChange(arguments[0],arguments[1]);
+						_bind();  //Re-bind
+				}
+		}
+		
+		/*
+			To handle data-binds for specific nodes based upon HTML element type and browser type.
+		*/
+		function doBind(objects) {
+				var strTag;     // HTML tag
+				var strDI;      // XML data island id
+				var strNode;    //XML node name
+				var strValue;   //XML node value
+			
+				for (var i=0;i < objects.length;i++) {
+						strTag  = objects[i].tagName;
+						strDI   = objects[i].getAttribute('xmldi');
+						strNode = objects[i].getAttribute('xmlnode');
+						
+						if(_IE) 
+								strValue = document.getElementById(strDI).XMLDocument.selectNodes('//' + strNode).item(i).text;
+						else 
+								strValue = document.getElementById(strDI).getElementsByTagName(strNode)[i].innerHTML;
+						
+						switch(strTag) {
+								case('div'):
+								case('span'):
+										objects[i].innerHTML = strValue;
+										break;
+								case('input'):
+										switch(objects[i].type) {
+												case ('text'):
+												case('hidden'):
+												case('password'):
+														objects[i].value = strValue;
+														objects[i].onchange = new Function("_bind(this, " + i.toString() + ")");
+														break;
+												case('checkbox'):
+														if(objects[i].value == strValue) objects[i].checked = true;
+														else objects[i].checked = false;									
+														objects[i].onclick = new Function("_bind(this," + i.toString() + ")");
+														break;								
+												case('radio'):
+														if(_IE) strValue = document.getElementById(strDI).XMLDocument.selectNodes('//' + strNode).item(0).text;
+														else strValue = document.getElementById(strDI).getElementsByTagName(strNode)[0].innerHTML;
+								
+														if(objects[i].value == strValue) objects[i].checked = true;
+														else objects[i].checked = false;
+									
+														objects[i].onclick = new Function("_bind(this,0)");
+														break;
+										}  // end inner switch
+										break;
+								case('select'):
+								case('textarea'):
+										objects[i].value = strValue;
+										objects[i].onchange = new Function("_bind(this," + i.toString() + ")");
+										break;
+						}		  //switch		
+				}  // for
+		}  //function
+		
+		/*
+			To handle changes to the bound HTML elements and apply those changes to the appropriate XML node.
+		*/
+		function applyChange(obj,index) {
+				var strDI = obj.getAttribute('xmldi');
+				var strNode = obj.getAttribute('xmlnode');
+				var strValue = obj.value;
+			
+				if (obj.type == 'checkbox')
+						if (obj.checked) strValue = obj.value;
+						else strValue = '';
+										
+				if (_IE) 
+						document.getElementById(strDI).XMLDocument.selectNodes('//' + strNode).item(index).text = strValue;
+				else 
+						document.getElementById(strDI).getElementsByTagName(strNode)[index].innerHTML = strValue;
+		}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>ExtJS - Building First Container</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />		
+		<link rel="stylesheet" type="text/css" href="resources/css/ext-all.css" /> <!-- 1 -->
+		<script type="text/javascript" src="adapter/ext/ext-base.js"></script> <!-- 2 -->
+		<script type="text/javascript" src="ext-all-debug.js"></script>
+		<script type="text/javascript"> // 3
+			Ext.BLANK_IMAGE_URL = 'resources/images/default/s.gif';
+			Ext.onReady(function(){
+				var myBtnHandler = function(btn) {
+					Ext.MessageBox.alert('You Clicked', btn.text);
+				}				
+				var fileBtn = new Ext.Button({
+					text : 'File',
+					handler : myBtnHandler
+				});
+				var editBtn = new Ext.Button({ 
+					text : 'Edit',
+					handler : myBtnHandler
+				});
+				var tbFill = new Ext.Toolbar.Fill(); 
+				var myTopToolbar = new Ext.Toolbar({ 
+					items : [				
+						fileBtn,
+						tbFill,
+						editBtn
+					]
+				});
+				var myBottomToolbar = [ 
+					{
+						text : 'Save',
+						handler : myBtnHandler
+					},
+					'-',
+					{
+						text : 'Cancel',
+						handler : myBtnHandler
+					},
+					'->',
+					'<b>Items open: 1</b>',
+				];
+				
+				var myPanel = new Ext.Panel({
+width : 200,
+height : 150,
+title : 'Ext Panels rock!',
+html : 'My first Toolbar Panel!',
+renderTo : Ext.getBody(),
+collapsible : true,
+tbar : myTopToolbar,
+bbar : myBottomToolbar
+});
+			});
+		</script>
+	</head>
+	
+	<body>		
+			
+	</body>
+</html>

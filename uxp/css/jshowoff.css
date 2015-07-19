@@ -1,0 +1,53 @@
+#features, .jshowoff div {
+	height: 385px;	
+}
+#features, .jshowoff, .jshowoff div {
+	width: 990px;
+}
+#features {
+	background: #efefef;
+	position: relative;
+	overflow: hidden;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+}
+.jshowoff {
+	text-align: center;
+}
+.jshowoff, .jshowoff div, .jshowoff img {
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+}
+.jshowoff div p {
+	_background-color: #efefef;
+}
+.jshowoff p.jshowoff-slidelinks {
+	position: absolute;
+	bottom: 70px;
+	left: 43px;
+	margin: 0;
+	padding: 0;
+	}
+.jshowoff-slidelinks a, .jshowoff-controls a {
+	display: block;
+	background-color: #FBB03B;
+	color: #fff;
+	padding: 5px 10px;
+	margin: 5px 7px 0 7px;
+	float: left;
+	text-decoration: none;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	outline: none;
+	font-size: 1.1em;
+	line-height: 1.1em;
+}
+.jshowoff-slidelinks a:hover, .jshowoff-controls a:hover {
+	color: #fff;
+}
+.jshowoff-slidelinks a.jshowoff-active, .jshowoff-slidelinks a.jshowoff-active:hover {
+	background-color: #000;
+	color: #fff;
+}

@@ -1,0 +1,33 @@
+h1, h2, p, a, li , div {
+	font-size: xx-small;
+}
+h1 {
+	padding: 0 5px;
+	border-top: 2px solid #500;
+	border-bottom: 2px solid #500;
+}
+h2 {
+	margin: 0 auto;
+	padding-top: 0;
+}
+p {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	padding: 1px 0 0 5px;
+}
+.par{
+	padding: 2px;
+	line-height: 1.2em;
+}
+ol {
+	padding: 0 0 0 5px;
+}
+li {
+	padding: 2px 0;
+	margin-left: 15px;
+}
+a:link {
+	text-decoration: underline;
+	color: blue;
+}

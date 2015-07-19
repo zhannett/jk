@@ -1,0 +1,26 @@
+﻿@model PIA.Module_FrontPageRotator
+
+<div id="slider" class="slider">
+	<div class="slidercontrols">
+		<div class="controls_abs">
+			<div class="controls_l"></div>
+			<div class="controls_r"></div>
+			<div class="controls_abs_inner"></div>	
+		</div> 
+	</div>
+
+	<div class="slidercontent">
+<!--
+        @foreach (var item in Model.RotatorItems.Items())
+        {
+            <text><div class="sliderelement">@try { <a href="@(item.TargetURL)"><img src="@(item.RotatorImage.URL.ToString())"/></a> } catch (Exception) { <img src="@(item.RotatorImage.URL.ToString())"/> }</div></text>
+        }
+-->
+
+	    <div class="sliderelement"> <a id="slide0" href=""><img src="http://pia-addfdfd6.s3.amazonaws.com/rotator/video/Slide1.jpg"></a></div>            
+	    <div class="sliderelement"> <a id="slide1" href=""><img src="http://pia-addfdfd6.s3.amazonaws.com/rotator/video/Slide2.jpg"></a> </div>
+            <div class="sliderelement"> <a id="slide2" href=""><img src="http://pia-addfdfd6.s3.amazonaws.com/rotator/video/Slide3.jpg"></a> </div>
+ 	    <div class="sliderelement"> <a id="slide3" href=""><img src="http://pia-addfdfd6.s3.amazonaws.com/rotator/video/Slide4.jpg"></a> </div>	   	
+	</div> 
+	<div id="video"></div>
+</div> 

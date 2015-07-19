@@ -1,0 +1,20 @@
+[
+	{
+		"beneficiary"			: "JP Ben-001",
+		"beneficiaryAccounts"	: ["Ben Account 0000001:::***101", "Ben Account 0000001:::***202", "Ben Account 0000001:::***303"],
+		"savedBenNotes"			: "ben 0000001 saved Notes: Notify CEO ...",
+		"beneficiaryBankInfo"	: "JP Ben-001: [DETAILED INFORMATION ...]"
+	},
+	{
+		"beneficiary"			: "JP Ben-002",
+		"beneficiaryAccounts"	: ["Ben Account 0000001:::***404", "Ben Account 0000001:::***505", "Ben Account 0000001:::***606"],
+		"savedBenNotes"			: "ben 0000002 saved Notes: Notify CEO ...",
+		"beneficiaryBankInfo"	: "JP Ben-002: [DETAILED INFORMATION ...]"
+	},
+	{
+		"beneficiary"			: "JP Ben-003",
+		"beneficiaryAccounts"	: ["Ben Account 0000001:::***707", "Ben Account 0000001:::***808", "Ben Account 0000001:::***909"],
+		"savedBenNotes"			: "ben 0000003 saved Notes: Notify CEO ...",
+		"beneficiaryBankInfo"	: "JP Ben-003: [DETAILED INFORMATION ...]"
+	}
+]

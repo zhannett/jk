@@ -1,0 +1,23 @@
+[
+	{
+			"order"				: "Forward #F001007",
+			"currency"			: "USD",
+			"origAmount"		: 18500000,
+			"rate"				: 1.250000000,
+			"fee"				: 300
+	},
+	{
+			"order"				: "Forward #F001008",
+			"currency"			: "EUR",
+			"origAmount"		: 500000,
+			"rate"				: 1.750000000,
+			"fee"				: 300
+	},
+	{
+			"order"				: "Forward #F001009",
+			"currency"			: "CAD",
+			"origAmount"		: 10000000,
+			"rate"				: 1.020000000,
+			"fee"				: 300
+	}
+]

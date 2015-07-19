@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" rel="stylesheet" type="text/css" />
+		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
+		<style>
+			.ui-icon-envato {
+				background: red;
+				border: 1px solid black;
+			}
+		</style>
+		<title>
+			Home
+		</title>
+	</head>
+
+
+	<body>
+		
+		<div data-role="page" id="home">
+			<header data-role="header">
+				<h1>Page Title</h1>
+			</header>
+			
+			<div data-role="content" data-theme="a">
+				<a data-role="button" href="#"  data-inline="true"  data-icon="envato" data-iconpos="notext">Click Me</a>
+				<button data-inline="true" data-theme="e" data-icon="info">Click Me</button>
+				<input type="submit" name="" data-inline="true"  data-icon="delete" value="Click Me" />
+				<div class="ui-grid-b">
+					<div class="ui-block-a">
+						<input type="submit" name=""  value="Click Me" data-theme="b"/>
+					</div>
+					<div class="ui-block-b">
+						<input type="submit" name=""  value="Click Me" data-theme="e" />
+					</div>
+					<div class="ui-block-c">
+						<input type="submit" name=""  value="Click Me" />
+					</div>
+				</div>
+				
+				<ul data-role="listview" data-inset="true" data-theme="e" data-filter="true">
+					<li data-transition="slidedown">
+						<a href="about.html">About Me</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact Me</a>
+					</li>
+					<li>
+						<img src="img/eventicon.png" alt="CSS" class="ui-li-icon" />
+						<h3>My Event Title Here</h3>
+						<p>Here is a description of my event</p>
+					</li>
+					<li>
+						<a href="#">Some Text</a>
+					</li>
+					<li>
+						<img src=" http://d2o0t5hpnwv4c1.cloudfront.net/859_massiveCSS/massiveCSS.jpg" alt="CSS" />
+						<h3>
+							<a href="#">Some Event Title</a>
+							<span class="ui-li-aside">5:45 PM</span>
+						</h3>
+						<p>Some description about the event should go here.</p>
+					</li>
+					<li>
+						<a href="#">Some Text</a>
+					</li>
+					<li>
+						<img src=" http://d2o0t5hpnwv4c1.cloudfront.net/859_massiveCSS/massiveCSS.jpg" alt="CSS" />
+						<h3>My Event Title Here</h3>
+						<p>Here is a description of my event</p>
+					</li>
+					<li data-role="list-divider">
+						Some More Event Info
+					</li>
+					<li>
+						<img src="http:/d2o)t5hpnwv4c1.cloudfront.net/859_massiveCSS/massiveCSS.jpg" alt="CSS" />
+						<h3>My Event Title Here</h3>
+						<p>HEre is the description of my event.</p>
+					</li>
+					
+				</ul>
+				<form action="index.html" method=get">
+					<div data-role="fieldcontain">
+						<label for="firstName">First Name: </label>
+						<input type+text" name="firstName" value="" id="firstName" />
+					</div>
+					<div data-role="fieldcontain">
+						<label for="lastName">Last Name: </label>
+						<input type+text" name="lastName" value="" id="lastName" />
+					</div>
+					<div data-role="fieldcontain">
+						<label for="age">Age:</label>
+						<input id="age" min="7" max="120" type="Range" name="age" value="" />
+					</div>
+					<div data-role="fieldcontain">
+						<label for="cars">Favorite Car:</label>
+						<select id="car" name="car">
+							<option value="honda">Honda</option>
+							<option value="toyota">Toyota</option>
+							<option value="ford">Ford</option>
+						</select>
+					
+					</div>
+					<div data-role="fieldcontain">
+						<p>Your Hobbies?</p>
+						<input type="checkbox" id="movies" name="movies" />
+						<label for="movies">Movies</label>
+						<input type="checkbox" id="sports" name="sports" />
+						<label for="sports">Sports</label>
+						<input type="checkbox" id="eating" name="eating" />
+						<label for="eating">Eating</label>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<input data-theme="b" type="submit" name="" value="Submit Form" />
+					</div>
+				</form>
+			</div>
+			
+			<footer data-role="footer">
+				<h4>Page Footer</h4>
+			</footer>
+			<script>
+				$('form').submit(function(e) {
+					console.log($(this).serialize());
+					//$.post('server.php', vals, function(d) {
+						
+					//});
+					e.preventDefault();
+				});
+			</script>
+		</div>
+		
+	
+	</body>
+</html>

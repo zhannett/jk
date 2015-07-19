@@ -1,0 +1,20 @@
+body {
+	background-color: #BDD4AE;
+}
+p {
+	color: #333;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.offer { 
+	color: #AC6FA1;
+	font-weight: bold;
+}
+a {
+	text-decoration: underline;
+	color: #CC1E41;
+}
+li {
+	padding: 10px 0;
+}

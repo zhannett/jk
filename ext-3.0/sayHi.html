@@ -1,0 +1,15 @@
+<div>Hello from the <strong>world</strong> of AJAX!</div> <!-- 1 -->
+<script type='text/javascript'>
+	function highlightWindow() { /* 2 */
+		var win = Ext.getCmp('myWindow');
+		var winBody = win.body;
+		winBody.highlight();
+	}
+	highlightWindow.defer(1000); /* 3 */
+</script>
+
+<!--
+	1) The “Hello world” DIV tag.
+	2) A method to highlight the body of the window.
+	3) Delay the execution of highlightWindow by one second.
+-->

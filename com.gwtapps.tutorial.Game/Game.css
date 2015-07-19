@@ -1,0 +1,12 @@
+/** Add css rules here for your application. */
+
+.word{letter-spacing:10;margin:20px; font-family:Courier, fixed width;}
+.gwt-Image{ height:200px; margin:20px;}
+.gwt-SuggestBox {margin:20px; color:#FF0000; font-size:1.5em}
+.gwt-SuggestBoxPopup { border: 2px solid #C3D9FF; background-color:#E8EEF7; }
+.gwt-SuggestBoxPopup .item { }
+.gwt-SuggestBoxPopup .item-selected { background-color:#C3D9FF;}
+
+/** Example rules used by the template application (remove for your app) */
+.pc-template-btn {display: block; font-size: 1.4em; color: #FF0000}
+#pc-template-img {margin: 20px}
